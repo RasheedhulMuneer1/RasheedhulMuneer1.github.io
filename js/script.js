@@ -1,12 +1,6 @@
 // toggle icon navbar
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
-let footer = document.querySelector('footer');
-footer.classList.toggle(
-    'show-animate',
-    window.innerHeight + window.scrollY >= document.documentElement.scrollHeight
-);
-
 
  
 menuIcon.onclick = () => {
@@ -14,6 +8,9 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 
 }
+
+
+
     // scroll sections
     let sections = document.querySelectorAll('section');
     let navLinks = document.querySelectorAll('header nav a');
