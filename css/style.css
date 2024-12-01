@@ -20,12 +20,24 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrollbars */
+
 
 }
 
 body{
     background: var(--bg-color);
     color:var(--text-color);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrollbars */
+    display: flex;
+    flex-direction: column;
+
 
 }
 
@@ -699,6 +711,7 @@ span {
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--second-bg-color);
+    margin: 0;
 }
 
 .footer-text,
