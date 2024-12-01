@@ -712,6 +712,7 @@ span {
     padding: 2rem 9%;
     background: var(--second-bg-color);
     margin: 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
 }
 
 .footer-text,
