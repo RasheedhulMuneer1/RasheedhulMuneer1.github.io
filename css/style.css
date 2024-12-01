@@ -887,16 +887,6 @@ section:nth-child(odd) .animate.scroll,
 
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        display: none;
-    }
-    #menu-icon {
-        display: block;
-    }
-}
-
-
 @media (max-width: 462px) {
     .home-content h1 {
         font-size: 5.2rem;
