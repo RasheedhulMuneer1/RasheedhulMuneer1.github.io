@@ -383,40 +383,6 @@ span {
     background: var(--second-bg-color);
 }
 
-.education-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;  /* Adjust gap between columns */
-}
-
-.education-column {
-    flex: 1; /* Allow each column to take up equal width */
-    padding: 10px;
-}
-
-.left {
-    /* Styling for left columns */
-    max-width: 48%;  /* Ensure left columns don't exceed half the width */
-}
-
-.right {
-    /* Styling for the right column */
-    max-width: 48%;  /* Ensure right column doesn't exceed half the width */
-}
-
-@media screen and (max-width: 768px) {
-    /* For smaller screens, stack the sections vertically */
-    .education-row {
-        flex-direction: column;
-    }
-
-    .education-column {
-        max-width: 100%;  /* Full width on small screens */
-        margin-bottom: 20px;
-    }
-}
-
-
 .education {
     display: flex;
     justify-content: center;
