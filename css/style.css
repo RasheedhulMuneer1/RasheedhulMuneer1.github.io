@@ -512,28 +512,6 @@ span {
     position: relative;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 20px; /* Space between columns */
-}
-
-.languages,
-.libraries {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Space between progress items */
-}
-
-.title {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.progress h3 {
-    font-size: 1.2em; /* Adjust as needed */
-    margin: 0;
-}
 
 .skills-box .skills-content {
     position: relative;
@@ -1000,8 +978,4 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: 1fr; /* Stack columns on smaller screens */
-    }
-}
+
