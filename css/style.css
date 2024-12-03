@@ -97,22 +97,29 @@ section {
 
 .home {
     display: flex;
-    align-items: center;
-    justify-content: center; /* Optional, centers content horizontally */
-    padding: 0 9%; /* Adjust padding for your content */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align content to the left */
+    justify-content: center; /* Vertically center the content */
+    padding: 0 5%; /* Add some padding to the left for spacing */
     background: url('../images/geometric-gradient-futuristic-background_23-2149116406.avif') no-repeat center center;
-    background-size: cover; /* Ensures the image covers the entire screen */
-    margin: 0; /* Removes extra margins */
-    height: 100vh; /* Sets height to viewport height */
-    width: 100%; /* Ensures full width */
-    box-sizing: border-box; /* Includes padding in width/height calculations */
+    background-size: cover;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't affect layout */
 }
 
 
 .home-content {
-    max-width: 60rem;
-    z-index: 99;
+    max-width: 50%; /* Limit width of the content */
+    color: #fff; /* Adjust text color for readability */
 }
+.home-sci {
+    display: flex;
+    margin-top: 20px; /* Space between social icons and content */
+    gap: 10px; /* Spacing between icons */
+}
+
 
 .home-content h1 {
     position: relative;
@@ -153,11 +160,31 @@ section {
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
 }
+
+.discord-icon {
+    position: relative; /* For tooltip positioning */
+}
 .discord-icon .tooltip {
     visibility: hidden;
-    opacity: 1;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
 }
 
+.discord-icon .tooltip.show {
+    visibility: visible;
+    opacity: 1;
+}
 
 .home-content .text-animate h3::before {
     content: '';
@@ -180,12 +207,16 @@ section {
     margin: 2rem 0 4rem;
 }
 
-.btn-box {
+/* .btn-box {
     position: relative;
     display: flex;
     justify-content: space-between;
     width: 34.5rem;
     height: 5rem;
+} */
+
+.btn-box {
+    margin-top: 20px; /* Add space above buttons */
 }
 
 .btn-box .btn {
@@ -990,6 +1021,17 @@ section:nth-child(odd) .animate.scroll,
         padding: 0 5%; /* Reduce padding on smaller screens */
     }
 }
+
+@media (max-width: 768px) {
+    .home {
+        padding: 0 3%; /* Reduce padding on smaller screens */
+    }
+
+    .home-content {
+        max-width: 100%; /* Allow full width for smaller devices */
+    }
+}
+
 
 
 
