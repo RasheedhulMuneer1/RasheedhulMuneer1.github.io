@@ -99,7 +99,7 @@ section {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: flex-start; /* Align content to the left */
-    justify-content: center; /* Vertically center the content */
+/*     justify-content: center;  */
     padding: 0 5%; /* Add some padding to the left for spacing */
     background: url('../images/geometric-gradient-futuristic-background_23-2149116406.avif') no-repeat center center/cover;
     background-size: cover;
