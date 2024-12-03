@@ -96,18 +96,18 @@ section {
 }
 
 .home {
-    display:flex;
+    display: flex;
     align-items: center;
-    padding: 0 9%;
-    background: url('../images/geometric-gradient-futuristic-background_23-2149116406.avif') no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* Ensures the height covers the viewport */
-    background-repeat: no-repeat; /* Prevents tiling */
-
+    justify-content: center; /* Optional, centers content horizontally */
+    padding: 0 9%; /* Adjust padding for your content */
+    background: url('../images/geometric-gradient-futuristic-background_23-2149116406.avif') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    margin: 0; /* Removes extra margins */
+    height: 100vh; /* Sets height to viewport height */
+    width: 100%; /* Ensures full width */
+    box-sizing: border-box; /* Includes padding in width/height calculations */
 }
+
 
 .home-content {
     max-width: 60rem;
@@ -153,8 +153,8 @@ section {
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
 }
-.discord-icon:hover .tooltip {
-    visibility: visible;
+.discord-icon .tooltip {
+    visibility: hidden;
     opacity: 1;
 }
 
@@ -984,5 +984,12 @@ section:nth-child(odd) .animate.scroll,
         width: 0;
     }
 }
+
+@media (max-width: 768px) {
+    .home {
+        padding: 0 5%; /* Reduce padding on smaller screens */
+    }
+}
+
 
 
