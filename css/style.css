@@ -114,6 +114,7 @@ section {
     text-align: left; /* Align text to the left */
     width: 100%; /* Allow full width for content */
     color: #fff;
+    margin-top: 20px;
 }
 .home-sci {
     display: flex;
