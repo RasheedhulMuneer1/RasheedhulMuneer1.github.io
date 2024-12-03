@@ -101,12 +101,16 @@ section {
     align-items: flex-start; /* Align content to the left */
     justify-content: center; /* Vertically center the content */
     padding: 0 5%; /* Add some padding to the left for spacing */
-    background: url('../images/geometric-gradient-futuristic-background_23-2149116406.avif') no-repeat center center;
+    background: url('../images/geometric-gradient-futuristic-background_23-2149116406.avif') no-repeat center center/cover;
     background-size: cover;
     height: 100vh; /* Full viewport height */
     margin: 0;
     width: 100%;
     box-sizing: border-box; /* Ensures padding doesn't affect layout */
+/*     align-items: center;
+    text-align: center; */
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -924,6 +928,14 @@ section:nth-child(odd) .animate.scroll,
         height: 38px;
     }
 
+}@media (max-width: 768px) {
+    .home {
+        padding: 0 3%; /* Unified padding for smaller screens */
+    }
+
+    .home-content {
+        max-width: 100%; /* Allow full width for smaller devices */
+    }
 }
 
 @media (max-width: 462px) {
@@ -947,8 +959,7 @@ section:nth-child(odd) .animate.scroll,
         margin-top: 2rem;
         text-align: center;
     }
-} 
-
+}
 
 @media (max-width: 371px) {
     .home {
@@ -963,51 +974,37 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 5rem; /* Adjusted smaller font size */
     }
-} 
+}
 
-/*keyframes animation*/ 
+/* Keyframes Animation */
 @keyframes homeBgText {
-    0%,
-    10%,
-    100% {
+    0%, 10%, 100% {
         background-position: -33rem 0;
     }
-
-    65%,
-    85% {
+    65%, 85% {
         background-position: 0 0;
     }
 }
 
 @keyframes homeCurserText {
-    0%,
-    10%,
-    100% {
+    0%, 10%, 100% {
         width: 0;
     }
-
-    65%,
-    78%,
-    85% {
+    65%, 78%, 85% {
         width: 100%;
         opacity: 1;
     }
-
-    75%,
-    81% {
+    75%, 81% {
         opacity: 0;
     }
 }
 
 @keyframes aboutSpinner {
     100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-
-
+        transform: translate(-50%, -50%) rotate(360deg);
     }
-
 }
 
 @keyframes showRight {
@@ -1015,23 +1012,3 @@ section:nth-child(odd) .animate.scroll,
         width: 0;
     }
 }
-
-@media (max-width: 768px) {
-    .home {
-        padding: 0 5%; /* Reduce padding on smaller screens */
-    }
-}
-
-@media (max-width: 768px) {
-    .home {
-        padding: 0 3%; /* Reduce padding on smaller screens */
-    }
-
-    .home-content {
-        max-width: 100%; /* Allow full width for smaller devices */
-    }
-}
-
-
-
-
