@@ -114,14 +114,14 @@ section {
     text-align: left; /* Align text to the left */
     max-width: 60rem;
     z-index: 99;
-     width: 100%; /* Allow full width for content */
+/*     width: 100%;  */
     color: #fff;
     margin-top: 20px;
 }
 
 .home-sci {
     display: flex;
-    gap: 10px; /* Spacing between icons */
+    gap: 20px; /* Spacing between icons */
     margin-top: 2rem;
 }
 
