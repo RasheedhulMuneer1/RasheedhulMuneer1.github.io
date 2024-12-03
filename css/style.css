@@ -185,6 +185,10 @@ section {
     color: var(--bg-color);
 }
 
+.discord-icon:hover .tooltip {
+    display: block; /* Show tooltip on hover */
+}
+
 .about {
     background: var(--second-bg-color);
     padding: 6rem 9%;
@@ -332,6 +336,7 @@ section {
 .home {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
+.home {
     align-items: flex-start; /* Align content to the left */
     justify-content: flex-start; /* Push content to the top-left */
     padding: 10rem 5%; /* Add padding for spacing */
