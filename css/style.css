@@ -99,8 +99,8 @@ section {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: flex-start; /* Align content to the left */
-/*     justify-content: center;  */
-    padding: 0 5%; /* Add some padding to the left for spacing */
+    justify-content: flex-start; /* Push content to the top-left */
+    padding: 10rem 5%; /* Add padding for spacing */
     background: url('../images/geometric-gradient-futuristic-background_23-2149116406.avif') no-repeat center center/cover;
     background-size: cover;
     height: 100vh; /* Full viewport height */
@@ -111,19 +111,18 @@ section {
 
 
 .home-content {
-    max-width: 50%; /* Limit width of the content */
-    color: #fff; /* Adjust text color for readability */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Allow full width for content */
+    color: #fff;
 }
 .home-sci {
     display: flex;
-    margin-top: 20px; /* Space between social icons and content */
     gap: 10px; /* Spacing between icons */
+    margin-top: 2rem;
 }
 
 
 .home-content h1 {
-    position: relative;
-    display: inline-block;
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
@@ -160,12 +159,13 @@ section {
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
 }
-
 .discord-icon {
     position: relative; /* For tooltip positioning */
 }
+
 .discord-icon .tooltip {
     visibility: hidden;
+    opacity: 0;
     background-color: #555;
     color: #fff;
     text-align: center;
@@ -177,14 +177,16 @@ section {
     transform: translateX(-50%);
     white-space: nowrap;
     z-index: 1;
-    opacity: 0;
     transition: opacity 0.3s, visibility 0.3s;
 }
 
+/* Show tooltip when the .show class is added */
 .discord-icon .tooltip.show {
     visibility: visible;
     opacity: 1;
 }
+
+
 
 .home-content .text-animate h3::before {
     content: '';
@@ -201,8 +203,7 @@ section {
 
 }
 
-.home-content p{
-    position: relative;
+.home-content p {
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
 }
@@ -236,6 +237,7 @@ section {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+     margin-right: 1rem; /* Add spacing between buttons */
 }
 
 .btn-box .btn:hover {
