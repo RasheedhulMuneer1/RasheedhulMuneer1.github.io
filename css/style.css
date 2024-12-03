@@ -149,7 +149,10 @@ section {
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
 }
-
+.discord-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
 
 
 .home-content .text-animate h3::before {
