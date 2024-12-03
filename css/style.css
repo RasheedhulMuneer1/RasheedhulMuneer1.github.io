@@ -112,10 +112,13 @@ section {
 
 .home-content {
     text-align: left; /* Align text to the left */
-    width: 100%; /* Allow full width for content */
+    max-width: 60rem;
+    z-index: 99;
+     width: 100%; /* Allow full width for content */
     color: #fff;
     margin-top: 20px;
 }
+
 .home-sci {
     display: flex;
     gap: 10px; /* Spacing between icons */
