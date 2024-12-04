@@ -79,24 +79,6 @@ body{
 
 
 }
-#home {
-    display: flex; /* Enables flexbox */
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    text-align: center; /* Centers text inside child elements */
-    height: 100vh; /* Ensures the section takes the full viewport height */
-    padding: 0 20px; /* Optional: Adds some padding for small screens */
-    box-sizing: border-box; /* Ensures padding doesn't affect layout */
-}
-#home {
-    display: flex; /* Enables flexbox */
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    height: 100vh; /* Ensures the section takes the full viewport height */
-    margin: 0; /* Removes any margin */
-    padding: 0; /* Removes any padding */
-    box-sizing: border-box; /* Ensures padding doesn't affect layout */
-}
 
 #menu-icon {
     position: relative;
@@ -116,12 +98,8 @@ section {
 .home {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-/*     align-items: flex-start;
-    justify-content: flex-start;  */
-    align-items: center; /* Align content to the left */
-    justify-content: center; /* Push content to the top-left */
-    
-    
+    align-items: flex-start; /* Align content to the left */
+    justify-content: flex-start; /* Push content to the top-left */
     padding: 10rem 5%; /* Add padding for spacing */
     background: var(--bg-color); /* Fallback background color */
     background-size: cover;
@@ -132,47 +110,26 @@ section {
 }
 
 
-/* .home-content {
-    text-align: left; 
+.home-content {
+    text-align: left; /* Align text to the left */
     max-width: 60rem;
     z-index: 99;
+/*  width: 100%;  */
     color: #fff;
     margin-top: 40px;
-} */
-
-/* .home-content {
-    max-width: 800px; 
-    margin: 0 auto; 
-} */
-.home-content {
-    display: flex; /* Enables flexbox for the content inside */
-    flex-direction: column; /* Aligns items vertically */
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
-    text-align: center; /* Centers text inside child elements */
-    height: 100%; /* Ensures the content takes the full height of the section */
-    max-width: 800px; /* Optional: to prevent text from stretching too wide */
-    padding: 0 20px; /* Optional: adds some padding to avoid content touching the edges */
 }
 
 .home-sci {
     display: flex;
-    gap: 25px; /* Adjusts spacing between icons */
-    justify-content: center;
-    margin-top: 20px; /* Adds space between the content and icons */
+    gap: 20px; /* Spacing between icons */
     margin-top: 2rem;
-
 }
-
-
 
 
 .home-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
-    margin: 0; /* Removes extra margin from the elements */
-    
 }
 .home-content h1 span {
     color: var(--text-color);
@@ -207,19 +164,10 @@ section {
     animation-delay: 2s;
 }
 .discord-icon {
-   position: relative; /* For tooltip positioning */
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: .2rem solid var(--main-color);
-  border-radius: 50%;
-  font-size: 20px; 1 
+    position: relative; /* For tooltip positioning */
 }
 
-/* .discord-icon .tooltip {
+.discord-icon .tooltip {
     visibility: hidden;
     opacity: 0;
     background-color: #555;
@@ -234,19 +182,6 @@ section {
     white-space: nowrap;
     z-index: 1;
     transition: opacity 0.3s, visibility 0.3s;
-} */
-.discord-icon .tooltip {
-    display: none;
-    position: absolute;
-    top: 150%; /* Adjust tooltip position */
-    left: 50%;
-    transform: translateX(-50%);
-    background: #333;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 12px;
-    white-space: nowrap;
 }
 
 /* Show tooltip when the .show class is added */
@@ -254,43 +189,6 @@ section {
     visibility: visible;
     opacity: 1;
 }
-/* Tooltip container */
-
-.discord-icon .tooltip-container {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    line-height: 1; /* Ensures the icon is vertically centered */
-    
-}
-
-/* Tooltip text */
-.tooltip {
-    visibility: hidden;
-    width: auto;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 10px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%; /* Position above the icon */
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-/* Show the tooltip on hover */
-.tooltip-container:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    
-}
-
-
 
 
 
@@ -312,16 +210,12 @@ section {
 .home-content p {
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
-    text-align: center;
-    margin: 0; /* Removes extra margin from the elements */
-     
 }
 
 
-.home-content .btn-box {
-    display: flex;
-    justify-content: center; /* Centers the button horizontally */
-    margin-top: 20px; /* Adds spacing above the button */
+
+.btn-box {
+    margin-top: 20px; /* Add space above buttons */
 }
 
 .btn-box .btn {
@@ -378,16 +272,6 @@ section {
     width: 100%;
     
    
-}
-.home-content .btn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    text-transform: uppercase;
-    transition: background-color 0.3s;
 }
 
 .home-sci {
