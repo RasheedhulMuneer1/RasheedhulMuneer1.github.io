@@ -53,45 +53,6 @@ body{
     color:var(--text-color);
     font-weight: 600;
 }
-.text-animate {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    padding: 2rem; /* Add padding for spacing */
-    box-sizing: border-box;
-}
-
-.text-animate p {
-    max-width: 90%; /* Restrict width to ensure readability */
-    margin: 1rem auto; /* Center the text */
-    font-size: 1.2rem; /* Adjust text size */
-    line-height: 1.6; /* Improve readability */
-    color: var(--text-color); /* Use your preferred text color */
-    text-align: justify; /* Align text for better flow */
-}
-
-.btn-box {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem; /* Space between text and button */
-}
-
-.btn {
-    padding: 0.8rem 2rem;
-    background: var(--button-color);
-    color: var(--button-text-color);
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background: var(--button-hover-color);
-}
-
 
 .navbar {
     position: static;
