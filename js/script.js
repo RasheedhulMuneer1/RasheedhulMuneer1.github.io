@@ -45,9 +45,15 @@ window.onscroll = () => {
 menuIcon.classList.remove('bx-x');
 navbar.classList.remove('active');
 
-// Discord icon tooltip toggle
 function toggleTooltip(event) {
-    event.preventDefault(); // Prevent default link behavior
-    var tooltip = document.querySelector('.discord-icon .tooltip');
-    tooltip.style.display = tooltip.style.display === 'block' ? 'none' : 'block';
+    event.preventDefault(); // Prevents the default behavior of the anchor tag
+    const tooltip = document.getElementById("discord-tooltip");
+
+    // Toggle visibility
+    if (tooltip.classList.contains("visible")) {
+        tooltip.classList.remove("visible");
+    } else {
+        tooltip.classList.add("visible");
+    }
 }
+
