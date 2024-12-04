@@ -601,6 +601,13 @@ span {
     text-align: center;
     
 }
+.skills-content .progress h4{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
 
 .skills-content .progress h3 span{
     color: var(--text-color);
