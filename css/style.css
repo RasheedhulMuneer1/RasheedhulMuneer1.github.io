@@ -95,19 +95,33 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+/* .home {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    padding: 10rem 5%; 
+    background: var(--bg-color); 
+    background-size: cover;
+    height: 100vh; 
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box; 
+} */
 .home {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: flex-start; /* Align content to the left */
     justify-content: flex-start; /* Push content to the top-left */
     padding: 10rem 5%; /* Add padding for spacing */
-    background: var(--bg-color); /* Fallback background color */
-    background-size: cover;
+    background: url('images/flux-image.com_code-in-the-dark.jpeg') no-repeat center center; /* Set the background image */
+    background-size: cover; /* Ensure the background image covers the entire area */
     height: 100vh; /* Full viewport height */
     margin: 0;
     width: 100%;
     box-sizing: border-box; /* Ensures padding doesn't affect layout */
 }
+
 
 
 .home-content {
