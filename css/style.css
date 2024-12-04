@@ -79,6 +79,15 @@ body{
 
 
 }
+#home {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center; /* Centers text inside child elements */
+    height: 100vh; /* Ensures the section takes the full viewport height */
+    padding: 0 20px; /* Optional: Adds some padding for small screens */
+    box-sizing: border-box; /* Ensures padding doesn't affect layout */
+}
 
 #menu-icon {
     position: relative;
@@ -114,20 +123,26 @@ section {
 }
 
 
-.home-content {
-    text-align: left; /* Align text to the left */
+/* .home-content {
+    text-align: left; 
     max-width: 60rem;
     z-index: 99;
-/*  width: 100%;  */
     color: #fff;
     margin-top: 40px;
+} */
+.home-content {
+    max-width: 800px; /* Adjust as needed for content width */
+    margin: 0 auto; /* Centers the content within the flex container */
 }
 
 .home-sci {
     display: flex;
-    gap: 20px; /* Spacing between icons */
+    gap: 15px; /* Adjusts spacing between icons */
+    justify-content: center;
+    margin-top: 20px; /* Adds space between the content and icons */
     margin-top: 2rem;
 }
+
 
 
 .home-content h1 {
@@ -171,7 +186,7 @@ section {
     position: relative; /* For tooltip positioning */
 }
 
-.discord-icon .tooltip {
+/* .discord-icon .tooltip {
     visibility: hidden;
     opacity: 0;
     background-color: #555;
@@ -186,6 +201,19 @@ section {
     white-space: nowrap;
     z-index: 1;
     transition: opacity 0.3s, visibility 0.3s;
+} */
+.discord-icon .tooltip {
+    display: none;
+    position: absolute;
+    top: 150%; /* Adjust tooltip position */
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
 }
 
 /* Show tooltip when the .show class is added */
@@ -194,10 +222,12 @@ section {
     opacity: 1;
 }
 /* Tooltip container */
-.tooltip-container {
-    position: relative;
+
+.discord-icon .tooltip-container {
     display: inline-block;
+    position: relative;
     cursor: pointer;
+    
 }
 
 /* Tooltip text */
@@ -222,7 +252,10 @@ section {
 .tooltip-container:hover .tooltip {
     visibility: visible;
     opacity: 1;
+    display: block;
+    
 }
+
 
 
 
