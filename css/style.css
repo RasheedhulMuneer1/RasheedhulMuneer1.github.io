@@ -540,7 +540,7 @@ span {
     flex: 1 1 40rem
 }
 .skills-column a {
-    color: #000; /* Initial link color (black) */
+    color: #FFA500; /* Initial link color (black) */
     text-decoration: none; /* Remove underline for a clean look */
     font-weight: bold; /* Make the text more prominent */
 }
