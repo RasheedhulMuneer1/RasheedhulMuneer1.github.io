@@ -98,8 +98,12 @@ section {
 .home {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    align-items: flex-start; /* Align content to the left */
-    justify-content: flex-start; /* Push content to the top-left */
+/*     align-items: flex-start;
+    justify-content: flex-start;  */
+    align-items: center; /* Align content to the left */
+    justify-content: center; /* Push content to the top-left */
+    
+    
     padding: 10rem 5%; /* Add padding for spacing */
     background: var(--bg-color); /* Fallback background color */
     background-size: cover;
