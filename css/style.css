@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-* {
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,36 +10,37 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
-
 :root {
-    --bg-color: #081b29;
-    --second-bg-color: #112e42;
+    --bg-color:#081b29;
+    --second-bg-color:#112e42;
     --text-color: #ededed;
     --main-color: #00abf0;
 }
 
-html {
+html{
     font-size: 62.5%;
     overflow-x: hidden;
+
 }
 
-body {
+body{
     background: var(--bg-color);
-    color: var(--text-color);
+    color:var(--text-color);
+
 }
 
 .header {
     position: fixed;
-    top: 0;
-    left: 0;
+    top:0;
+    left:0;
     width: 100%;
-    padding: 2rem 9%;
+    padding:2rem 9%;
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .header.sticky {
@@ -47,33 +48,46 @@ body {
 }
 
 .logo {
+    position: relative;
     font-size: 2.5rem;
-    color: var(--text-color);
+    color:var(--text-color);
     font-weight: 600;
 }
 
 .navbar {
-    display: flex;
-    gap: 3.5rem;
+    position: static;
+    
 }
+
+
 
 .navbar a {
     font-size: 1.7rem;
-    color: var(--text-color);
+    color:var(--text-color);
     font-weight: 500;
-    transition: 0.3s;
+    margin-left: 3.5rem;
+    transition: .3s;
 }
-
 .navbar a:hover,
 .navbar a.active {
-    color: var(--second-bg-color);
+    color:var(--second-bg-color);
+    font-size: 1.7rem;
+    color:var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+
+
 }
 
 #menu-icon {
+    position: relative;
     font-size: 3.6rem;
     color: var(--text-color);
     cursor: pointer;
     display: none;
+
+
 }
 
 section {
@@ -83,107 +97,74 @@ section {
 
 .home {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 10rem 5%;
-    margin-top: 2rem;
-    margin-left: 2rem;
-/*     background: url('../images/geometric-gradient-futuristic-background_23-2149116406.avif') no-repeat center/cover; */
-    height: 100vh;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align content to the left */
+    justify-content: flex-start; /* Push content to the top-left */
+    padding: 10rem 5%; /* Add padding for spacing */
+    background: url('../images/geometric-gradient-futuristic-background_23-2149116406.avif') no-repeat center center/cover;
+    background-size: cover;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
     width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't affect layout */ 
 }
 
+
 .home-content {
-    text-align: left;
+    text-align: left; /* Align text to the left */
     max-width: 60rem;
+    z-index: 99;
+/*     width: 100%;  */
     color: #fff;
+    margin-top: 20px;
+}
+
+.home-sci {
+    display: flex;
+    gap: 20px; /* Spacing between icons */
     margin-top: 2rem;
 }
+
 
 .home-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
 }
-
 .home-content h1 span {
     color: var(--text-color);
 }
 
 .home-content .text-animate {
+    position: relative;
     width: 32.8rem;
+   
 }
 
-.home-content .text-animate h3 {
+.home-content .text-animate h3{
     font-size: 3.2rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: 0.7px var(--main-color);
-    background-clip: text;
+    -webkit-text-stroke: .7px var(--main-color);
+    background-image: linear-gradient(var(--main-color)), var(--main-color);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
     background-position: -33rem 0;
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
 }
 
-.home-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 4rem;
+.home .show-animate .home-content .text-animate {
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 2s;
 }
 
-.btn-box {
-    margin-top: 2rem;
-    display: flex;
-    gap: 1rem;
+.home .show-animate .home-content .text-animate h3::before {
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 2s;
 }
-
-.btn-box .btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 15rem;
-    height: 4rem;
-    background: var(--main-color);
-    border: 0.2rem solid var(--main-color);
-    border-radius: 0.8rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: var(--bg-color);
-    transition: 0.5s;
-}
-
-.btn-box .btn:hover {
-    background: transparent;
-    color: var(--main-color);
-}
-
-.home-sci {
-    display: flex;
-    gap: 2rem;
-    position: absolute;
-    bottom: 4rem;
-}
-
-.home-sci a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    border: 0.2rem solid var(--main-color);
-    border-radius: 50%;
-    font-size: 2rem;
-    color: var(--main-color);
-    transition: 0.5s;
-}
-
-.home-sci a:hover {
-    background: var(--main-color);
-    color: var(--bg-color);
-}
-
-.discord-icon:hover .tooltip {
-    display: block;
+.discord-icon {
+    position: relative; /* For tooltip positioning */
 }
 
 .discord-icon .tooltip {
@@ -203,10 +184,13 @@ section {
     transition: opacity 0.3s, visibility 0.3s;
 }
 
+/* Show tooltip when the .show class is added */
 .discord-icon .tooltip.show {
     visibility: visible;
     opacity: 1;
 }
+
+
 
 .home-content .text-animate h3::before {
     content: '';
@@ -219,6 +203,45 @@ section {
     z-index: -1;
     animation: homeCursorText 6s linear infinite;
     animation-delay: 2s;
+
+
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+}
+
+
+
+.btn-box {
+    margin-top: 20px; /* Add space above buttons */
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height:100%;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+     margin-right: 1rem; /* Add spacing between buttons */
+}
+
+.btn-box .btn:hover {
+    color: var(--second-bg-color);
+     background: transparent;
+    
 }
 
 .btn-box .btn:nth-child(2){
@@ -231,6 +254,52 @@ section {
     background: transparent;
 }
 
+
+.btn-box .btn ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+   
+}
+
+.btn-box .btn:hover ::before{
+    width: 100%;
+    
+   
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 4rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
 .home-sci a::before {
     content: '';
     position: absolute;
@@ -241,6 +310,7 @@ section {
     background: var(--main-color);
     z-index: -1;
     transition: .5s;
+
 }
 
 .home-sci a:hover::before {
@@ -277,6 +347,7 @@ section {
     font-size: 5rem;
     margin-bottom: 3rem;
     text-align: center;
+
 }
 
 span {
@@ -291,6 +362,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .about-img img {
@@ -310,8 +382,9 @@ span {
     border-top: 2rem solid var(--second-bg-color);
     border-bottom: 2rem solid var(--second-bg-color);
     border-left: 2rem solid var(--main-color);
+    border-right: 2rem solid var(--main-color);
+    animation: aboutSpinner 8s linear infinite;
 }
-
 
 .about-content {
     text-align: center;
@@ -471,7 +544,7 @@ span {
     display: inline-block;
     font-size: 2.5rem;
     margin: 0 0 1.5rem;
-} */
+}
 
 .skills-column .skills-box {
     position: relative;
