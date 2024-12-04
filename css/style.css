@@ -97,6 +97,20 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+/* .home {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    padding: 10rem 5%; 
+    background-image: url("/images/flux-image.com_code-in-the-dark.jpeg"); 
+    background-size: cover;
+    height: 100vh; 
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box; 
+} */
+
 .home {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
@@ -104,12 +118,16 @@ section {
     justify-content: flex-start; /* Push content to the top-left */
     padding: 10rem 5%; /* Add padding for spacing */
     background-image: url("/images/flux-image.com_code-in-the-dark.jpeg"); /* Add background image */
-    background-size: cover;
+    background-size: contain; /* Ensures the entire image fits within the screen */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents tiling of the background */
+    background-attachment: fixed; /* Ensures background stays fixed while scrolling */
     height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
     margin: 0;
-    width: 100%;
     box-sizing: border-box; /* Ensures padding doesn't affect layout */
 }
+
 
 
 
