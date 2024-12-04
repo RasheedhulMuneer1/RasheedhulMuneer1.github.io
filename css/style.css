@@ -102,6 +102,7 @@ section {
     justify-content: flex-start; /* Push content to the top-left */
     padding: 10rem 5%; /* Add padding for spacing */
     background: var(--bg-color); /* Fallback background color */
+    background-image: url("/images/ai-generated-programmer-coding-o.jpg");
     background-size: cover;
     height: 100vh; /* Full viewport height */
     margin: 0;
@@ -146,7 +147,7 @@ section {
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
-    background-image: linear-gradient(var(--main-color)), var(--main-color);
+/*     background-image: linear-gradient(var(--main-color)), var(--main-color); */
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: -33rem 0;
