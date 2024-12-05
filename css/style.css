@@ -37,13 +37,13 @@ body{
 }
 
 a.download-cv {
-    padding: 10px 35px 16px 35px;
+    padding: 8px 35px 16px 35px;
     text-decoration: none;
     border: rgb(255, 181, 0) 1px solid;      
     border-radius: 35px;
     letter-spacing: 2px;
     color: #fff;
-    background-color: transparent;
+    background-color: transparent; 
     margin-bottom: 10px;
 }
 
