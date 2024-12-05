@@ -33,9 +33,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4px 0; /* Add some spacing */
-    
+    margin-left: 20px; /* Adjust margin to push the link to the right of the icons */
 }
+
 
 a.download-cv {
     padding: 16px 25px 16px 25px;
