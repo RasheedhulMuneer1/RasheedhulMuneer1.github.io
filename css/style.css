@@ -28,26 +28,6 @@ body{
     color:var(--text-color);
 
 }
-/* Home Section Styling */
-.home-content {
-    padding: 16px 35px;
-}
-
-a.download-cv {
-    padding: 16px 35px;
-    text-decoration: none;
-    border: rgb(255, 181, 0) 1px solid;
-    border-radius: 35px;
-    letter-spacing: 2px;
-    color: #fff;
-    background-color: transparent;
-    position: relative; /* Ensures it aligns correctly */
-    display: inline-block;
-    margin-top: 30px; /* Adds space above icons */
-}
-
-
-
 
 .button-container {
     display: flex;
@@ -56,7 +36,16 @@ a.download-cv {
     margin: 20px 0; /* Add some spacing */
 }
 
-
+a.download-cv {
+    padding: 16px 35px;
+    text-decoration: none;
+    border: rgb(255, 181, 0) 1px solid;      
+    border-radius: 35px;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
 
 a.download-cv:hover {
     background-color: rgb(255, 181, 0);
@@ -158,9 +147,7 @@ section {
 .home-sci {
     display: flex;
     gap: 20px; /* Spacing between icons */
-/*     margin-top: 2rem; */
-/*     justify-content: center;  */
-    margin-top: 20px; /* Space above icons */
+    margin-top: 2rem;
 }
 
 
@@ -1065,14 +1052,9 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-
-/* Responsive Adjustments for Smaller Screens */
 @media (max-width: 768px) {
     a.download-cv {
         padding: 12px 25px;
         font-size: 14px;
-    }
-    .home-sci {
-        gap: 15px; /* Reduce gap between icons */
     }
 }
