@@ -29,6 +29,13 @@ body{
 
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Add some spacing */
+}
+
 a.download-cv {
     padding: 16px 35px;
     text-decoration: none;
@@ -36,13 +43,13 @@ a.download-cv {
     border-radius: 35px;
     letter-spacing: 2px;
     color: #fff;
-    position: absolute;
-    margin: 10% 35%;
+    background-color: transparent;
 }
 
 a.download-cv:hover {
     background-color: rgb(255, 181, 0);
 }
+
 
 
 .header {
@@ -1043,3 +1050,11 @@ section:nth-child(odd) .animate.scroll,
         padding: 5rem 2%; /* Reduce padding for mobile devices */
     }
 }
+
+@media (max-width: 768px) {
+    a.download-cv {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
