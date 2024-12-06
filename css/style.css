@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-#loom-companion-mv3 {
-    display: none !important;
-}
-
 * { 
     margin: 0;
     padding: 0;
@@ -143,9 +139,9 @@ section {
     text-align: left; /* Align text to the left */
     max-width: 60rem;
     z-index: 99;
-    width: 100%;  
+/*  width: 100%;  */
     color: #fff;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .home-sci {
@@ -230,15 +226,15 @@ section {
     height: 100%;
     border-right: 2px solid var(--main-color);
     z-index: -1;
-/*     animation: homeCursorText 6s linear infinite; */
-/*     animation-delay: 2s; */
+    animation: homeCursorText 6s linear infinite;
+    animation-delay: 2s;
 
 
 }
 
 .home-content p {
     font-size: 1.6rem;
-    margin: 4rem 0 4rem;
+    margin: 2rem 0 4rem;
 }
 
 
@@ -266,7 +262,6 @@ section {
     transition: .5s;
     margin-right: 1rem; /* Add spacing between buttons */
     margin-top: 10px;
-    padding: 4px 4px 4px 4px;
 }
 
 .btn-box .btn:hover {
@@ -773,30 +768,18 @@ span {
     cursor: pointer;
 }
 
-/* .footer {
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--second-bg-color);
-} */
-.footer {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;    /* Center vertically */
-    flex-wrap: wrap;
-    padding: 2rem 9%;
-    background: var(--second-bg-color);
-    
 }
-
 
 .footer-text,
 .footer-iconTop {
     font-size: 1.6rem;
-/*     align-items: center; */
-    
 }
 
 .footer-iconTop a {
