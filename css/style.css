@@ -30,20 +30,17 @@ body{
 }
 
 .button-container {
-/*  display: flex;
-    justify-content: center;
+    display: flex;
     align-items: center;
     margin-left: 200px;  
-    margin-top: 50px;    */
+    margin-top: 50px;    
     position: relative;
-    display: inline-flex;
     justify-content: center;
-    align-items: center;
     letter-spacing: .1rem;
     z-index: 1;
     overflow: hidden;
     transition: .5s;
-    margin-right: 1rem; /* Add spacing between buttons */
+    
 }
 
 
@@ -264,7 +261,7 @@ section {
     align-items: center;
     width: 15rem;
     height:100%;
-    background: var(--main-color);
+    background: #000;
     border: .2rem solid var(--main-color);
     border-radius: .8rem;
     font-size: 1.8rem;
@@ -274,12 +271,12 @@ section {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
-     margin-right: 1rem; /* Add spacing between buttons */
+    margin-right: 1rem; /* Add spacing between buttons */
 }
 
 .btn-box .btn:hover {
     color: var(--second-bg-color);
-     background: transparent;
+    background: transparent;
     
 }
 
@@ -777,7 +774,7 @@ span {
 
 
 .contact form .btn-box.btns .btn{
-    color: var(--second-bg-color);
+    color: #000;
     cursor: pointer;
 }
 
