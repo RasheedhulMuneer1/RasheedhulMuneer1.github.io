@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+#loom-companion-mv3 {
+    display: none !important;
+}
+
 * { 
     margin: 0;
     padding: 0;
@@ -776,19 +780,11 @@ span {
     padding: 2rem 9%;
     background: var(--second-bg-color);
 }
-/*
-.footer-text,
- .footer-iconTop {
-    font-size: 1.6rem;
-} */
-.footer-iconTop {
-    position: fixed; /* Fix it in place */
-    bottom: 1rem; /* Distance from the bottom */
-    right: 1rem; /* Distance from the right corner */
-    font-size: 1.6rem; /* Keep the font size as is */
-    z-index: 10; /* Ensure it stays above other elements */
-}
 
+.footer-text,
+.footer-iconTop {
+    font-size: 1.6rem;
+}
 
 .footer-iconTop a {
     position: relative;
