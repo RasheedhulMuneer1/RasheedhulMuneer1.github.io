@@ -145,14 +145,13 @@ section {
     z-index: 99;
 /*  width: 100%;  */
     color: #fff;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .home-sci {
     display: flex;
     gap: 20px; /* Spacing between icons */
     margin-top: 2rem;
-    margin-left: 2rem;
 }
 
 
@@ -329,7 +328,6 @@ section {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
-    margin-left: 2rem;
 }
 
 .home-sci a::before {
@@ -342,7 +340,6 @@ section {
     background: var(--main-color);
     z-index: -1;
     transition: .5s;
-    margin-left: 2rem;
 
 }
 
