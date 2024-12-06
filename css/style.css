@@ -33,7 +33,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0; /* Add some spacing */
+    margin: 20px auto; /* Add some spacing */
 }
 
 a.download-cv {
@@ -44,7 +44,7 @@ a.download-cv {
     letter-spacing: 2px;
     color: #fff;
     background-color: transparent;
-    margin-bottom: 10px;
+    margin: 20px 0; /* Add spacing */
 }
 
 a.download-cv:hover {
@@ -261,6 +261,7 @@ section {
     overflow: hidden;
     transition: .5s;
     margin-right: 1rem; /* Add spacing between buttons */
+    margin-top: 10px;
 }
 
 .btn-box .btn:hover {
