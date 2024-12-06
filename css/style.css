@@ -572,6 +572,7 @@ span {
     color: #FFA500; /* Initial link color (black) */
     text-decoration: none; /* Remove underline for a clean look */
     font-weight: bold; /* Make the text more prominent */
+    font-size: 1.6rem; 
 }
 
 .skills-column a:hover {
@@ -624,7 +625,9 @@ span {
 }
 
 .skills-content .progress h3{
-    font-size: 1.7rem;
+/*     font-size: 1.7rem; */
+   
+    font-size: 1.6rem; 
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -794,6 +797,7 @@ span {
     text-align: center; /* Ensure text alignment */
     height: 100%; /* Ensure it takes the full height of the parent container */
     font-size: 1.6rem;
+    
     
 }
 /* .footer-text, */
