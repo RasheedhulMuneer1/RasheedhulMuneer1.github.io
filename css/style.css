@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+#loom-companion-mv3 {
+    display: none !important;
+}
+
 * { 
     margin: 0;
     padding: 0;
@@ -782,16 +786,16 @@ span {
     justify-content: center; /* Center horizontally */
     align-items: center;    /* Center vertically */
     flex-wrap: wrap;
-    padding: 2rem;
+    padding: 2rem 9%;
     background: var(--second-bg-color);
-    height: 100vh;          /* Ensure it spans the full viewport height */
+    
 }
 
 
 .footer-text,
 .footer-iconTop {
     font-size: 1.6rem;
-    align-items: center;
+/*     align-items: center; */
     
 }
 
