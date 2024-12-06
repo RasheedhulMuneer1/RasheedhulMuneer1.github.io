@@ -30,11 +30,20 @@ body{
 }
 
 .button-container {
-    display: flex;
+/*  display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 200px;  /* Increase the margin to push the link further right */
-    margin-top: 50px;   /* Add space on top */
+    margin-left: 200px;  
+    margin-top: 50px;    */
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .1rem;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin-right: 1rem; /* Add spacing between buttons */
 }
 
 
