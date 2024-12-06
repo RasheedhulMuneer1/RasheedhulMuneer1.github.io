@@ -769,18 +769,30 @@ span {
     cursor: pointer;
 }
 
-.footer {
+/* .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--second-bg-color);
+} */
+.footer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    flex-wrap: wrap;
+    padding: 2rem;
+    background: var(--second-bg-color);
+    height: 100vh;          /* Ensure it spans the full viewport height */
 }
+
 
 .footer-text,
 .footer-iconTop {
     font-size: 1.6rem;
+    align-items: center;
+    
 }
 
 .footer-iconTop a {
