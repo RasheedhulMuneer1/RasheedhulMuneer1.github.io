@@ -267,11 +267,11 @@ section {
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: .1rem;
-    color: #000;
+    color: #fff;
     z-index: 1;
     overflow: hidden;
     transition: .5s;
-     margin-right: 1rem; /* Add spacing between buttons */
+    margin-right: 1rem; /* Add spacing between buttons */
 }
 
 .btn-box .btn:hover {
@@ -774,7 +774,7 @@ span {
 
 
 .contact form .btn-box.btns .btn{
-    color: var(--second-bg-color);
+    color: #fff;
     cursor: pointer;
 }
 
