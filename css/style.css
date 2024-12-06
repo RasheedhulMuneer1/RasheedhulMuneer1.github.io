@@ -802,10 +802,12 @@ span {
     text-align: center; /* Ensure text alignment */
     height: 100%; /* Ensure it takes the full height of the parent container */
     font-size: 1.6rem;
-    
+}
+
+.footer-text p {
+    justify-content: center; /* Center horizontally */
     
 }
-/* .footer-text, */
 .footer-iconTop {
     font-size: 1.6rem;
 }
