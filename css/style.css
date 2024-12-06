@@ -270,7 +270,7 @@ section {
 
 .btn-box .btn:hover {
     color: var(--second-bg-color);
-     background: transparent;
+    background: transparent;
     
 }
 
@@ -436,7 +436,7 @@ span {
     display: inline-block;
     width:15rem;
     color: var(--second-bg-color);
-     background: transparent;
+    background: transparent;
     
 }
 
@@ -781,7 +781,15 @@ span {
     background: var(--second-bg-color);
 }
 
-.footer-text,
+
+.footer-text {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensure text alignment */
+    height: 100%; /* Ensure it takes the full height of the parent container */
+}
+/* .footer-text, */
 .footer-iconTop {
     font-size: 1.6rem;
 }
