@@ -31,31 +31,20 @@ body{
 
 .button-container {
     display: flex;
-    align-items: center;
-    margin-left: 200px;  
-    margin-top: 50px;    
-    position: relative;
     justify-content: center;
-    letter-spacing: .1rem;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
-    
+    align-items: center;
+    margin: 20px 0; /* Add some spacing */
 }
 
-
-
 a.download-cv {
-    padding: 16px 25px 16px 25px;
+    padding: 16px 35px;
     text-decoration: none;
     border: rgb(255, 181, 0) 1px solid;      
     border-radius: 35px;
     letter-spacing: 2px;
     color: #fff;
-    background-color: transparent; 
-    margin-bottom: 30px;
-    
-    
+    background-color: transparent;
+    margin-bottom: 10px;
 }
 
 a.download-cv:hover {
@@ -276,7 +265,7 @@ section {
 
 .btn-box .btn:hover {
     color: var(--second-bg-color);
-    background: transparent;
+     background: transparent;
     
 }
 
