@@ -631,10 +631,15 @@ span {
     
 }
 
-.skills-content .progress h3 span{
+.skills-content .progress h3 span{    
     color: var(--text-color);
     
     
+}
+
+.skills-content .progress p{    
+    color: var(--text-color);
+    font-size: 1.6rem;    
 }
 
 .skills-content .progress .bar{
@@ -788,6 +793,8 @@ span {
     align-items: center; /* Center vertically */
     text-align: center; /* Ensure text alignment */
     height: 100%; /* Ensure it takes the full height of the parent container */
+    font-size: 1.6rem;
+    
 }
 /* .footer-text, */
 .footer-iconTop {
