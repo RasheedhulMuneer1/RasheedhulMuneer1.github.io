@@ -139,9 +139,9 @@ section {
     text-align: left; /* Align text to the left */
     max-width: 60rem;
     z-index: 99;
-/*  width: 100%;  */
+    width: 100%;  
     color: #fff;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .home-sci {
@@ -226,15 +226,15 @@ section {
     height: 100%;
     border-right: 2px solid var(--main-color);
     z-index: -1;
-    animation: homeCursorText 6s linear infinite;
-    animation-delay: 2s;
+/*     animation: homeCursorText 6s linear infinite; */
+/*     animation-delay: 2s; */
 
 
 }
 
 .home-content p {
     font-size: 1.6rem;
-    margin: 2rem 0 4rem;
+    margin: 4rem 0 4rem;
 }
 
 
@@ -262,6 +262,7 @@ section {
     transition: .5s;
     margin-right: 1rem; /* Add spacing between buttons */
     margin-top: 10px;
+    padding: 4px 4px 4px 4px;
 }
 
 .btn-box .btn:hover {
