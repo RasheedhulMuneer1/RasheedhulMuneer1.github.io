@@ -24,7 +24,7 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
-
+    scroll-behavior: smooth;
 }
 
 body{
@@ -83,11 +83,8 @@ a.download-cv:hover {
 }
 
 .navbar {
-    position: static;
-    
+    position: static;  
 }
-
-
 
 .navbar a {
     font-size: 1.7rem;
@@ -262,24 +259,6 @@ section {
     position: relative;
 }
 
-/* .tooltip {
-    position: absolute;
-    bottom: 35px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #333;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    display: none;
-    white-space: nowrap;
-} */
-
-/* .tooltip-container:hover .tooltip {
-    display: block; 
-} */
-
 
 .tooltip {
     visibility: hidden;
@@ -386,33 +365,6 @@ section {
    
 }
 
-/* .home-sci {
-    position: absolute;
-    bottom: 4rem;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 4rem;
-
-} */
-
-/* .home-sci a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: .2rem solid var(--main-color);
-    border-radius: 50%;
-    font-size: 20px;
-    color: var(--main-color);
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
-} */
-
 .home-sci a {
     position: relative;
     display: inline-flex;
@@ -426,25 +378,6 @@ section {
     color: var(--main-color);
     transition: all 0.3s ease;
 }
-
-
-
-/* .home-sci a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--main-color);
-    z-index: -1;
-    transition: .5s;
-
-} */
-
-/* .home-sci a:hover {
-    color: #007bff; 
-} */
 
 .home-sci a::before {
     content: none;
@@ -1009,6 +942,90 @@ section:nth-child(odd) .animate.scroll,
  {
     animation-delay: calc(.3s * var(--i));
     width: 0;
+}
+
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+    html {
+        font-size: 55%; /* Reduce font size */
+    }
+
+    /* Header */
+    .header {
+        flex-direction: column; /* Stack logo and menu vertically */
+        align-items: center;
+        padding: 2rem 4%;
+    }
+
+    #menu-icon {
+        display: block; /* Show the menu icon for mobile */
+    }
+
+    .navbar {
+        position: fixed;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--bg-color);
+        flex-direction: column; /* Stack navigation links */
+        align-items: center;
+        display: none; /* Hide the menu initially */
+        z-index: 1000;
+    }
+
+    .navbar.active {
+        display: flex; /* Show the menu when active */
+    }
+
+    .navbar a {
+        padding: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    /* Home Section */
+    .home {
+        padding: 10rem 4%;
+    }
+
+    .home-content h1 {
+        font-size: 4.5rem; /* Reduce heading size */
+    }
+
+    .home-sci {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .home-sci a {
+        margin: 1rem; /* Adjust spacing */
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column; /* Stack footer content */
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .footer-text {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 50%; /* Further reduce font size for small devices */
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .btn-box .btn {
+        width: 100%; /* Full-width buttons for smaller screens */
+    }
 }
 
 /* BreakPoints */
