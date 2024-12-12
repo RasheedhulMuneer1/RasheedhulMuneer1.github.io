@@ -155,11 +155,44 @@ section {
     margin-left: 2rem; 
 } */
 
+/* .home-sci {
+    margin-top: 20px; 
+    text-align: center; 
+} */
+
 .home-sci {
-    margin-top: 20px; /* Add space between the submit button and icons */
-    text-align: center; /* Center align the icons */
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f0f0f0; /* Light gray background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-decoration: none;
+    color: #333; /* Default icon color */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effects */
+}
+
+/* Hover Effect */
+.icon-circle:hover {
+    background-color: #007bff; /* Change background on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+    color: white; /* Change icon color */
+}
+
+/* Icon Styling */
+.icon-circle i {
+    font-size: 24px; /* Adjust icon size as needed */
+}
 .home-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
@@ -228,7 +261,8 @@ section {
 .tooltip-container {
     position: relative;
 }
-.tooltip {
+
+/* .tooltip {
     position: absolute;
     bottom: 35px;
     left: 50%;
@@ -240,11 +274,32 @@ section {
     font-size: 12px;
     display: none;
     white-space: nowrap;
-}
-.tooltip-container:hover .tooltip {
-    display: block; /* Show tooltip on hover */
+} */
+
+/* .tooltip-container:hover .tooltip {
+    display: block; 
+} */
+
+
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: opacity 0.3s;
 }
 
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
 
 
 
@@ -359,13 +414,22 @@ section {
 } */
 
 .home-sci a {
-    margin: 0 10px; /* Spacing between icons */
-    color: #333; /* Default color for the icons */
-    font-size: 24px; /* Adjust icon size */
-    transition: color 0.3s ease; /* Smooth hover effect */
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 24px;
+    color: var(--main-color);
+    transition: all 0.3s ease;
 }
 
-.home-sci a::before {
+
+
+/* .home-sci a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -376,10 +440,23 @@ section {
     z-index: -1;
     transition: .5s;
 
+} */
+
+/* .home-sci a:hover {
+    color: #007bff; 
+} */
+
+.home-sci a::before {
+    content: none;
 }
+
+
+
 .home-sci a:hover {
-    color: #007bff; /* Color change on hover */
+    background-color: var(--main-color); /* Fill the circle on hover */
+    color: var(--text-color); /* Change icon color on hover */
 }
+
 
 .home-sci a:hover::before {
     width: 100%;
