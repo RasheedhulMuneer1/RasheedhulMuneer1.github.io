@@ -1,20 +1,11 @@
-
 // Toggle icon navbar
 const menuIcon = document.getElementById('menu-icon');
 const navbar = document.querySelector('.navbar');
 
+// Toggle the navbar visibility when the menu icon is clicked
 menuIcon.addEventListener('click', () => {
     navbar.classList.toggle('active');
 });
-
-
-// let menuIcon = document.querySelector('#menu-icon');
-// let navbar = document.querySelector('.navbar');
-
-// menuIcon.onclick = () => {
-//     menuIcon.classList.toggle('bx-x');
-//     navbar.classList.toggle('active'); 
-// };
 
 // Scroll sections
 let sections = document.querySelectorAll('section');
@@ -54,11 +45,12 @@ window.onscroll = () => {
 menuIcon.classList.remove('bx-x');
 navbar.classList.remove('active');
 
+// Tooltip toggle functionality
 function toggleTooltip(event) {
     event.preventDefault(); // Prevents the default behavior of the anchor tag
     const tooltip = document.getElementById("discord-tooltip");
 
-    // Toggle visibility
+    // Toggle visibility of the tooltip
     if (tooltip.classList.contains("visible")) {
         tooltip.classList.remove("visible");
     } else {
@@ -66,3 +58,13 @@ function toggleTooltip(event) {
     }
 }
 
+// Ensure navbar stays in the top-right corner (for mobile and smaller screens)
+window.addEventListener('resize', () => {
+    if (window.innerWidth <= 768) {
+        navbar.style.position = 'absolute'; // Position the navbar at the top-right corner on mobile
+        navbar.style.top = '0';
+        navbar.style.right = '0';
+    } else {
+        navbar.style.position = 'static'; // Default positioning for larger screens
+    }
+});
