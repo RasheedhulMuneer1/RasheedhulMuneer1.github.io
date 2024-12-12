@@ -224,7 +224,7 @@ section {
 
 .home-content .text-animate h3::before {
     content: '';
-    position: absolute;
+    position: absolute; 
     top: 0;
     left: 0;
     width: 0;
