@@ -919,7 +919,7 @@ span {
     box-sizing: border-box;
 }
 
-/*  .footer-text {
+ .footer-text {
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -931,21 +931,21 @@ span {
 
 .footer-text p {
     justify-content: center;   
-} */
+} 
 
-.footer-text {
+/* .footer-text {
     display: flex; 
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; 
+    align-items: center; 
     text-align: center; 
     height: 100%; 
     font-size: 1.6rem;
-}
+} */
 
-.footer-text p {
-    margin: 0; /* Optional: Ensure no default margin affects alignment */
+/* .footer-text p {
+    margin: 0; 
     font-size: 16px;
-}
+} */
 
 
 .footer-iconTop {
