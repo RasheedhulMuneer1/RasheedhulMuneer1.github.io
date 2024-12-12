@@ -912,18 +912,18 @@ span {
     align-items: center;    /* Centers content vertically */
     background: var(--bg-color); /* Optional: ensures consistent footer background */
     padding: 2rem;           /* Adds padding around the footer */
-    text-align: center;      /* Aligns text within the footer */
+     
 }
 
 
- .footer-text {
+/*  .footer-text {
     text-align: center;     
-} 
+}  */
 
 
-.footer-text p {
+/* .footer-text p {
     justify-content: center;   
-} 
+}  */
 
 /* .footer-text {
     display: flex; 
