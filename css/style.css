@@ -803,18 +803,18 @@ span {
 }
 
 
-.footer-text {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    text-align: center; /* Ensure text alignment */
-    height: 100%; /* Ensure it takes the full height of the parent container */
-    font-size: 1.6rem;
-}
-
 /* .footer-text {
-    text-align: center;     
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    height: 100%; 
+    font-size: 1.6rem;
 } */
+
+.footer-text {
+    text-align: center;     
+} 
 
 .footer-text p {
     justify-content: center; /* Center horizontally */
