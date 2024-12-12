@@ -152,6 +152,7 @@ section {
     display: flex;
     gap: 20px; /* Spacing between icons */
     margin-top: 2rem;
+    margin-left: 2rem; 
 }
 
 
