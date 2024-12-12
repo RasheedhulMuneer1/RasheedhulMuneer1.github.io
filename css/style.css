@@ -83,7 +83,11 @@ a.download-cv:hover {
 }
 
 .navbar {
-    position: static;  
+    display: flex;
+    justify-content: space-around;
+/*     align-items: center; */
+    gap: 20px;
+    position: static;
 }
 
 .navbar a {
@@ -1013,7 +1017,7 @@ section:nth-child(odd) .animate.scroll,
         margin-bottom: 1rem;
     }
 }
-
+/* Default font size adjustments for small devices */
 @media (max-width: 480px) {
     html {
         font-size: 50%; /* Further reduce font size for small devices */
@@ -1028,53 +1032,27 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-/* BreakPoints */
+/* Font size adjustments for medium devices */
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
 }
 
-/* Responsive Design Adjustments */
+/* Responsive Design Adjustments for screens <= 768px */
 @media screen and (max-width: 768px) {
     .footer-text p {
         font-size: 14px;
     }
+    
     .footer-iconTop a {
         font-size: 20px;
     }
-}
 
-@media (max-width: 991px) {
     .header {
-        padding: 2rem 4%;
+        background: var(--bg-color);
     }
 
-    section {
-        padding: 10rem 4% 2rem;
-    }
-
-    .home {
-        padding: 0 4%;
-    }
-
-    .footer {
-        padding: 2rem 4%;
-    }
-}
-
-
-@media (max-width: 850px){
-    .animate .home-img {
-        width: 55%;
-    }
-
-}
-
-@media (max-width: 768px) {
-    .header {
-       background: var(--bg-color);
-    }
     #menu-icon {
         display: block;
     }
@@ -1111,6 +1089,40 @@ section:nth-child(odd) .animate.scroll,
         background: var(--bg-color);
         opacity: .6;
     }
+
+    .home {
+        padding: 5rem 2%; /* Reduce padding for mobile devices */
+    }
+
+    a.download-cv {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
+/* Additional styles for smaller screens */
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 4%;
+    }
+
+    section {
+        padding: 10rem 4% 2rem;
+    }
+
+    .home {
+        padding: 0 4%;
+    }
+
+    .footer {
+        padding: 2rem 4%;
+    }
+}
+
+@media (max-width: 850px) {
+    .animate .home-img {
+        width: 55%;
+    }
 }
 
 @media (max-width: 520px) {
@@ -1121,8 +1133,8 @@ section:nth-child(odd) .animate.scroll,
     .home-content h1 {
         display: flex;
         flex-direction: column;
-
     }
+
     .home-sci {
         width: 160px;
     }
@@ -1130,15 +1142,6 @@ section:nth-child(odd) .animate.scroll,
     .home-sci a {
         width: 38px;
         height: 38px;
-    }
-
-}@media (max-width: 768px) {
-    .home {
-        padding: 0 3%; /* Unified padding for smaller screens */
-    }
-
-    .home-content {
-        max-width: 100%; /* Allow full width for smaller devices */
     }
 }
 
@@ -1179,54 +1182,5 @@ section:nth-child(odd) .animate.scroll,
 
     .home-content h1 {
         font-size: 5rem; /* Adjusted smaller font size */
-    }
-}
-
-/* Keyframes Animation */
-@keyframes homeBgText {
-    0%, 10%, 100% {
-        background-position: -33rem 0;
-    }
-    65%, 85% {
-        background-position: 0 0;
-    }
-}
-
-@keyframes homeCurserText {
-    0%, 10%, 100% {
-        width: 0;
-    }
-    65%, 78%, 85% {
-        width: 100%;
-        opacity: 1;
-    }
-    75%, 81% {
-        opacity: 0;
-    }
-}
-
-@keyframes aboutSpinner {
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
-
-@keyframes showRight {
-    100% {
-        width: 0;
-    }
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .home {
-        padding: 5rem 2%; /* Reduce padding for mobile devices */
-    }
-}
-
-@media (max-width: 768px) {
-    a.download-cv {
-        padding: 12px 25px;
-        font-size: 14px;
     }
 }
