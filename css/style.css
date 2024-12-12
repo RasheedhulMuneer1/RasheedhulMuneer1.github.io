@@ -441,19 +441,20 @@ span {
     width: 25rem;
     height: 25rem;
     border-radius: 50%;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
 
 }
 
 .about-img img {
-    width: 90%;
+    width: 100%;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
 }
 
-.about-img .circle-spin {
+
+/* .about-img .circle-spin {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -466,6 +467,32 @@ span {
     border-left: 2rem solid var(--main-color);
     border-right: 2rem solid var(--main-color);
     animation: aboutSpinner 8s linear infinite;
+} */
+
+/* Circle spin */
+.about-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%; /* Slightly larger than the image to wrap around it */
+    height: 120%; /* Same as width for circular animation */
+    border-radius: 50%; /* Make it circular */
+    border-top: 2rem solid var(--second-bg-color);
+    border-bottom: 2rem solid var(--second-bg-color);
+    border-left: 2rem solid var(--main-color);
+    border-right: 2rem solid var(--main-color);
+    animation: aboutSpinner 8s linear infinite; /* Make the animation run infinitely with a smooth linear motion */
+}
+
+/* Keyframes for spinning animation */
+@keyframes aboutSpinner {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg); /* Start from 0 rotation */
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg); /* End at full 360-degree rotation */
+    }
 }
 
 .about-content {
