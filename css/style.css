@@ -795,7 +795,7 @@ span {
     background: var(--second-bg-color);
 } 
 
- .footer-text {
+/*  .footer-text {
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -806,9 +806,23 @@ span {
 
 
 .footer-text p {
+    justify-content: center;   
+} */
+
+.footer-text {
+    display: flex; 
     justify-content: center; /* Center horizontally */
-    
+    align-items: center; /* Center vertically */
+    text-align: center; 
+    height: 100%; 
+    font-size: 1.6rem;
 }
+
+.footer-text p {
+    margin: 0; /* Optional: Ensure no default margin affects alignment */
+}
+
+
 .footer-iconTop {
     font-size: 1.6rem;
 }
