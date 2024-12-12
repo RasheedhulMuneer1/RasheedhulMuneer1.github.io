@@ -898,46 +898,27 @@ span {
     cursor: pointer;
 }
 
-/*  .footer {
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--second-bg-color);
-}  */
-.footer {
-    display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center;    /* Centers content vertically */
-    background: var(--bg-color); /* Optional: ensures consistent footer background */
-    padding: 2rem;           /* Adds padding around the footer */
-     
-}
+}  
 
 
-/*  .footer-text {
+
+.footer-text {
     text-align: center;     
-}  */
+}  
 
 
-/* .footer-text p {
+.footer-text p {
     justify-content: center;   
-}  */
+}  
 
-/* .footer-text {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    text-align: center; 
-    height: 100%; 
-    font-size: 1.6rem;
-} */
 
-/* .footer-text p {
-    margin: 0; 
-    font-size: 16px;
-} */
 
 
 .footer-iconTop {
