@@ -57,7 +57,7 @@ a.download-cv:hover {
 
 
 
-/* .header {
+.header {
     position: fixed;
     top:0;
     left:0;
@@ -69,9 +69,9 @@ a.download-cv:hover {
     align-items: center;
     z-index: 100;
     transition: .3s;
-} */
+} 
 
-.header {
+/* .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,7 +79,7 @@ a.download-cv:hover {
     background: var(--bg-color);
     position: relative;
     z-index: 10;
-}
+} */
 
 .header.sticky {
     background: var(--bg-color);
