@@ -71,15 +71,6 @@ a.download-cv:hover {
     transition: .3s;
 } 
 
-/* .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: var(--bg-color);
-    position: relative;
-    z-index: 10;
-} */
 
 .header.sticky {
     background: var(--bg-color);
@@ -103,17 +94,6 @@ a.download-cv:hover {
     
 } 
 
-/* .navbar {
-    display: none; 
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: var(--bg-color);
-    width: 100%;
-    text-align: center;
-    z-index: 10;
-} */
 
 .navbar.active {
     display: flex;
@@ -148,17 +128,8 @@ a.download-cv:hover {
 }
 
 
-
-/* #menu-icon {
-    position: relative;
-    font-size: 3.6rem;
-    color: var(--text-color);
-    cursor: pointer;
-    display: none;
-} */
-
 #menu-icon {
-    font-size: 2rem;
+    font-size: 10rem;
     cursor: pointer;
     display: none; /* Hidden by default, shown on smaller screens */
 }
@@ -193,17 +164,6 @@ section {
     margin-top: 55px;
 }
 
-/* .home-sci {
-    display: flex;
-    gap: 20px; 
-    margin-top: 2rem;
-    margin-left: 2rem; 
-} */
-
-/* .home-sci {
-    margin-top: 20px; 
-    text-align: center; 
-} */
 
 .home-sci {
     display: flex;
@@ -496,22 +456,6 @@ span {
     border-radius: 50%;
     border: .2rem solid var(--main-color);
 }
-
-
-/* .about-img .circle-spin {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border-top: 2rem solid var(--second-bg-color);
-    border-bottom: 2rem solid var(--second-bg-color);
-    border-left: 2rem solid var(--main-color);
-    border-right: 2rem solid var(--main-color);
-    animation: aboutSpinner 8s linear infinite;
-} */
 
 /* Circle spin */
 .about-img .circle-spin {
