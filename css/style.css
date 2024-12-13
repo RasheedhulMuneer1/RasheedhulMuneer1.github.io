@@ -57,7 +57,7 @@ a.download-cv:hover {
 
 
 
-.header {
+/* .header {
     position: fixed;
     top:0;
     left:0;
@@ -69,6 +69,16 @@ a.download-cv:hover {
     align-items: center;
     z-index: 100;
     transition: .3s;
+} */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--bg-color);
+    position: relative;
+    z-index: 10;
 }
 
 .header.sticky {
@@ -131,14 +141,18 @@ a.download-cv:hover {
 
 }
 
-#menu-icon {
+/* #menu-icon {
     position: relative;
     font-size: 3.6rem;
     color: var(--text-color);
     cursor: pointer;
     display: none;
+} */
 
-
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; /* Hidden by default, shown on smaller screens */
 }
 
 section {
@@ -996,6 +1010,7 @@ section:nth-child(odd) .animate.scroll,
     animation-delay: calc(.3s * var(--i));
     width: 0;
 }
+
 /* Styles for screens larger than 768px */
 @media screen and (min-width: 769px) {
     .navbar {
@@ -1058,11 +1073,11 @@ section:nth-child(odd) .animate.scroll,
     }
 
     #menu-icon {
-        display: block;
+        display: block; /* Display hamburger menu icon */
     }
 
     .navbar {
-        display: none;
+        display: none; /* Hide navbar by default */
         position: absolute;
         top: 0;
         right: 0;
@@ -1074,7 +1089,7 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .navbar.active {
-        display: block;
+        display: block; /* Show navbar when active */
     }
 
     .navbar a {
