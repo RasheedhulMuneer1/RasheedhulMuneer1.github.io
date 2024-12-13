@@ -120,10 +120,12 @@ a.download-cv:hover {
 
 #menu-icon {
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 6rem;
     display: block; /* Show on mobile */
     position: fixed;
 }
+
+
 
 .navbar a {
     font-size: 1.7rem;
@@ -137,12 +139,14 @@ a.download-cv:hover {
     color:var(--second-bg-color);
     font-size: 1.7rem;
     color:var(--text-color);
-    font-weight: 500;
+    font-weight: bold;
     margin-left: 3.5rem;
     transition: .3s;
-
-
+    text-decoration: underline;
+    
 }
+
+
 
 /* #menu-icon {
     position: relative;
@@ -1123,66 +1127,96 @@ section:nth-child(odd) .animate.scroll,
         font-size: 14px;
     }
 }
-
 /* Styles for screens up to 520px */
 @media (max-width: 520px) {
     html {
-        font-size: 50%;
+        font-size: 50%; /* Reduces base font size */
     }
 
     .home-content h1 {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Stacks text vertically */
     }
 
     .home-sci {
-        width: 160px;
+        width: 160px; /* Adjusts social icon container width */
     }
 
     .home-sci a {
         width: 38px;
-        height: 38px;
+        height: 38px; /* Reduces social icon size */
+    }
+
+    .navbar {
+        padding: 1rem; /* Adjust navbar spacing */
+    }
+
+    .navbar a {
+        font-size: 1.4rem; /* Scales down link text */
     }
 }
 
 /* Styles for screens up to 462px */
 @media (max-width: 462px) {
     .home-content h1 {
-        font-size: 5.2rem;
+        font-size: 5.2rem; /* Adjusts heading size */
     }
 
     .education {
-        padding: 10rem 4% 5rem 5%;
+        padding: 10rem 4% 5rem 5%; /* Reduces padding */
     }
 
     .contact form .input-box .input-field {
-        width: 100%;
+        width: 100%; /* Ensures input fields are full width */
     }
 
     .footer {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse; /* Stacks footer content */
     }
 
     .footer p {
         margin-top: 2rem;
-        text-align: center;
+        text-align: center; /* Centers footer text */
+    }
+
+    .navbar {
+        font-size: 1.2rem; /* Scales navbar link size further */
     }
 }
 
 /* Styles for screens up to 371px */
 @media (max-width: 371px) {
     .home {
-        justify-content: center;
+        justify-content: center; /* Centers home content */
     }
 
     .home-content {
         display: flex;
         align-items: center;
         flex-direction: column;
-        text-align: center;
+        text-align: center; /* Ensures proper alignment */
     }
 
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 5rem; /* Further reduces heading size */
+    }
+
+    .home-sci a {
+        width: 32px;
+        height: 32px; /* Scales down social icons */
+    }
+
+    .navbar a {
+        font-size: 1rem; /* Reduces navbar link size */
+    }
+
+    .bx-menu {
+        font-size: 1.8rem; /* Adjusts hamburger menu icon size */
+    }
+
+    .contact form .submit-btn {
+        font-size: 1.2rem; /* Ensures button text is readable */
+        padding: 0.8rem 1.2rem; /* Adjusts button padding */
     }
 }
+
