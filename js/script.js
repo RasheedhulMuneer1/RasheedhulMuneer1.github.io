@@ -5,6 +5,7 @@ const navbar = document.querySelector('.navbar');
 // Toggle the navbar visibility when the menu icon is clicked
 menuIcon.addEventListener('click', () => {
     navbar.classList.toggle('active');
+    menuIcon.classList.toggle('bx-x'); // Toggle the menu icon to "close" style
 });
 
 // Scroll sections and update active navbar links
@@ -61,5 +62,13 @@ window.addEventListener('resize', () => {
         navbar.style.right = '0';
     } else {
         navbar.style.position = 'static';
+    }
+});
+
+// Close the navbar when clicking outside
+document.addEventListener('click', (event) => {
+    if (!navbar.contains(event.target) && !menuIcon.contains(event.target)) {
+        navbar.classList.remove('active');
+        menuIcon.classList.remove('bx-x');
     }
 });
