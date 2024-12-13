@@ -82,12 +82,34 @@ a.download-cv:hover {
     font-weight: 600;
 }
 
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center; 
     gap: 20px;
     position: static;
+} */
+
+.navbar {
+    display: none; /* Hide navbar by default */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;
+    top: 60px; /* Position below the header */
+    right: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+.navbar.active {
+    display: flex;
+}
+
+#menu-icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: block; /* Show on mobile */
 }
 
 .navbar a {
@@ -974,80 +996,28 @@ section:nth-child(odd) .animate.scroll,
     animation-delay: calc(.3s * var(--i));
     width: 0;
 }
+/* Styles for screens larger than 768px */
+@media screen and (min-width: 769px) {
+    .navbar {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background: none;
+    }
 
-/* Font size adjustments for medium devices */
+    #menu-icon {
+        display: none;
+    }
+}
+
+/* Styles for medium-sized screens */
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
 }
 
-/* Responsive Design Adjustments for screens <= 768px */
-@media screen and (max-width: 768px) {
-    .footer-text p {
-        font-size: 14px;
-    }
-
-    .footer-iconTop a {
-        font-size: 20px;
-    }
-
-    .header {
-        background: var(--bg-color);
-    }
-
-    #menu-icon {
-        display: block; /* Show the menu icon on smaller screens */
-    }
-
-    /* Position navbar in the top-right corner for smaller screens */
-
-     .navbar.active {
-        display: none;
-    }
-    .navbar {
-        position: absolute; /* Absolute positioning */
-        top: 0;
-        right: 0;
-        width: auto; /* Adjust width for right-aligned navbar */
-        padding: 1rem 2rem; /* Adjust padding as needed */
-        background: transparent; /* Keep background transparent */
-        box-shadow: none; /* Remove shadow if you want */
-        z-index: 1;
-        transition: .25s ease;
-    }
-
-    /* Adjust navbar items for smaller screens */
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-        transform: translateX(-20rem);
-        transition: .25s ease;
-    }
-
-    .navbar.active a {
-        transform: translateX(0);
-        transition-delay: .25s;
-    }
-
-    .home-imgHover {
-        pointer-events: none;
-        background: var(--bg-color);
-        opacity: .6;
-    }
-
-    .home {
-        padding: 5rem 2%; /* Reduce padding for mobile devices */
-    }
-
-    a.download-cv {
-        padding: 12px 25px;
-        font-size: 14px;
-    }
-}
-
-/* Additional styles for smaller screens */
+/* Styles for screens up to 991px */
 @media (max-width: 991px) {
     .header {
         padding: 2rem 4%;
@@ -1066,12 +1036,77 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
+/* Styles for screens up to 850px */
 @media (max-width: 850px) {
     .animate .home-img {
         width: 55%;
     }
 }
 
+/* Styles for screens up to 768px */
+@media screen and (max-width: 768px) {
+    .footer-text p {
+        font-size: 14px;
+    }
+
+    .footer-iconTop a {
+        font-size: 20px;
+    }
+
+    .header {
+        background: var(--bg-color);
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+        padding: 1rem 2rem;
+        background: transparent;
+        z-index: 1;
+        transition: 0.25s ease;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        transform: translateX(-20rem);
+        transition: 0.25s ease;
+    }
+
+    .navbar.active a {
+        transform: translateX(0);
+        transition-delay: 0.25s;
+    }
+
+    .home-imgHover {
+        pointer-events: none;
+        background: var(--bg-color);
+        opacity: 0.6;
+    }
+
+    .home {
+        padding: 5rem 2%;
+    }
+
+    a.download-cv {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
+/* Styles for screens up to 520px */
 @media (max-width: 520px) {
     html {
         font-size: 50%;
@@ -1092,6 +1127,7 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
+/* Styles for screens up to 462px */
 @media (max-width: 462px) {
     .home-content h1 {
         font-size: 5.2rem;
@@ -1115,6 +1151,7 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
+/* Styles for screens up to 371px */
 @media (max-width: 371px) {
     .home {
         justify-content: center;
@@ -1128,6 +1165,6 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .home-content h1 {
-        font-size: 5rem; /* Adjusted smaller font size */
+        font-size: 5rem;
     }
 }
