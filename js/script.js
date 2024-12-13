@@ -7,7 +7,7 @@ menuIcon.addEventListener('click', () => {
     navbar.classList.toggle('active');
 });
 
-// Scroll sections
+// Scroll sections and update active navbar links
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -19,52 +19,47 @@ window.onscroll = () => {
         let id = sec.getAttribute('id');
 
         if (top >= offset && top < offset + height) {
-            // Active navbar links
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document
-                    .querySelector('header nav a[href*=' + id + ']')
-                    .classList.add('active');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                document.querySelector(`header nav a[href*=${id}]`).classList.add('active');
             });
         }
     });
 
     // Sticky header
-    let header = document.querySelector('.header');
+    const header = document.querySelector('.header');
     header.classList.toggle('sticky', window.scrollY > 100);
 
-    // Animation footer on scroll
-    let footer = document.querySelector('footer');
+    // Animation for footer on scroll
+    const footer = document.querySelector('footer');
     footer.classList.toggle(
         'show-animate',
-        this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight
     );
 };
 
-// Remove toggle icon and navbar when clicking navbar links (scroll)
-menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active');
+// Remove toggle icon and navbar when clicking navbar links
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
+    });
+});
 
 // Tooltip toggle functionality
 function toggleTooltip(event) {
-    event.preventDefault(); // Prevents the default behavior of the anchor tag
-    const tooltip = document.getElementById("discord-tooltip");
-
-    // Toggle visibility of the tooltip
-    if (tooltip.classList.contains("visible")) {
-        tooltip.classList.remove("visible");
-    } else {
-        tooltip.classList.add("visible");
-    }
+    event.preventDefault(); // Prevent default anchor behavior
+    const tooltip = document.getElementById('discord-tooltip');
+    tooltip.classList.toggle('visible');
 }
 
-// Ensure navbar stays in the top-right corner (for mobile and smaller screens)
+// Ensure navbar position adjusts for screen size changes
 window.addEventListener('resize', () => {
     if (window.innerWidth <= 768) {
-        navbar.style.position = 'absolute'; // Position the navbar at the top-right corner on mobile
+        navbar.style.position = 'absolute';
         navbar.style.top = '0';
         navbar.style.right = '0';
     } else {
-        navbar.style.position = 'static'; // Default positioning for larger screens
+        navbar.style.position = 'static';
     }
 });
