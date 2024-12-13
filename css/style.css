@@ -56,82 +56,87 @@ a.download-cv:hover {
 }
 
 
-
+/* Header Section */
 .header {
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding:2rem 9%;
+    padding: 2rem 9%;
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    transition: .3s;
-} 
-
-
-.header.sticky {
-    background: var(--bg-color);
-    size: 3rem;
+    transition: background-color 0.3s ease;
 }
 
+/* Sticky Header */
+.header.sticky {
+    background: var(--bg-color);
+    padding: 1rem 9%;
+}
+
+/* Logo */
 .logo {
-    position: relative;
-    font-size: 2.5rem; 
-    color:var(--text-color);
+    font-size: 2.5rem;
+    color: var(--text-color);
     font-weight: 600;
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-around;
-    align-items: center; 
-    margin-right: 20px;
+    align-items: center;
     gap: 30px;
     position: static;
-    
-} 
+    transition: transform 0.3s ease;
+}
 
-
+/* Navbar active for hamburger */
 .navbar.active {
-    display: flex;
-}
-
-#menu-icon {
-    cursor: pointer;
-    font-size: 8rem;
-    display: block; /* Show on mobile */
     position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    background: var(--bg-color);
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0);
+    z-index: 99;
 }
 
+/* Default hidden state for navbar on mobile */
+.navbar {
+    transform: translateX(100%);
+}
 
-
+/* Navbar links */
 .navbar a {
     font-size: 1.7rem;
-    color:var(--text-color);
+    color: var(--text-color);
     font-weight: 500;
     margin-left: 3.5rem;
-    transition: .3s;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
+
+/* Hover and active state */
 .navbar a:hover,
 .navbar a.active {
-    color:var(--second-bg-color);
-    font-size: 1.7rem;
-    color:var(--text-color);
+    color: var(--second-bg-color);
     font-weight: bold;
-    margin-left: 3.5rem;
-    transition: .3s;
     text-decoration: underline;
-    
 }
 
-
+/* Hamburger Menu Icon */
 #menu-icon {
-    font-size: 10rem;
+    font-size: 3rem;
     cursor: pointer;
-    display: none; /* Hidden by default, shown on smaller screens */
+    display: none; /* Hidden by default */
 }
 
 section {
@@ -962,6 +967,7 @@ section:nth-child(odd) .animate.scroll,
     animation-delay: calc(.3s * var(--i));
     width: 0;
 }
+/* General Responsive Media Queries */
 
 /* Styles for screens larger than 768px */
 @media screen and (min-width: 769px) {
@@ -1072,6 +1078,7 @@ section:nth-child(odd) .animate.scroll,
         font-size: 14px;
     }
 }
+
 /* Styles for screens up to 520px */
 @media (max-width: 520px) {
     html {
@@ -1164,4 +1171,3 @@ section:nth-child(odd) .animate.scroll,
         padding: 0.8rem 1.2rem; /* Adjusts button padding */
     }
 }
-
