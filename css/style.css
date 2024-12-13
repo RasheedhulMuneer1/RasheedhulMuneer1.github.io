@@ -83,6 +83,7 @@ a.download-cv:hover {
 
 .header.sticky {
     background: var(--bg-color);
+    size: 3rem;
 }
 
 .logo {
@@ -120,7 +121,7 @@ a.download-cv:hover {
 
 #menu-icon {
     cursor: pointer;
-    font-size: 6rem;
+    font-size: 8rem;
     display: block; /* Show on mobile */
     position: fixed;
 }
