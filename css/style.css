@@ -175,7 +175,7 @@ section {
     justify-content: flex-start; /* Push content to the top-left */
     padding: 10rem 5%; /* Add padding for spacing */
     background: var(--bg-color); /* Fallback background color */
-    background-image: url("/images/IT homepage bg.jpg");
+    background-image: url("/images/homepage bg image.avif");
     background-size: cover;
     height: 100vh; /* Full viewport height */
     margin: 0;
