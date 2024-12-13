@@ -42,8 +42,8 @@ window.onscroll = () => {
 // Remove toggle icon and navbar when clicking navbar links
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        menuIcon.classList.remove('bx-x');
         navbar.classList.remove('active');
+        menuIcon.classList.remove('bx-x'); // Reset the menu icon
     });
 });
 
@@ -69,6 +69,6 @@ window.addEventListener('resize', () => {
 document.addEventListener('click', (event) => {
     if (!navbar.contains(event.target) && !menuIcon.contains(event.target)) {
         navbar.classList.remove('active');
-        menuIcon.classList.remove('bx-x');
+        menuIcon.classList.remove('bx-x'); // Reset the menu icon
     }
 });
