@@ -65,7 +65,7 @@ window.addEventListener('resize', () => {
     }
 });
 
-// Close the navbar when clicking outside
+// Close the navbar when clicking outside 
 document.addEventListener('click', (event) => {
     if (!navbar.contains(event.target) && !menuIcon.contains(event.target)) {
         navbar.classList.remove('active');
