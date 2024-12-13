@@ -85,7 +85,7 @@ a.download-cv:hover {
 .navbar {
     display: flex;
     justify-content: space-around;
-/*     align-items: center; */
+    align-items: center; 
     gap: 20px;
     position: static;
 }
@@ -1001,6 +1001,10 @@ section:nth-child(odd) .animate.scroll,
     }
 
     /* Position navbar in the top-right corner for smaller screens */
+
+     .navbar.active {
+        display: none;
+    }
     .navbar {
         position: absolute; /* Absolute positioning */
         top: 0;
