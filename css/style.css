@@ -125,8 +125,8 @@ a.download-cv:hover {
 }
 
 /* Hover and active state */
-.navbar a:hover,
-.navbar a.active {
+/* .navbar a.active, */
+.navbar a:hover {
     color: var(--second-bg-color);
     font-weight: bold;
     text-decoration: underline;
