@@ -83,15 +83,14 @@ a.download-cv:hover {
 
 /* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
     position: static;
-    transition: transform 0.3s ease;
+    transform: translateX(100%);
+    
+    
 }
 
-/* Navbar active for hamburger */
+/* Navbar active for hamburger  */
+/* with Default hidden state for navbar on mobile */
 .navbar.active {
     position: fixed;
     top: 0;
@@ -106,10 +105,6 @@ a.download-cv:hover {
     z-index: 99;
 }
 
-/* Default hidden state for navbar on mobile */
-.navbar {
-    transform: translateX(100%);
-}
 
 /* Navbar links */
 .navbar a {
