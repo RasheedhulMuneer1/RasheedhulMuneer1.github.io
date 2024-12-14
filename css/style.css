@@ -93,7 +93,7 @@ a.download-cv:hover {
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
-    font-weight: 500;
+    font-weight: 500; 
     margin-left: 3.5rem;
     text-decoration: none;
     transition: color 0.3s ease;
