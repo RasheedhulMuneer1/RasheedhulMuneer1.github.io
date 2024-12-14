@@ -75,6 +75,7 @@ a.download-cv:hover {
 .header.sticky  {
     background: var(--bg-color);
     padding: 1rem 9%;
+    width: 110%;
 }
 
 /* Logo */
