@@ -89,23 +89,6 @@ a.download-cv:hover {
     
 }
 
-/* Navbar active for hamburger  */
-/* with Default hidden state for navbar on mobile */
-.navbar.active {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 60%;
-    height: 100%;
-    flex-direction: column;
-    background: var(--bg-color);
-    justify-content: center;
-    align-items: center;
-    transform: translateX(0);
-    z-index: 99;
-}
-
-
 /* Navbar links */
 .navbar a {
     font-size: 1.7rem;
@@ -116,13 +99,18 @@ a.download-cv:hover {
     transition: color 0.3s ease;
 }
 
-/* Hover and active state */
-/* .navbar a.active, */
-.navbar a:hover {
-    color: var(--second-bg-color);
-    font-weight: bold;
-    text-decoration: underline;
+.navbar a:hover,
+.navbar a.active {
+    color:var(--second-bg-color);
+    font-size: 1.7rem;
+    color:var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+
+
 }
+
 
 /* Hamburger Menu Icon */
 #menu-icon {
