@@ -24,7 +24,7 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+
 }
 
 body{
@@ -56,6 +56,7 @@ a.download-cv:hover {
 }
 
 
+
 .header {
     position: fixed;
     top:0;
@@ -74,31 +75,27 @@ a.download-cv:hover {
     background: var(--bg-color);
 }
 
-/* Logo */
 .logo {
+    position: relative;
     font-size: 2.5rem;
-    color: var(--text-color);
+    color:var(--text-color);
     font-weight: 600;
 }
 
-/* Navbar */
 .navbar {
     position: static;
-    transform: translateX(100%);
-    
     
 }
 
-/* Navbar links */
+
+
 .navbar a {
     font-size: 1.7rem;
-    color: var(--text-color);
-    font-weight: 500; 
+    color:var(--text-color);
+    font-weight: 500;
     margin-left: 3.5rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    transition: .3s;
 }
-
 .navbar a:hover,
 .navbar a.active {
     color:var(--second-bg-color);
