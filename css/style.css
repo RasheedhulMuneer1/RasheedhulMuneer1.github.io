@@ -56,26 +56,22 @@ a.download-cv:hover {
 }
 
 
-/* Header Section */
 .header {
     position: fixed;
-    top: 0;
-    left: 0;
+    top:0;
+    left:0;
     width: 100%;
-    padding: 2rem 9%;
+    padding:2rem 9%;
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    transition: background-color 0.3s ease;
+    transition: .3s;
 }
 
-/* Sticky Header */
-.header.sticky  {
+.header.sticky {
     background: var(--bg-color);
-    padding: 1rem 9%;
-    width: 110%;
 }
 
 /* Logo */
