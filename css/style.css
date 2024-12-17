@@ -79,11 +79,14 @@ a.download-cv:hover {
     position: sticky; /* Ensures header sticks to the top */
     top: 0; /* Sticks at the top of the viewport */
     width: 100%; /* Full width */
-    background-color: rgba(0, 0, 0, 0.8); /* Add a semi-transparent background */
+    background: var(--bg-color); /* Sticky background color */
     z-index: 1000; /* Ensures it stays above other content */
-    padding: 10px 20px; /* Padding for spacing */
-    box-sizing: border-box;
+    padding: 20px 20px; /* Increase top and bottom padding for height */
+    height: 80px; /* Explicit height for the sticky header */
+    box-sizing: border-box; /* Ensures padding and border are included in the height */
+    transition: all 0.3s ease; /* Smooth transition */
 }
+
 
 .header .navbar {
     display: flex; /* Use flexbox for alignment */
