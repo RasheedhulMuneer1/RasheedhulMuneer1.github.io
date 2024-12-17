@@ -76,25 +76,14 @@ a.download-cv:hover {
 } */
 /* Sticky header with wider width */
 .header.sticky {
-    width: 100%; /* Full width of the viewport */
-    max-width: 1200px; /* Set custom width (adjust as needed) */
-    margin: 0 auto; /* Center the header if max-width is set */
-    padding: 0 20px; /* Add spacing on both sides */
-    box-sizing: border-box; /* Include padding in width calculation */
+    background: var(--bg-color);
 }
 
-/* Navigation stays centered within the header */
-.header .navbar {
-    width: auto; /* Navigation doesn't stretch */
-    max-width: 100%; /* Ensure it adapts to the header */
-    margin: 0 auto; /* Keep navigation centered */
-    display: flex;
-    justify-content: center;
-}
 
-/* Optional: Remove any position restrictions */
+
 .navbar {
-    position: static; /* Default position */
+    position: static;
+    
 }
 
 
