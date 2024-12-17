@@ -136,17 +136,41 @@ section {
     box-sizing: border-box; /* Ensures padding doesn't affect layout */
 }
 
-
+/* Home Content */
 .home-content {
     text-align: left; /* Align text to the left */
     max-width: 60rem;
     z-index: 99;
-/*  width: 100%;  */
     color: #fff;
     margin-top: 55px;
 }
 
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 4rem;
+}
 
+.home-content h1 span {
+    color: var(--text-color);
+}
+
+/* Increase font size for "Aspiring Software Developer" */
+.home-content p:first-of-type {
+    font-size: 1.8rem; /* Adjust as needed */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Increase font size for "I am motivated..." */
+.home-content p:last-of-type {
+    font-size: 1.4rem; /* Adjust as needed */
+    line-height: 1.6;
+    margin: 4rem 0 4rem;
+}
+
+/* Home Social Icons */
 .home-sci {
     display: flex;
     gap: 15px;
@@ -162,93 +186,27 @@ section {
     width: 50px; /* Adjust size as needed */
     height: 50px;
     border-radius: 50%;
-    background-color: #000000; /* Light gray background */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #000000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-decoration: none;
-    color: #333; /* Default icon color */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effects */
+    color: #333;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Hover Effect */
 .icon-circle:hover {
-    background-color: #007bff; /* Change background on hover */
-    transform: scale(1.1); /* Slight zoom effect */
-    color: white; /* Change icon color */
+    background-color: #007bff;
+    transform: scale(1.1);
+    color: white;
 }
 
-/* Icon Styling */
 .icon-circle i {
-    font-size: 24px; /* Adjust icon size as needed */
-}
-.home-content h1 {
-    font-size: 5.6rem;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-top: 4rem;
-}
-.home-content h1 span {
-    color: var(--text-color);
+    font-size: 24px;
 }
 
-.home-content .text-animate {
-    position: relative;
-    width: 32.8rem;
-   
-}
-
-.home-content .text-animate h3{
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: .7px var(--main-color);
-/*     background-image: linear-gradient(var(--main-color)), var(--main-color); */
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    background-position: -33rem 0;
-    animation: homeBgText 6s linear infinite;
-    animation-delay: 2s;
-}
-
-.home .show-animate .home-content .text-animate {
-    animation: homeBgText 6s linear infinite;
-    animation-delay: 2s;
-}
-
-.home .show-animate .home-content .text-animate h3::before {
-    animation: homeBgText 6s linear infinite;
-    animation-delay: 2s;
-}
-.discord-icon {
-    position: relative; /* For tooltip positioning */
-}
-
-.discord-icon .tooltip {
-    visibility: hidden;
-    opacity: 0;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    z-index: 1;
-    transition: opacity 0.3s, visibility 0.3s;
-}
-
-/* Show tooltip when the .show class is added */
-.discord-icon .tooltip.show {
-    visibility: visible;
-    opacity: 1;
-}
-
+/* Tooltip */
 .tooltip-container {
     position: relative;
 }
-
 
 .tooltip {
     visibility: hidden;
@@ -270,11 +228,104 @@ section {
     opacity: 1;
 }
 
+/* Buttons */
+.btn-box {
+    margin-top: 20px;
+}
 
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-right: 1rem;
+    margin-top: 10px;
+}
+
+.btn-box .btn:hover {
+    color: var(--second-bg-color);
+    background: transparent;
+}
+
+.btn-box .btn:nth-child(2) {
+    background: transparent;
+    color: var(--second-bg-color);
+}
+
+.btn-box .btn:nth-child(2):hover {
+    color: var(--main-color);
+    background: transparent;
+}
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+
+/* Social Links */
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 24px;
+    color: var(--main-color);
+    transition: all 0.3s ease;
+}
+
+.home-sci a:hover {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+/* Animated Text */
+.home-content .text-animate {
+    position: relative;
+    width: 32.8rem;
+}
+
+.home-content .text-animate h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 0.7px var(--main-color);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -33rem 0;
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 2s;
+}
 
 .home-content .text-animate h3::before {
     content: '';
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
     width: 0;
@@ -283,9 +334,8 @@ section {
     z-index: -1;
     animation: homeCursorText 6s linear infinite;
     animation-delay: 2s;
-
-
 }
+
 
 .home-content p {
     font-size: 1.6rem;
