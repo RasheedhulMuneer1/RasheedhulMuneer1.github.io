@@ -74,11 +74,34 @@ a.download-cv:hover {
 /* .header.sticky {
     background: var(--bg-color);
 } */
-/* Sticky header with wider width */
+/* Sticky Header */
 .header.sticky {
-    background: var(--bg-color);
+    position: sticky; /* Ensures header sticks to the top */
+    top: 0; /* Sticks at the top of the viewport */
+    width: 100%; /* Full width */
+    background-color: rgba(0, 0, 0, 0.8); /* Add a semi-transparent background */
+    z-index: 1000; /* Ensures it stays above other content */
+    padding: 10px 20px; /* Padding for spacing */
+    box-sizing: border-box;
 }
 
+.header .navbar {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end; /* Align content to the right */
+    gap: 20px; /* Add space between navigation links */
+    margin: 0; /* Remove default margins */
+}
+
+.header .navbar a {
+    text-decoration: none; /* Remove underlines */
+    color: #fff; /* White text color */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+.header .navbar a:hover {
+    color: #00bcd4; /* Light blue color on hover */
+}
 
 
 .navbar {
