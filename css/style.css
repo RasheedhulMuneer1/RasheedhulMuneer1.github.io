@@ -71,9 +71,6 @@ a.download-cv:hover {
     transition: .3s;
 }
 
-/* .header.sticky {
-    background: var(--bg-color);
-} */
 /* Sticky Header */
 .header.sticky {
     position: sticky; /* Ensures header sticks to the top */
@@ -108,8 +105,7 @@ a.download-cv:hover {
 
 
 .navbar {
-    position: static;
-    
+    position: static; 
 }
 
 
@@ -174,7 +170,7 @@ section {
     z-index: 99;
 /*  width: 100%;  */
     color: #fff;
-    margin-top: 55px;
+    margin-top: 50px;
 }
 
 
