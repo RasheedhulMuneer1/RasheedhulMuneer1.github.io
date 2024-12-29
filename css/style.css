@@ -598,6 +598,18 @@ span {
     padding-top: .5rem;
     
   } 
+
+.education-content .content a {
+    font-size: 1.6rem;
+/*     padding-top: .5rem; */
+    color: #FFA500; 
+  } 
+
+.education-content .content a:hover {
+    color: #007bff; 
+/*     text-decoration: underline;  */
+}
+ 
  
 
 .skills {
