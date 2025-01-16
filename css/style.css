@@ -76,7 +76,8 @@ a.download-cv:hover {
 } */
 /* Sticky header with wider width */
 .header.sticky {
-    background: var(--bg-color);
+/*     background: var(--bg-color); */
+    background-color: #000;
 }
 
 
