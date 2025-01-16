@@ -133,7 +133,7 @@ section {
     padding: 10rem 5%; /* Add padding for spacing */
 /*  background: var(--bg-color);  Fallback background color */ 
 /*  background-image: url("/images/IT homepage bg.jpg"); */
-    background-color: black;
+    background-color: #121212;
     background-size: cover;
     height: 100vh; /* Full viewport height */
     margin: 0;
