@@ -15,8 +15,10 @@
     font-family: 'Poppins', sans-serif;
 }
 :root {
-    --bg-color:#081b29;
-    --second-bg-color:#112e42;
+/*     --bg-color:#081b29; */
+    --bg-color:#121212;
+/*     --second-bg-color:#112e42; */
+     --second-bg-color:#2D2D2D;
     --text-color: #ededed;
     --main-color: #00abf0;
 }
