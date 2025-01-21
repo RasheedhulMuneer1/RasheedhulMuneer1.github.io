@@ -277,12 +277,12 @@ section {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 15rem;
-    height:100%;
+    width: 12rem; /* Decreased width */
+    height: 3rem; /* Adjusted height */
     background: var(--main-color);
     border: .2rem solid var(--main-color);
     border-radius: 2.5rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem; /* Reduced font size */
     font-weight: 600;
     letter-spacing: .1rem;
     color: #fff;
@@ -292,6 +292,7 @@ section {
     margin-right: 1rem; /* Add spacing between buttons */
     margin-top: 10px;
 }
+
 
 .btn-box .btn:hover {
     color: var(--second-bg-color);
@@ -827,7 +828,7 @@ span {
     cursor: pointer;
 }
 
-.footer {
+/* .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -841,7 +842,21 @@ span {
 .footer-text {
     text-align: center;     
 }  
+ */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
 
+.footer-text {
+    text-align: center; /* Ensures text is centered */
+    flex-basis: 100%; /* Ensures the footer-text takes full width on small screens */
+    margin: 0; /* Removes default margin */
+}
 
 .footer-text p {
     justify-content: center;  
@@ -956,8 +971,8 @@ section:nth-child(odd) .animate.scroll,
     /* Ensure h1 stays on a single line in desktop view */
     .home-content h1 {
         white-space: nowrap; /* Keeps text on a single line */
-        overflow: hidden; /* Hide overflow if text doesn't fit */
-        text-overflow: ellipsis; /* Adds ellipsis if text overflows */
+/*         overflow: hidden; 
+        text-overflow: ellipsis;  */
     }
 }
 
