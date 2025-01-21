@@ -218,32 +218,6 @@ section {
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
 }
-.discord-icon {
-    position: relative; /* For tooltip positioning */
-}
-
-.discord-icon .tooltip {
-    visibility: hidden;
-    opacity: 0;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    z-index: 1;
-    transition: opacity 0.3s, visibility 0.3s;
-}
-
-/* Show tooltip when the .show class is added */
-.discord-icon .tooltip.show {
-    visibility: visible;
-    opacity: 1;
-}
 
 .tooltip-container {
     position: relative;
@@ -480,14 +454,23 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
-
 .btn-box.btns {
     display: inline-block;
-    width:15rem;
+    width: auto; /* Adjust width to fit button content dynamically */
     color: var(--second-bg-color);
     background: transparent;
-    
 }
+
+.btn {
+    padding: 20px 40px; /* Increase padding for overall larger button size */
+    font-size: 20px; /* Increase font size */
+    border-radius: 15px; /* Increase corner radius */
+    background-color: var(--primary-color); /* Example: Add background color */
+    color: var(--text-color); /* Example: Text color */
+    border: none; /* Example: Remove border if not needed */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
 
 .btn-box.btns:hover {
     color: var(--second-bg-color);
