@@ -15,9 +15,7 @@
     font-family: 'Poppins', sans-serif;
 }
 :root {
-/*     --bg-color:#081b29; */
     --bg-color:#121212;
-/*     --second-bg-color:#112e42; */
      --second-bg-color:#2D2D2D;
     --text-color: #ededed;
     --main-color: #00abf0;
@@ -39,7 +37,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto; /* Add some spacing */
+    margin: 20px auto; 
 }
 
 a.download-cv {
@@ -50,7 +48,7 @@ a.download-cv {
     letter-spacing: 2px;
     color: #fff;
     background-color: transparent;
-    margin: 20px 0; /* Add spacing */
+    margin: 20px 0;
 }
 
 a.download-cv:hover {
@@ -71,12 +69,8 @@ a.download-cv:hover {
     transition: .3s;
 }
 
-/* .header.sticky {
-    background: var(--bg-color);
-} */
-/* Sticky header with wider width */
+
 .header.sticky {
-/*     background: var(--bg-color); */
     background-color: #000;
 }
 
@@ -120,7 +114,7 @@ a.download-cv:hover {
 #menu-icon {
     font-size: 3rem;
     cursor: pointer;
-    display: none; /* Hidden by default */
+    display: none; 
 }
 
 section {
@@ -134,8 +128,6 @@ section {
     align-items: flex-start; /* Align content to the left */
     justify-content: flex-start; /* Push content to the top-left */
     padding: 10rem 5%; /* Add padding for spacing */
-/*  background: var(--bg-color);  Fallback background color */ 
-/*  background-image: url("/images/IT homepage bg.jpg"); */
     background-color: #121212;
     background-size: cover;
     height: 100vh; /* Full viewport height */
@@ -460,7 +452,7 @@ span {
     border-bottom: 2rem solid var(--second-bg-color);
     border-left: 2rem solid var(--main-color);
     border-right: 2rem solid var(--main-color);
-    animation: aboutSpinner 8s linear infinite; /* Make the animation run infinitely with a smooth linear motion */
+    animation: aboutSpinner 8s linear infinite; 
 }
 
 /* Keyframes for spinning animation */
