@@ -277,8 +277,8 @@ section {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 12rem; /* Decreased width */
-    height: 3rem; /* Adjusted height */
+    width: 15rem; /* Decreased width */
+    height: 5rem; /* Adjusted height */
     background: var(--main-color);
     border: .2rem solid var(--main-color);
     border-radius: 2.5rem;
@@ -1178,5 +1178,31 @@ section:nth-child(odd) .animate.scroll,
     .contact form .submit-btn {
         font-size: 1.2rem; /* Ensures button text is readable */
         padding: 0.8rem 1.2rem; /* Adjusts button padding */
+    }
+}
+
+
+/* Styles for mobile view */
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 4%;
+    }
+
+    .footer-iconTop {
+        position: relative; /* Remove absolute positioning */
+        right: 0;
+        bottom: 0;
+        margin-bottom: 1rem; /* Adds some space between the arrow and copyright */
+        justify-content: center;
+        align-items: center;
+        order: -1; /* Moves the up-arrow above the copyright text */
+    }
+
+    .footer-iconTop a {
+        font-size: 2rem; /* Smaller arrow size for mobile */
+    }
+
+    .footer-text {
+        order: 1; /* Ensures the text is below the up-arrow */
     }
 }
