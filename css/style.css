@@ -938,8 +938,7 @@ section:nth-child(odd) .animate.scroll,
  {
     animation-delay: calc(.3s * var(--i));
     width: 0;
-}
-/* General Responsive Media Queries */
+}/* General Responsive Media Queries */
 
 /* Styles for screens larger than 768px */
 @media screen and (min-width: 769px) {
@@ -952,6 +951,13 @@ section:nth-child(odd) .animate.scroll,
 
     #menu-icon {
         display: none;
+    }
+
+    /* Ensure h1 stays on a single line in desktop view */
+    .home-content h1 {
+        white-space: nowrap; /* Keeps text on a single line */
+        overflow: hidden; /* Hide overflow if text doesn't fit */
+        text-overflow: ellipsis; /* Adds ellipsis if text overflows */
     }
 }
 
@@ -1048,6 +1054,11 @@ section:nth-child(odd) .animate.scroll,
     a.download-cv {
         padding: 12px 25px;
         font-size: 14px;
+    }
+
+    /* Ensure h1 wraps text in mobile view */
+    .home-content h1 {
+        white-space: normal; /* Allows wrapping in smaller screens */
     }
 }
 
