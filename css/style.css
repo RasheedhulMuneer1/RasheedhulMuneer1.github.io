@@ -124,6 +124,7 @@ section {
 
 .home {
     display: flex;
+    background-image: url('images/homePageBgImage.jpg'); 
     flex-direction: column; /* Stack elements vertically */
     align-items: flex-start; /* Align content to the left */
     justify-content: flex-start; /* Push content to the top-left */
@@ -133,7 +134,7 @@ section {
     height: 100vh; /* Full viewport height */
     margin: 0;
     width: 100%;
-    box-sizing: border-box; /* Ensures padding doesn't affect layout */
+    box-sizing: border-box; /* Ensures padding doesn't affect layout */ 
 }
 
 .home-content {
