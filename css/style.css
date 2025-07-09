@@ -1332,92 +1332,27 @@ section:nth-child(odd) .animate.scroll,
 
 
 /* Styles for mobile view */
-/* @media (max-width: 768px) {
-    .footer {
-        padding: 2rem 4%;
-    }
-
-    .footer-iconTop {
-        position: relative; 
-        right: 0;
-        bottom: 0;
-        margin-bottom: 1rem; 
-        justify-content: center;
-        align-items: center;
-        order: -1; 
-    }
-
-    .footer-iconTop a {
-        font-size: 2rem; 
-    }
-
-    .footer-text {
-        order: 1; 
-    }
-} */
-
 @media (max-width: 768px) {
     .footer {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
         padding: 2rem 4%;
-        gap: 1.5rem;
-        position: relative; /* Added for absolute positioning context */
     }
 
     .footer-iconTop {
-        position: absolute; /* Changed from relative to absolute */
-        display: flex;
+        position: relative; /* Remove absolute positioning */
+        right: 0;
+        bottom: 0;
+        margin-bottom: 1rem; /* Adds some space between the arrow and copyright */
         justify-content: center;
         align-items: center;
-        width: auto; /* Changed from 100% to auto */
-        margin: 0;
-        padding: 0;
-        order: -1;
-        right: 4%; /* Positions arrow at right edge */
-        bottom: 2rem; /* Positions arrow at bottom */
+        order: -1; /* Moves the up-arrow above the copyright text */
     }
 
     .footer-iconTop a {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 4.5rem;
-        height: 4.5rem;
-        font-size: 2.2rem;
-        background: var(--main-color);
-        border-radius: 50%;
-        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease;
-    }
-
-    .footer-iconTop a:hover {
-        transform: translateY(-0.3rem);
-        box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.3);
-    }
-
-    .footer-iconTop a i {
-        color: var(--second-bg-color);
+        font-size: 2rem; /* Smaller arrow size for mobile */
     }
 
     .footer-text {
-        order: 1;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 3rem; /* Added space for absolute positioned arrow */
-    }
-
-    .footer-text p {
-        margin: 0;
-        font-size: 1.4rem;
-        line-height: 1.6;
-    }
-
-    /* Animation compatibility */
-    .animate.scroll {
-        display: inline-block;
-        vertical-align: middle;
+        order: 1; /* Ensures the text is below the up-arrow */
     }
 }
 
@@ -1454,4 +1389,3 @@ section:nth-child(odd) .animate.scroll,
         display: none;
     }
 }
-
