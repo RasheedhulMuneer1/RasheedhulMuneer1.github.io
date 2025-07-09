@@ -903,7 +903,7 @@ span {
     text-align: center;     
 }  
  */
-/* .footer {
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -911,7 +911,7 @@ span {
     padding: 2rem 9%;
     background: var(--second-bg-color);
     position: relative; 
-} */
+}
 
 /* .footer {
     display: flex;
@@ -920,7 +920,7 @@ span {
     flex-wrap: wrap;
     padding: 2rem 7%;
     background: var(--bg-color);
-} */
+} 
 
 /* .footer {
     display: flex;
@@ -928,17 +928,17 @@ span {
     align-items: center;
     padding: 2rem 7%;
     background: var(--bg-color);
-} */
+}
 
 
 .footer {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end; /* Align items to bottom */
+    align-items: flex-end;
     padding: 2rem 7%;
     background: var(--bg-color);
     position: relative;
-}
+} */
 
 .footer-text {
     text-align: center; /* Ensures text is centered */
@@ -951,7 +951,7 @@ span {
     font-size: 1.6rem;    
 }  
 
-/* .footer-iconTop {
+ .footer-iconTop {
     font-size: 1.6rem;
     position: absolute;
     right: 10%;
@@ -959,25 +959,25 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+} 
 
 /* .footer-iconTop {
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+} 
 /* .footer-iconTop {
     display: flex;
     justify-content: flex-end;
-} */
+} 
 .footer-iconTop {
     position: absolute;
     right: 7%;
     bottom: 2rem;
-}
+} */
 
 
-/* .footer-iconTop a {
+ .footer-iconTop a {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -991,7 +991,7 @@ span {
     font-size: 2.5rem; 
     color: #fff; 
     transition: all 0.3s ease; 
-} */
+} 
 
 /* .footer-iconTop a {
     display: inline-flex;
@@ -1001,9 +1001,9 @@ span {
     background: var(--main-color);
     border-radius: .8rem;
     transition: .5s ease;
-} */
+} 
 
-/* .footer-iconTop a {
+ .footer-iconTop a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -1013,7 +1013,7 @@ span {
     background: var(--main-color);
     border-radius: 50%;
     transition: all 0.3s ease;
-} */
+} 
 
 footer-iconTop a {
     display: inline-flex;
@@ -1054,16 +1054,16 @@ footer-iconTop a {
     
 }
 
-/* .footer-iconTop a i {
+.footer-iconTop a i {
     font-size: 2.4rem;
     color: var(--bg-color);
     transition: .5s;
-} */
+} 
 
-.footer-iconTop a i {
+/* .footer-iconTop a i {
     font-size: 2.4rem;
     color: var(--second-bg-color);
-}
+} */
 
 .footer-iconTop a:hover i{
     background: var(--main-color);
