@@ -903,14 +903,23 @@ span {
     text-align: center;     
 }  
  */
-.footer {
+/* .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--second-bg-color);
-    position: relative; /* Enables positioning for the up-arrow */
+    position: relative; 
+} */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 7%;
+    background: var(--bg-color);
 }
 
 .footer-text {
@@ -924,18 +933,24 @@ span {
     font-size: 1.6rem;    
 }  
 
-.footer-iconTop {
+/* .footer-iconTop {
     font-size: 1.6rem;
     position: absolute;
-    right: 10%; /* Position from the right */
-    bottom: 10%; /* Position from the bottom */
+    right: 10%;
+    bottom: 10%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.footer-iconTop {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-.footer-iconTop a {
+/* .footer-iconTop a {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -946,13 +961,28 @@ span {
     border-radius: .6rem;
     z-index: 1;
     overflow: hidden;
-    font-size: 2.5rem; /* Size of the arrow */
-    color: #fff; /* Arrow color */
-    transition: all 0.3s ease; /* Smooth hover effect */
+    font-size: 2.5rem; 
+    color: #fff; 
+    transition: all 0.3s ease; 
+} */
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
 }
+/* .footer-iconTop a:hover {
+    color: var(--main-color); 
+} */
 .footer-iconTop a:hover {
-    color: var(--main-color); /* Change color on hover */
+    box-shadow: 0 0 1rem var(--main-color);
 }
+
+
 
 .footer-iconTop a::before {
     content: '';
@@ -972,10 +1002,15 @@ span {
     
 }
 
-.footer-iconTop a i {
+/* .footer-iconTop a i {
     font-size: 2.4rem;
     color: var(--bg-color);
     transition: .5s;
+} */
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
 }
 
 .footer-iconTop a:hover i{
@@ -1245,27 +1280,88 @@ section:nth-child(odd) .animate.scroll,
 
 
 /* Styles for mobile view */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .footer {
         padding: 2rem 4%;
     }
 
     .footer-iconTop {
-        position: relative; /* Remove absolute positioning */
+        position: relative; 
         right: 0;
         bottom: 0;
-        margin-bottom: 1rem; /* Adds some space between the arrow and copyright */
+        margin-bottom: 1rem; 
         justify-content: center;
         align-items: center;
-        order: -1; /* Moves the up-arrow above the copyright text */
+        order: -1; 
     }
 
     .footer-iconTop a {
-        font-size: 2rem; /* Smaller arrow size for mobile */
+        font-size: 2rem; 
     }
 
     .footer-text {
-        order: 1; /* Ensures the text is below the up-arrow */
+        order: 1; 
+    }
+} */
+
+@media (max-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 2rem 4%;
+        gap: 1.5rem;
+    }
+
+    .footer-iconTop {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        order: -1;
+    }
+
+    .footer-iconTop a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 4.5rem;
+        height: 4.5rem;
+        font-size: 2.2rem;
+        background: var(--main-color);
+        border-radius: 50%;
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    .footer-iconTop a:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.3);
+    }
+
+    .footer-iconTop a i {
+        color: var(--second-bg-color);
+    }
+
+    .footer-text {
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-text p {
+        margin: 0;
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+
+    /* Animation compatibility */
+    .animate.scroll {
+        display: inline-block;
+        vertical-align: middle;
     }
 }
 
