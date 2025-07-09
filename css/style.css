@@ -913,11 +913,19 @@ span {
     position: relative; 
 } */
 
-.footer {
+/* .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 2rem 7%;
+    background: var(--bg-color);
+} */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 2rem 7%;
     background: var(--bg-color);
 }
@@ -943,10 +951,14 @@ span {
     align-items: center;
 } */
 
-.footer-iconTop {
+/* .footer-iconTop {
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+.footer-iconTop {
+    display: flex;
+    justify-content: flex-end; /* Right align on desktop */
 }
 
 
@@ -966,7 +978,7 @@ span {
     transition: all 0.3s ease; 
 } */
 
-.footer-iconTop a {
+/* .footer-iconTop a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -974,6 +986,18 @@ span {
     background: var(--main-color);
     border-radius: .8rem;
     transition: .5s ease;
+} */
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.4rem;
+    background: var(--main-color);
+    border-radius: 50%;
+    transition: all 0.3s ease;
 }
 /* .footer-iconTop a:hover {
     color: var(--main-color); 
@@ -1311,17 +1335,20 @@ section:nth-child(odd) .animate.scroll,
         align-items: center;
         padding: 2rem 4%;
         gap: 1.5rem;
+        position: relative; /* Added for absolute positioning context */
     }
 
     .footer-iconTop {
-        position: relative;
+        position: absolute; /* Changed from relative to absolute */
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: auto; /* Changed from 100% to auto */
         margin: 0;
         padding: 0;
         order: -1;
+        right: 4%; /* Positions arrow at right edge */
+        bottom: 2rem; /* Positions arrow at bottom */
     }
 
     .footer-iconTop a {
@@ -1350,6 +1377,7 @@ section:nth-child(odd) .animate.scroll,
         order: 1;
         width: 100%;
         text-align: center;
+        margin-bottom: 3rem; /* Added space for absolute positioned arrow */
     }
 
     .footer-text p {
