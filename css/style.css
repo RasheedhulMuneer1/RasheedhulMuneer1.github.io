@@ -166,7 +166,7 @@ a.download-cv:hover {
 
 .active-nav {
     position: absolute;
-    bottom: -0.4rem;  /* Changed from -0.75rem to remove gap */
+    bottom: -0.2rem;  /* Changed from -0.75rem to remove gap */
     left: 0;
     width: 100%;
     height: 0.3rem;
