@@ -664,6 +664,30 @@ span {
     color: #007bff; 
 /*     text-decoration: underline;  */
 }
+
+.horizontal-projects {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap; /* Set to wrap if you want it to go to next line when screen is small */
+  overflow-x: auto; /* Optional: makes it scroll horizontally on small screens */
+}
+
+.project-card {
+  min-width: 250px;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
  
  
 
