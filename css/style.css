@@ -674,7 +674,10 @@ span {
 }
 
  
- 
+ .skills-column {
+  margin: 0 auto;
+}
+
 
 .skills {
     min-height: auto;
