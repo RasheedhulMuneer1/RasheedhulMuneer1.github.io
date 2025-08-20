@@ -33,6 +33,38 @@ body{
 
 }
 
+.projects-column {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.project-card {
+  background: #1e1e1e;          /* dark card */
+  border: 2px solid #00bfff;   /* blue outline */ 
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project-card h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.project-card img {
+  width: 200px;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 6px;
+}
+
+
 .button-container {
     display: flex;
     justify-content: center;
