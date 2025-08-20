@@ -33,10 +33,11 @@ body{
 
 }
 .project-block {
-  border: 1px solid #00bfff; /* Blue outline */
+/*   border: 1px solid #00bfff; /* Blue outline */  
   border-radius: 6px;
   padding: 15px;
   margin-bottom: 20px;
+  font-size: 1.6rem; 
 }
 
 
