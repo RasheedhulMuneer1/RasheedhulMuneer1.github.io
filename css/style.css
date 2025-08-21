@@ -74,7 +74,7 @@ body{
 
 .project-block p {
   /* This resets your original margin-left and allows flexbox to control spacing */
-  margin-left: 0;
+  margin-left: 100px;
   margin-top: 0;
   flex-grow: 1; /* Allows the paragraph to take up the remaining horizontal space */
 }
