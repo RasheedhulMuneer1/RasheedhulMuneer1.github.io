@@ -732,6 +732,16 @@ span {
 }
 
 
+/* .skills-box .skills-content {
+    position: relative;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    padding: .5rem 1.5rem; 
+    z-index: 1;
+    overflow: hidden;
+ 
+} */
+
 .skills-box .skills-content {
     position: relative;
     border: .2rem solid var(--main-color);
@@ -739,6 +749,13 @@ span {
     padding: .5rem 1.5rem; 
     z-index: 1;
     overflow: hidden;
+
+    /* New styles for centering */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers horizontally */
+    justify-content: center; /* Centers vertically if needed; adjust or remove if not */
+    gap: 10px; /* Optional: Adds space between progress items for better readability */
 }
 
 .skills-box .skills-content::before {
