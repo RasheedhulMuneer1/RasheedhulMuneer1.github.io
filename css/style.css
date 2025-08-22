@@ -64,6 +64,8 @@ body{
 
 .project-block img {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+  padding-left: 60px;
+  padding-top: 10px;
 }
 
 
