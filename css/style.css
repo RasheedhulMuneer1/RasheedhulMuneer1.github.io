@@ -57,6 +57,10 @@ body{
   padding-top: 10px;
 }
 
+.project-block h3 {
+  margin-top: 10px;
+}
+
 .project-block a:hover img {
   transform: scale(1.1); /* Scales the image to 110% of its original size */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a pop-out effect */
