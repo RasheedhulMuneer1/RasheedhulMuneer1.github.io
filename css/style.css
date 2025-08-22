@@ -60,13 +60,13 @@ body{
 .project-block a:hover img {
   transform: scale(1.1); /* Scales the image to 110% of its original size */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a pop-out effect */
-  margin-left: 60px;
+  margin-left: 80px;
  
 }
 
 .project-block img {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
-  margin-left: 60px;
+  margin-left: 80px;
   
 }
 
