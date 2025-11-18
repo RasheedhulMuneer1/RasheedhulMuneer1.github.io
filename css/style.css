@@ -654,7 +654,7 @@ section {
         order: 1 !important;
     }
     .home-image {
-        order: 2 !important;
+        order: 1 !important;
     }
     .education-row {
         gap: 2rem;
