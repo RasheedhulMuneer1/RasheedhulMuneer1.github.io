@@ -648,7 +648,9 @@ section {
     padding: .8rem;
     background: var(--main-color);
     /* APPLIED FINAL BUTTON RADIUS */
-    border-radius: var(--button-radius); 
+    /* border-radius: var(--button-radius);  */
+    border-radius: 1.6rem;
+ 
     z-index: 1;
     overflow: hidden;
     font-size: 2.5rem; 
