@@ -116,7 +116,8 @@ section {
     align-items: center;
     padding: 1.4rem 3rem;
     /* APPLYING FINAL INCREASED BORDER RADIUS */
-    border-radius: var(--button-radius); 
+    /* border-radius: var(--button-radius);  */
+    border-radius: 1.6rem;
     font-size: 1.6rem;
     font-weight: 600;
     letter-spacing: .1rem;
@@ -217,7 +218,8 @@ section {
     width: 100%;
     max-width: 350px;
     height: auto;
-    border-radius: var(--button-radius); /* Applied new button radius */
+    /* border-radius: var(--button-radius);  */
+    border-radius: 2.6rem;
     border: 3px solid var(--main-color);
     box-shadow: 0 0 20px rgba(0, 171, 240, 0.4);
 }
@@ -264,7 +266,8 @@ section {
     background: transparent;
     border: 1px solid var(--section-bg-darker); 
     /* APPLIED NEW BORDER RADIUS TO ICONS */
-    border-radius: var(--button-radius); 
+    /* border-radius: var(--button-radius);  */
+    border-radius: 1.6rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -650,6 +653,7 @@ section {
     /* APPLIED FINAL BUTTON RADIUS */
     /* border-radius: var(--button-radius);  */
     border-radius: 1.6rem;
+ 
  
     z-index: 1;
     overflow: hidden;
