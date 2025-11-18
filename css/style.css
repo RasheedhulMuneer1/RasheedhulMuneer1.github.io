@@ -136,37 +136,16 @@ section {
     border: .2rem solid var(--dark-grey);
 }
 
-/* .projects-btn:hover {
-    background: var(--bg-color);
+.projects-btn:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
     border-color: var(--main-color);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-} */
-
-.projects-btn:hover {
-    /* Change the background to the main highlight color on hover */
-    background: var(--main-color); 
-    
-    /* Keep the border and shadow consistent with the current hover effect */
-    border-color: var(--main-color); /* Ensure border also matches main color */
-    box-shadow: 0 0 10px var(--main-color); /* Adjust shadow to main color for consistency */
-}
-
-/* Also, ensure the text color changes to the dark background color */
-.projects-btn:hover {
-    color: var(--bg-color); /* Text color becomes dark when background is bright */
+    box-shadow: 0 0 10px var(--main-color);
 }
 
 /* --- Home Section --- */
-/* .home {
-    background: var(--bg-color); 
-    align-items: flex-start;
-    padding-top: 15rem;
-    padding-bottom: 5rem;
-} */
-
 .home {
-    /* Set background to a deep blue-black shade */
-    background: #0E111C; 
+    background: var(--bg-color); 
     align-items: flex-start;
     padding-top: 15rem;
     padding-bottom: 5rem;
@@ -597,7 +576,6 @@ section {
     justify-content: center;
 }
 .btn-box.btns button {
-    /* Submit button styling: full width inside container */
     width: 100%;
     max-width: 100%; 
     font-size: 1.8rem;
@@ -605,27 +583,23 @@ section {
 
 /* --- Footer --- */
 .footer {
-    /* Changed to flex-end to push the arrow to the right edge */
     display: flex;
     justify-content: space-between; 
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--bg-color);
-    /* Added alignment styles to match the screenshot */
     flex-direction: column;
     gap: 1rem;
 }  
 
 .footer-text {
-    /* Ensures text is centered/takes full width if needed */
-    order: 2; /* Ensures text is visually below the arrow (in flex-direction: column) */
+    order: 2; 
     font-size: 1.5rem;
     color: #ccc;
 }
 
 .footer-iconTop {
-    /* Positioned centrally above the text */
     order: 1; 
     margin-bottom: 1.5rem;
 } 
