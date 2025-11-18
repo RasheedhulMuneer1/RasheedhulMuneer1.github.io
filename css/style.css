@@ -15,14 +15,17 @@
 :root {
     /* --- REVISED BLUE PALETTE --- */
     --home-bg-color: #0E111C;        /* Home background (Specific deep blue from screenshot) */
-    --section-bg-darker: #090C15;    /* Slightly darker blue for About, Skills, Contact sections */
+    --section-bg-darker: #090C15;    /* Slightly darker blue for Skills, Contact sections */
     --section-bg-darkest: #05070B;   /* Darkest blue for Journey, Projects, and Footer */
     --card-bg-color: #1C2230;        /* Background for cards, input fields, projects-btn */
     
     --text-color: #ededed;           /* White text */
     --main-color: #00abf0;           /* Bright blue highlight */
-    --link-color: #00bfff;           /* A lighter blue for interactive elements */
-    --border-color: #333333;         /* Border color */
+    --link-color: #00bfff;
+    --border-color: #333333;
+    
+    /* NEW VARIABLE for common border radius */
+    --button-radius: 0.8rem;
 }
 
 html {
@@ -31,7 +34,6 @@ html {
 }
 
 body {
-    /* Set body to the absolute darkest blue, ensuring a fallback for elements not explicitly styled */
     background: var(--section-bg-darkest); 
     color: var(--text-color);
 }
@@ -43,7 +45,8 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    /* Increased horizontal padding for sections */
+    padding: 10rem 12% 2rem; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,7 +64,8 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 9%;
+    /* Increased header padding to match new section padding */
+    padding: 1.5rem 12%; 
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -71,7 +75,6 @@ section {
 }
 
 .header.sticky {
-    /* Header becomes the home page blue when sticky */
     background: var(--home-bg-color); 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -102,7 +105,7 @@ section {
     display: none;
 }
 
-/* --- Button Styling (reused across sections) --- */
+/* --- Button Styling (Increased Border Radius) --- */
 .btn-box {
     display: flex;
     gap: 1.5rem;
@@ -114,7 +117,8 @@ section {
     justify-content: center;
     align-items: center;
     padding: 1.4rem 3rem;
-    border-radius: 0.5rem;
+    /* INCREASED BORDER RADIUS */
+    border-radius: var(--button-radius); 
     font-size: 1.6rem;
     font-weight: 600;
     letter-spacing: .1rem;
@@ -125,7 +129,7 @@ section {
 
 .connect-btn { 
     background: var(--main-color);
-    color: var(--card-bg-color); /* Use a dark blue for text on bright button */
+    color: var(--card-bg-color); 
     border: .2rem solid var(--main-color);
 }
 
@@ -136,29 +140,58 @@ section {
 }
 
 .projects-btn { 
-    background: var(--card-bg-color); /* Use the card background color */
+    background: var(--card-bg-color); 
     color: var(--text-color);
     border: .2rem solid var(--card-bg-color);
 }
 
 .projects-btn:hover {
     background: var(--main-color);
-    color: var(--card-bg-color); /* Use dark blue for text on bright button */
+    color: var(--card-bg-color); 
     border-color: var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
 }
 
-/* --- Home Section (Set to primary deep blue from screenshot) --- */
+/* --- Home Section (Main Layout) --- */
 .home {
     background: var(--home-bg-color); 
-    align-items: flex-start;
-    padding-top: 15rem;
+    /* Changed display to flex to manage content and image side-by-side */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10rem;
     padding-bottom: 5rem;
 }
 
-.home-content {
-    max-width: 90rem;
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Optional: Constrain overall width */
 }
+
+.home-content {
+    max-width: 60rem;
+    flex-basis: 55%; /* Allocate space for content */
+}
+
+.home-image {
+    flex-basis: 40%; /* Allocate space for image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image .profile-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 0.5rem; /* Apply consistent border radius */
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 20px rgba(0, 171, 240, 0.4);
+}
+
 
 .home-content .greeting-text {
     font-size: 2rem;
@@ -186,7 +219,7 @@ section {
     font-size: 1.6rem;
     line-height: 1.6;
     margin: 2rem 0 3rem;
-    max-width: 90%;
+    max-width: 100%; /* Use full content width */
 }
 
 .home-sci {
@@ -198,7 +231,7 @@ section {
     width: 3.5rem;
     height: 3.5rem;
     background: transparent;
-    border: 1px solid var(--section-bg-darker); /* Border from a slightly darker blue */
+    border: 1px solid var(--section-bg-darker); 
     border-radius: 0.5rem;
     display: inline-flex;
     justify-content: center;
@@ -210,58 +243,12 @@ section {
 
 .home-sci a:hover {
     background: var(--main-color);
-    color: var(--card-bg-color); /* Text color on hover */
+    color: var(--card-bg-color); 
     border-color: var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
 }
 
-/* --- About Section (Set to darker blue) --- */
-.about {
-    background: var(--section-bg-darker);
-    min-height: auto;
-}
-
-.about-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 8rem;
-    padding: 3rem 0;
-}
-
-.about-img {
-    position: relative;
-    width: 35rem;
-    height: 35rem;
-    border-radius: 0.5rem;
-    background: linear-gradient(135deg, rgba(0, 171, 240, 0.1) 0%, rgba(0, 86, 179, 0.1) 100%);
-    border: 2px solid var(--main-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.image-placeholder {
-    font-size: 8rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.1);
-}
-
-.about-content {
-    max-width: 60rem;
-    text-align: left;
-}
-
-.about-content p {
-    font-size: 1.7rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
-
-.about-content .download-cv {
-    margin-top: 1.5rem;
-}
+/* --- About Section - REMOVED --- */
 
 
 /* --- Journey/Education Section (Set to darkest blue) --- */
@@ -300,7 +287,7 @@ section {
     position: relative;
     padding: 2rem;
     border-radius: 0.8rem;
-    background: var(--section-bg-darker); /* Content boxes use a slightly lighter dark blue */
+    background: var(--section-bg-darker); 
     margin-bottom: 2rem;
     transition: all 0.3s ease;
 }
@@ -362,7 +349,7 @@ section {
 
 /* Skills: List Layout (Languages) */
 .skills-box {
-    background: var(--card-bg-color); /* Card uses dedicated card background blue */
+    background: var(--card-bg-color); 
     border-radius: 0.8rem;
     padding: 2rem;
 }
@@ -391,7 +378,7 @@ section {
     gap: 1.5rem;
 }
 .skill-tag {
-    background: var(--section-bg-darkest); /* Tags use the darkest base blue */
+    background: var(--section-bg-darkest); 
     color: var(--text-color);
     padding: 1.2rem 2rem; 
     border-radius: 0.5rem;
@@ -417,7 +404,7 @@ section {
 }
 
 .project-card {
-    background: var(--card-bg-color); /* Card uses dedicated card background blue */
+    background: var(--card-bg-color); 
     border-radius: 0.8rem;
     padding: 2.5rem;
     display: flex;
@@ -480,7 +467,7 @@ section {
 }
 
 .tech-tag {
-    background: var(--section-bg-darker); /* Tags use secondary dark blue */
+    background: var(--section-bg-darker); 
     color: var(--text-color);
     padding: 0.5rem 1rem;
     border-radius: 0.4rem;
@@ -491,7 +478,7 @@ section {
 .project-card .view-github {
     margin-top: auto;
     text-align: center;
-    color: var(--card-bg-color); /* Text color on bright button */
+    color: var(--card-bg-color); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -509,8 +496,17 @@ section {
     padding-bottom: 7rem;
 }
 
+.contact-container { 
+    /* Max width increased to utilize space */
+    max-width: 100rem; 
+    margin: 0 auto;
+    background: var(--card-bg-color);
+    padding: 3rem;
+    border-radius: 0.8rem;
+}
+
 .contact-form {
-    max-width: 80rem;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -543,7 +539,7 @@ section {
     padding: 1.5rem 1.5rem 1.5rem 5rem;
     font-size: 1.7rem; 
     color: var(--text-color);
-    background: var(--card-bg-color); /* Input background uses dedicated card background blue */
+    background: var(--section-bg-darker); 
     border: 1px solid var(--border-color);
     border-radius: 0.6rem;
     transition: border-color 0.3s;
@@ -642,12 +638,13 @@ section {
     section {
         padding: 10rem 4% 2rem;
     }
-    .about-container {
+    .home-container {
         flex-direction: column;
         gap: 3rem;
     }
-    .about-content {
-        text-align: center;
+    .home-image {
+        order: -1; /* Image moves above content on small screens */
+        margin-bottom: 3rem;
     }
     .education-row {
         gap: 2rem;
@@ -670,7 +667,7 @@ section {
         left: -100%;
         width: 100%;
         padding: 1rem 4%;
-        background: var(--section-bg-darker); /* Mobile navbar background */
+        background: var(--section-bg-darker);
         transition: .25s ease;
     }
     .navbar.active {
@@ -685,9 +682,8 @@ section {
     .home-content h1 {
         font-size: 5rem;
     }
-    .about-img {
-        width: 25rem;
-        height: 25rem;
+    .home-image .profile-image {
+        max-width: 250px;
     }
     .education-column {
         flex: 1 1 100%;
@@ -706,7 +702,6 @@ section {
     .input-field {
         width: 100%;
     }
-    /* Mobile footer adjustment */
     .footer {
         align-items: center;
     }
@@ -715,9 +710,5 @@ section {
 @media (max-width: 450px) {
     .home-content h1 {
         font-size: 4rem;
-    }
-    .about-img {
-        width: 20rem;
-        height: 20rem;
     }
 }
