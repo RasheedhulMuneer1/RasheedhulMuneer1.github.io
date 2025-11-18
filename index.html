@@ -7,10 +7,8 @@
         <title>Rasheedhul Muneer | Portfolio</title>
     
         <link rel="stylesheet" href="css/style.css">
-        <!-- box icons-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
 
-        <!-- code snippet from ms clarity to track website visitors -->
         <script type="text/javascript"> 
             (function(c,l,a,r,i,t,y){
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -27,7 +25,7 @@
             
             <nav class="navbar" id="navbar">
                 <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
+                <!-- <a href="#about">About</a> -->
                 <a href="#journey">Journey</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
@@ -37,7 +35,6 @@
             </nav>
         </header>
 
-        <!-- Home Section Design -->
         <section class="home" id="home">
             <div class="home-content">
                 <p class="greeting-text">Hello, I'm</p>
@@ -49,20 +46,19 @@
                 <div class="btn-box">
                     <a href="#" class="btn connect-btn">Let's Connect</a>
                     <a href="#projects" class="btn projects-btn">View Projects</a> 
-                    <!-- New/Moved Download CV Button -->
-                    <a class="download-cv btn projects-btn" href="Rasheedhul Muneer .pdf" download>Download CV</a>
+                    <a class="download-cv btn projects-btn" href="Rasheedhul_Muneer_CV.pdf" download>Download CV</a>
+                     <div class="about-img">
+                    <div class="image-placeholder">RM</div>
+                </div>
                 </div> 
 
                 <div class="home-sci">
-                    <!-- LinkedIn Icon -->
                     <a href="https://www.linkedin.com/in/rasheedhul-muneer123/" target="_blank">
                         <i class='bx bxl-linkedin'></i>
                     </a> 
-                    <!-- GitHub Icon -->
                     <a href="https://github.com/RasheedhulMuneer1" target="_blank">
                         <i class='bx bxl-github'></i>
                     </a>
-                    <!-- Gmail Icon -->
                     <a href="mailto:marasheedhulmuneer@gmail.com">
                         <i class='bx bxs-envelope'></i>
                     </a>
@@ -71,13 +67,11 @@
         </section>
 
 
-        <!-- About Section Design (using home styling for consistency) -->
-        <section class="about" id="about">
+        <!-- <section class="about" id="about">
             <h2 class="heading">About<span class="highlight"> Me</span></h2>
             
             <div class="about-container">
                 <div class="about-img">
-                    <!-- Placeholder for image/initials -->
                     <div class="image-placeholder">RM</div>
                 </div>
                 
@@ -85,17 +79,14 @@
                     <p>Alongside my academic studies, I’ve been actively working on projects and exploring new tools and technologies on my own. I genuinely enjoy building things that solve problems and I’m always looking for ways to improve and learn.</p>
                     <p>I take initiative, enjoy working with others and value opportunities that help me grow while making a meaningful contribution.</p>
                     
-                    <!-- Download button removed from here as per request -->
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <!-- Journey Section Design -->
         <section class="education" id="journey">
             <h2 class="heading">My <span class="highlight">Journey</span></h2>
             
             <div class="education-row">
-                <!-- Left Column - Education, Experience, & Volunteer -->
                 <div class="education-column">
                     <h3 class="title"><i class='bx bxs-graduation'></i> Education</h3>
                     <div class="education-box">
@@ -125,7 +116,6 @@
                         </div>
                     </div>
 
-                    <!-- NEW: Leadership & Volunteer Section -->
                     <h3 class="title"><i class='bx bxs-group'></i> Leadership & Volunteer</h3>
                     <div class="education-box">
                         <div class="education-content">
@@ -137,11 +127,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- END NEW SECTION -->
+                    </div>
 
-                </div>
-
-                <!-- Right Column - Certificates -->
                 <div class="education-column">
                     <h3 class="title"><i class='bx bxs-certification'></i> Certificates</h3>
                     <div class="education-box">
@@ -188,11 +175,9 @@
             </div>
         </section>
         
-        <!-- Skills Section Design -->
         <section class="skills" id="skills">
             <h2 class="heading">Technical <span class="highlight">Skills</span></h2>
             <div class="skills-row">
-                <!-- Languages Column (NOW USING TAG LAYOUT) -->
                 <div class="skills-column">
                     <h3 class="title">Languages</h3>
                     <div class="skills-box skills-tags">
@@ -204,7 +189,6 @@
                     </div>
                 </div>
 
-                <!-- Libraries, Frameworks Column -->
                 <div class="skills-column">
                     <h3 class="title">Frameworks & Libraries</h3>
                     <div class="skills-box skills-tags">
@@ -221,12 +205,10 @@
             </div>
         </section>
 
-        <!-- Projects Section Design -->
         <section class="projects" id="projects">
             <h2 class="heading">Featured <span class="highlight">Projects</span></h2>
             <div class="projects-grid">
                 
-                <!-- Project 1: Sales and Inventory Management System -->
                 <div class="project-card">
                     <h3>Sales and Inventory Management System</h3>
                     <p class="project-description">Windows Forms application to streamline sales and inventory operations for shopkeepers.</p>
@@ -246,7 +228,6 @@
                     <a href="https://github.com/RasheedhulMuneer1/Sales-InventoryManagementSystem" target="_blank" class="btn projects-btn view-github">View on GitHub <i class='bx bx-link-external'></i></a>
                 </div>
 
-                <!-- Project 2: Hill and Valley Prediction -->
                 <div class="project-card">
                     <h3>Hill and Valley Prediction</h3>
                     <p class="project-description">Machine Learning model to predict whether a given set of 100 points on a 2D graph forms a hill or a valley.</p>
@@ -269,7 +250,6 @@
                     <a href="https://github.com/RasheedhulMuneer1/Hill_and_Valley_Prediction/blob/main/Hill_and_Valley_Prediction.ipynb" target="_blank" class="btn projects-btn view-github">View on GitHub <i class='bx bx-link-external'></i></a>
                 </div>
 
-                <!-- Project 3: MovieLand -->
                 <div class="project-card">
                     <h3>MovieLand</h3>
                     <p class="project-description">Responsive movie search app built with React (Original description: ReactJS/Vite/OMDb API).</p>
@@ -290,7 +270,6 @@
                     <a href="https://github.com/RasheedhulMuneer1/ReactApp-MovieLand/tree/main" target="_blank" class="btn projects-btn view-github">View on GitHub <i class='bx bx-link-external'></i></a>
                 </div>
 
-                <!-- Project 4: Calories Burn Estimation -->
                 <div class="project-card">
                     <h3>Calories Burn Estimation</h3>
                     <p class="project-description">ML model to estimate calories burned based on steps walked using Linear Regression (Original: Python/Scikit-learn/Jupyter).</p>
@@ -311,7 +290,6 @@
                     <a href="https://github.com/RasheedhulMuneer1/ML-Project-Calories-Burn-Prediction-Based-on-Steps-Walked" target="_blank" class="btn projects-btn view-github">View on GitHub <i class='bx bx-link-external'></i></a>
                 </div>
 
-                <!-- Project 5: InMemoryBookStore-API -->
                 <div class="project-card">
                     <h3>InMemoryBookStore-API</h3>
                     <p class="project-description">A RESTful API built with NestJS to manage a collection of books with full CRUD operations.</p>
@@ -335,7 +313,6 @@
         </section>
 
 
-        <!-- Contact Section Design -->
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span class="highlight">Me!</span></h2>
             <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
@@ -343,12 +320,10 @@
                 <p class="contact-subtitle">I'm always open to discussing new projects, opportunities, or partnerships.</p>
 
                 <div class="input-row">
-                    <!-- Full Name -->
                     <div class="input-field">
                         <i class='bx bxs-user'></i>
                         <input type="text" name="full_name" placeholder="Full Name" required>
                     </div>
-                    <!-- Email Address -->
                     <div class="input-field">
                         <i class='bx bxs-envelope'></i>
                         <input type="email" name="email" placeholder="Email Address" required>
@@ -356,19 +331,16 @@
                 </div>
 
                 <div class="input-row">
-                    <!-- Mobile Number -->
                     <div class="input-field">
                         <i class='bx bxs-phone'></i>
                         <input type="tel" name="mobile_number" placeholder="Mobile Number" pattern="[0-9]{10}">
                     </div>
-                    <!-- Subject -->
                     <div class="input-field">
                         <i class='bx bxs-comment-detail'></i>
                         <input type="text" name="subject" placeholder="Subject">
                     </div>
                 </div>
 
-                <!-- Message -->
                 <div class="textarea-field">
                     <i class='bx bxs-message-alt-dots'></i>
                     <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
@@ -380,10 +352,8 @@
             </form>
         </section>
         
-        <!-- Footer Design -->
         <footer class="footer">
             <div class="footer-text">
-                <!-- Copyright text -->
                 <p> &copy; 2025 Rasheedhul Muneer. All <span class="highlight">rights</span> reserved.</p>
             </div>
             <div class="footer-iconTop">
