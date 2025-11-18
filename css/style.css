@@ -650,9 +650,11 @@ section {
         flex-direction: column;
         gap: 3rem;
     }
+   .home-content {
+        order: 1 !important;
+    }
     .home-image {
-        order: -1; /* Image moves above content on small screens */
-        margin-bottom: 3rem;
+        order: 2 !important;
     }
     .education-row {
         gap: 2rem;
