@@ -42,7 +42,7 @@
 
 
 
-    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Poppins', sans-serif;
 
 
 
@@ -937,7 +937,7 @@ section {
     white-space: nowrap; 
 
     /* === ADD THIS LINE TO CHANGE FONT STYLE === */
-    font-family: 'Georgia', serif; 
+    /* font-family: 'Georgia', serif;  */
     /* OR */
     /* font-family: 'Roboto', sans-serif; */
 }
@@ -980,7 +980,7 @@ section {
 
 
 
-    font-size: 2.0rem;
+    font-size: 1.8rem;
 
 
 
