@@ -25,7 +25,7 @@
     --border-color: #333333;
     
     /* NEW VARIABLE for common border radius */
-    --button-radius: 0.8rem;
+    --button-radius: 0.8rem; /* Final Increased Radius */
 }
 
 html {
@@ -45,7 +45,6 @@ body {
 
 section {
     min-height: 100vh;
-    /* Increased horizontal padding for sections */
     padding: 10rem 12% 2rem; 
     display: flex;
     flex-direction: column;
@@ -64,7 +63,6 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    /* Increased header padding to match new section padding */
     padding: 1.5rem 12%; 
     background: transparent;
     display: flex;
@@ -117,7 +115,7 @@ section {
     justify-content: center;
     align-items: center;
     padding: 1.4rem 3rem;
-    /* INCREASED BORDER RADIUS */
+    /* APPLYING FINAL INCREASED BORDER RADIUS */
     border-radius: var(--button-radius); 
     font-size: 1.6rem;
     font-weight: 600;
@@ -141,7 +139,8 @@ section {
 
 .projects-btn { 
     background: var(--card-bg-color); 
-    color: var(--text-color);
+    /* FIX: Ensure non-hover color is white */
+    color: var(--text-color); 
     border: .2rem solid var(--card-bg-color);
 }
 
@@ -155,7 +154,6 @@ section {
 /* --- Home Section (Main Layout) --- */
 .home {
     background: var(--home-bg-color); 
-    /* Changed display to flex to manage content and image side-by-side */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -168,16 +166,16 @@ section {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px; /* Optional: Constrain overall width */
+    max-width: 1200px;
 }
 
 .home-content {
     max-width: 60rem;
-    flex-basis: 55%; /* Allocate space for content */
+    flex-basis: 55%; 
 }
 
 .home-image {
-    flex-basis: 40%; /* Allocate space for image */
+    flex-basis: 40%; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,7 +185,7 @@ section {
     width: 100%;
     max-width: 350px;
     height: auto;
-    border-radius: 0.5rem; /* Apply consistent border radius */
+    border-radius: var(--button-radius); /* Applied new button radius */
     border: 3px solid var(--main-color);
     box-shadow: 0 0 20px rgba(0, 171, 240, 0.4);
 }
@@ -206,6 +204,7 @@ section {
     line-height: 1.1;
     margin: 0;
     text-shadow: 0 0 7px rgba(0, 171, 240, 0.7);
+    white-space: nowrap; /* FIX: Forces name onto one line */
 }
 
 .home-content .title-text {
@@ -219,7 +218,7 @@ section {
     font-size: 1.6rem;
     line-height: 1.6;
     margin: 2rem 0 3rem;
-    max-width: 100%; /* Use full content width */
+    max-width: 100%;
 }
 
 .home-sci {
@@ -232,7 +231,8 @@ section {
     height: 3.5rem;
     background: transparent;
     border: 1px solid var(--section-bg-darker); 
-    border-radius: 0.5rem;
+    /* APPLIED NEW BORDER RADIUS TO ICONS */
+    border-radius: var(--button-radius); 
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -247,9 +247,6 @@ section {
     border-color: var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
 }
-
-/* --- About Section - REMOVED --- */
-
 
 /* --- Journey/Education Section (Set to darkest blue) --- */
 .education {
@@ -478,12 +475,18 @@ section {
 .project-card .view-github {
     margin-top: auto;
     text-align: center;
-    color: var(--card-bg-color); 
+    /* FIX: Set non-hover color to white */
+    color: var(--text-color); 
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.7rem; 
+    /* Override projects-btn hover text color to dark blue */
 }
+.project-card .view-github:hover {
+    color: var(--card-bg-color); 
+}
+
 .project-card .view-github i {
     margin-left: 0.5rem;
 }
@@ -612,7 +615,8 @@ section {
     align-items: center;
     padding: .8rem;
     background: var(--main-color);
-    border-radius: 0.5rem;
+    /* APPLIED FINAL BUTTON RADIUS */
+    border-radius: var(--button-radius); 
     z-index: 1;
     overflow: hidden;
     font-size: 2.5rem; 
