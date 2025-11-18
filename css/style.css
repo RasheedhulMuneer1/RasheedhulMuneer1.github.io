@@ -25,7 +25,7 @@
     --border-color: #333333;
     
     /* NEW VARIABLE for common border radius */
-    --button-radius: 0.8rem; /* Final Increased Radius */
+    --button-radius: 1.5rem; /* Final Increased Radius */
 }
 
 html {
