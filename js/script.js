@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navbar.classList.remove('active');
         menuIcon.classList.remove('bx-x');
     }
-
+ 
     // Hamburger Menu Click Event
     menuIcon.addEventListener('click', function(e) {
         e.stopPropagation();
