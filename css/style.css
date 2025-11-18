@@ -175,16 +175,22 @@ section {
 
 
 
-.home-image {
+/* .home-image {
     flex-basis: 40%; 
-    /* display: flex; */
     display: none;
- 
-    /* CHANGE: Align content to the right side of its container space */
     justify-content: flex-end; 
     align-items: center;
     padding-right: 1rem; 
+} */
+
+.home-image {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
 }
+
 
 .home-image .profile-image {
     width: 100%;
