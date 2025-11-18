@@ -534,9 +534,18 @@ section {
     padding-bottom: 7rem;
 }
 
-.contact-container { 
-    /* Max width increased to utilize space */
+/* .contact-container { 
     max-width: 100rem; 
+    margin: 0 auto;
+    background: var(--card-bg-color);
+    padding: 3rem;
+    border-radius: 0.8rem;
+} */
+
+.contact-container { 
+    /* Increased width to utilize more horizontal space */
+    max-width: 90%; 
+    width: 90%; /* Ensure it takes up the maximum allowed space */
     margin: 0 auto;
     background: var(--card-bg-color);
     padding: 3rem;
@@ -651,8 +660,7 @@ section {
     padding: .8rem;
     background: var(--main-color);
     /* APPLIED FINAL BUTTON RADIUS */
-    /* border-radius: var(--button-radius);  */
-    border-radius: 1.6rem;
+    border-radius: var(--button-radius); 
  
  
     z-index: 1;
