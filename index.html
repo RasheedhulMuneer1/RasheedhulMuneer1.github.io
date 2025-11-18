@@ -25,7 +25,6 @@
             
             <nav class="navbar" id="navbar">
                 <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
                 <a href="#journey">Journey</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
@@ -36,49 +35,38 @@
         </header>
 
         <section class="home" id="home">
-            <div class="home-content">
-                <p class="greeting-text">Hello, I'm</p>
-                <h1>Rasheedhul <span class="highlight">Muneer</span></h1>
-                <p class="title-text">Aspiring Software Engineer</p> 
-                
-                <p class="description-text">As a final-year IT undergraduate with a strong passion for Software Engineering, I am driven by curiosity and a commitment to solving real-world problems through thoughtful and efficient solutions. My academic journey has cultivated resilience, adaptability and a deep appreciation for continuous learning and collaboration.</p> 
-                           
-                <div class="btn-box">
-                    <a href="#" class="btn connect-btn">Let's Connect</a>
-                    <a href="#projects" class="btn projects-btn">View Projects</a> 
-                    <a class="download-cv btn projects-btn" href="Rasheedhul_Muneer_CV.pdf" download>Download CV</a>
-                </div> 
-
-                <div class="home-sci">
-                    <a href="https://www.linkedin.com/in/rasheedhul-muneer123/" target="_blank">
-                        <i class='bx bxl-linkedin'></i>
-                    </a> 
-                    <a href="https://github.com/RasheedhulMuneer1" target="_blank">
-                        <i class='bx bxl-github'></i>
-                    </a>
-                    <a href="mailto:marasheedhulmuneer@gmail.com">
-                        <i class='bx bxs-envelope'></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="about" id="about">
-            <h2 class="heading">About<span class="highlight"> Me</span></h2>
-            
-            <div class="about-container">
-                <div class="about-img">
-                    <div class="image-placeholder">RM</div>
-                </div>
-                
-                <div class="about-content">  
-                    <p>Alongside my academic studies, I’ve been actively working on projects and exploring new tools and technologies on my own. I genuinely enjoy building things that solve problems and I’m always looking for ways to improve and learn.</p>
-                    <p>I take initiative, enjoy working with others and value opportunities that help me grow while making a meaningful contribution.</p>
+            <div class="home-container">
+                <div class="home-content">
+                    <p class="greeting-text">Hello, I'm</p>
+                    <h1>Rasheedhul <span class="highlight">Muneer</span></h1>
+                    <p class="title-text">Aspiring Software Engineer</p> 
                     
+                    <p class="description-text">As a final-year **IT undergraduate** aspiring to be a **Software Engineer**, I am driven by **curiosity** and a commitment to solving real-world problems with **efficient solutions**. My journey has fostered **resilience, adaptability, and a deep appreciation for collaboration**. I actively engage in **projects** to explore new technologies, genuinely enjoy **building solutions** that solve problems, and constantly seek opportunities to **learn and grow** while making a meaningful contribution.</p> 
+                               
+                    <div class="btn-box">
+                        <a href="#" class="btn connect-btn">Let's Connect</a>
+                        <a href="#projects" class="btn projects-btn">View Projects</a> 
+                        </div> 
+
+                    <div class="home-sci">
+                        <a href="https://www.linkedin.com/in/rasheedhul-muneer123/" target="_blank">
+                            <i class='bx bxl-linkedin'></i>
+                        </a> 
+                        <a href="https://github.com/RasheedhulMuneer1" target="_blank">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="mailto:marasheedhulmuneer@gmail.com">
+                            <i class='bx bxs-envelope'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home-image">
+                    <img src="Rasheedhul Muneer.jpg" alt="Rasheedhul Muneer" class="profile-image">
                 </div>
             </div>
         </section>
+
 
         <section class="education" id="journey">
             <h2 class="heading">My <span class="highlight">Journey</span></h2>
@@ -312,41 +300,43 @@
 
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span class="highlight">Me!</span></h2>
-            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                <input type="hidden" name="access_key" value="183428c0-7e4e-46f6-83d6-40e97827eb82">
-                <p class="contact-subtitle">I'm always open to discussing new projects, opportunities, or partnerships.</p>
+            <div class="contact-container"> 
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="183428c0-7e4e-46f6-83d6-40e97827eb82">
+                    <p class="contact-subtitle">I'm always open to discussing new projects, opportunities, or partnerships.</p>
 
-                <div class="input-row">
-                    <div class="input-field">
-                        <i class='bx bxs-user'></i>
-                        <input type="text" name="full_name" placeholder="Full Name" required>
+                    <div class="input-row">
+                        <div class="input-field">
+                            <i class='bx bxs-user'></i>
+                            <input type="text" name="full_name" placeholder="Full Name" required>
+                        </div>
+                        <div class="input-field">
+                            <i class='bx bxs-envelope'></i>
+                            <input type="email" name="email" placeholder="Email Address" required>
+                        </div>
                     </div>
-                    <div class="input-field">
-                        <i class='bx bxs-envelope'></i>
-                        <input type="email" name="email" placeholder="Email Address" required>
-                    </div>
-                </div>
 
-                <div class="input-row">
-                    <div class="input-field">
-                        <i class='bx bxs-phone'></i>
-                        <input type="tel" name="mobile_number" placeholder="Mobile Number" pattern="[0-9]{10}">
+                    <div class="input-row">
+                        <div class="input-field">
+                            <i class='bx bxs-phone'></i>
+                            <input type="tel" name="mobile_number" placeholder="Mobile Number" pattern="[0-9]{10}">
+                        </div>
+                        <div class="input-field">
+                            <i class='bx bxs-comment-detail'></i>
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
                     </div>
-                    <div class="input-field">
-                        <i class='bx bxs-comment-detail'></i>
-                        <input type="text" name="subject" placeholder="Subject">
+
+                    <div class="textarea-field">
+                        <i class='bx bxs-message-alt-dots'></i>
+                        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
                     </div>
-                </div>
 
-                <div class="textarea-field">
-                    <i class='bx bxs-message-alt-dots'></i>
-                    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                </div>
-
-                <div class="btn-box btns">
-                    <button type="submit" class="btn connect-btn">Send Message</button>
-                </div>
-            </form>
+                    <div class="btn-box btns">
+                        <button type="submit" class="btn connect-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
         </section>
         
         <footer class="footer">
