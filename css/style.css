@@ -116,8 +116,7 @@ section {
     align-items: center;
     padding: 1.4rem 3rem;
     /* APPLYING FINAL INCREASED BORDER RADIUS */
-    /* border-radius: var(--button-radius);  */
-    border-radius: 1.6rem;
+    border-radius: var(--button-radius); 
     font-size: 1.6rem;
     font-weight: 600;
     letter-spacing: .1rem;
@@ -138,9 +137,9 @@ section {
     box-shadow: 0 0 10px var(--main-color);
 }
 
-/* .projects-btn { 
+.projects-btn { 
     background: var(--card-bg-color); 
-    color: var(--text-color); 
+    color: var(--text-color);
     border: .2rem solid var(--card-bg-color);
 }
 
@@ -149,39 +148,6 @@ section {
     color: var(--card-bg-color); 
     border-color: var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
-} */
-
-
-/* ... Around line 133 ... */
-
-.projects-btn { 
-    background: var(--card-bg-color); 
-    /* ENSURING TEXT IS WHITE BEFORE HOVERING */
-    color: var(--text-color) !important; 
-    border: .2rem solid var(--card-bg-color);
-}
-
-.projects-btn:hover {
-    background: var(--main-color);
-    color: var(--card-bg-color) !important; /* Text color becomes dark when background is bright */
-    border-color: var(--main-color);
-    box-shadow: 0 0 10px var(--main-color);
-}
-
-/* ... Around line 603 (Project Section specific styling) ... */
-
-.project-card .view-github {
-    margin-top: auto;
-    text-align: center;
-    /* ENSURE TEXT IS WHITE (This rule specifically targets the anchor link) */
-    color: var(--text-color); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.7rem; 
-}
-.project-card .view-github:hover {
-    color: var(--card-bg-color); /* Text color on hover */
 }
 
 /* --- Home Section (Main Layout) --- */
@@ -200,8 +166,6 @@ section {
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    margin-top: 25px;
-    /* padding-top: 60px; */
 }
 
 .home-content {
@@ -212,16 +176,17 @@ section {
 .home-image {
     flex-basis: 40%; 
     display: flex;
-    justify-content: center;
+    /* CHANGE: Align content to the right side of its container space */
+    justify-content: flex-end; 
     align-items: center;
+    padding-right: 1rem; 
 }
 
 .home-image .profile-image {
     width: 100%;
     max-width: 350px;
     height: auto;
-    /* border-radius: var(--button-radius);  */
-    border-radius: 2.6rem;
+    border-radius: var(--button-radius); /* Applied final button radius */
     border: 3px solid var(--main-color);
     box-shadow: 0 0 20px rgba(0, 171, 240, 0.4);
 }
@@ -267,9 +232,8 @@ section {
     height: 3.5rem;
     background: transparent;
     border: 1px solid var(--section-bg-darker); 
-    /* APPLIED NEW BORDER RADIUS TO ICONS */
-    /* border-radius: var(--button-radius);  */
-    border-radius: 1.6rem;
+    /* APPLIED FINAL BUTTON RADIUS TO ICONS */
+    border-radius: var(--button-radius); 
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -512,13 +476,11 @@ section {
 .project-card .view-github {
     margin-top: auto;
     text-align: center;
-    /* FIX: Set non-hover color to white */
     color: var(--text-color); 
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.7rem; 
-    /* Override projects-btn hover text color to dark blue */
 }
 .project-card .view-github:hover {
     color: var(--card-bg-color); 
@@ -536,18 +498,10 @@ section {
     padding-bottom: 7rem;
 }
 
-/* .contact-container { 
-    max-width: 100rem; 
-    margin: 0 auto;
-    background: var(--card-bg-color);
-    padding: 3rem;
-    border-radius: 0.8rem;
-} */
-
 .contact-container { 
-    /* Increased width to utilize more horizontal space */
+    /* Max width increased to utilize space */
     max-width: 90%; 
-    width: 90%; /* Ensure it takes up the maximum allowed space */
+    width: 90%; 
     margin: 0 auto;
     background: var(--card-bg-color);
     padding: 3rem;
@@ -663,8 +617,6 @@ section {
     background: var(--main-color);
     /* APPLIED FINAL BUTTON RADIUS */
     border-radius: var(--button-radius); 
- 
- 
     z-index: 1;
     overflow: hidden;
     font-size: 2.5rem; 
@@ -756,6 +708,14 @@ section {
     }
     .footer {
         align-items: center;
+    }
+    /* FIX: Change order of image to appear after h1/p tags on mobile */
+    .home-container .home-content {
+        order: 1; 
+    }
+    .home-container .home-image {
+        order: 0; 
+        margin-bottom: 1rem; /* Reduced space after image */
     }
 }
 
