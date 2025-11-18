@@ -18,7 +18,8 @@
     --text-color: #ededed; /* White text */
     --main-color: #00abf0; /* Bright blue highlight */
     --link-color: #00bfff; /* A lighter blue for interactive elements */
-    --dark-grey: #222222;
+    --dark-grey: #222222; /* Darker grey for card backgrounds */
+    --border-color: #333333;
 }
 
 html {
@@ -96,6 +97,51 @@ section {
     display: none;
 }
 
+/* --- Button Styling (reused across sections) --- */
+.btn-box {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    transition: .3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.connect-btn { 
+    background: var(--main-color);
+    color: var(--bg-color);
+    border: .2rem solid var(--main-color);
+}
+
+.connect-btn:hover {
+    background: transparent;
+    color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+.projects-btn { 
+    background: var(--dark-grey);
+    color: var(--text-color);
+    border: .2rem solid var(--dark-grey);
+}
+
+.projects-btn:hover {
+    background: var(--bg-color);
+    border-color: var(--main-color);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
 /* --- Home Section --- */
 .home {
     background: var(--bg-color); 
@@ -120,7 +166,6 @@ section {
     font-weight: 800;
     line-height: 1.1;
     margin: 0;
-    /* Neon glow effect */
     text-shadow: 0 0 7px rgba(0, 171, 240, 0.7);
 }
 
@@ -138,52 +183,6 @@ section {
     max-width: 90%;
 }
 
-/* Home Buttons */
-.btn-box {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-.btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.4rem 3rem;
-    border-radius: 0.5rem; /* Slightly boxy look */
-    font-size: 1.6rem;
-    font-weight: 600;
-    letter-spacing: .1rem;
-    transition: .3s;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.connect-btn { /* "Let's Connect" button */
-    background: var(--main-color);
-    color: var(--dark-grey);
-    border: .2rem solid var(--main-color);
-}
-
-.connect-btn:hover {
-    background: transparent;
-    color: var(--main-color);
-    box-shadow: 0 0 10px var(--main-color);
-}
-
-.projects-btn { /* "View Projects" button */
-    background: var(--dark-grey);
-    color: var(--text-color);
-    border: .2rem solid var(--dark-grey);
-}
-
-.projects-btn:hover {
-    background: var(--bg-color);
-    border-color: var(--main-color);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-/* Social Icons */
 .home-sci {
     display: flex;
     gap: 1.5rem;
@@ -254,24 +253,8 @@ section {
     margin-bottom: 1.5rem;
 }
 
-/* Download CV Button (uses the standard .btn styling) */
 .about-content .download-cv {
-    display: inline-block;
-    padding: 1.4rem 3rem;
-    background: var(--main-color);
-    color: var(--bg-color);
-    border-radius: 0.5rem;
-    font-size: 1.6rem;
-    font-weight: 600;
     margin-top: 1.5rem;
-    text-decoration: none;
-    transition: .3s;
-}
-.about-content .download-cv:hover {
-    background: transparent;
-    color: var(--main-color);
-    border: .2rem solid var(--main-color);
-    box-shadow: 0 0 10px var(--main-color);
 }
 
 
@@ -299,7 +282,6 @@ section {
     font-weight: 600;
     margin: 0 0 2rem 0;
     color: var(--text-color);
-    /* Match the "My Journey" title font weight */
 }
 
 .education-column .title i {
@@ -336,7 +318,7 @@ section {
 .education-content .content p {
     font-size: 1.5rem;
     margin-top: 0.5rem;
-    color: #999; /* Slightly dim text for secondary info */
+    color: #999;
 }
 
 .education-content .content .view-cert {
@@ -352,9 +334,7 @@ section {
     color: var(--main-color);
 }
 
-
-/* --- Skills & Projects Section --- */
-
+/* --- Skills Section --- */
 .skills {
     background: var(--second-bg-color);
     min-height: auto;
@@ -366,157 +346,249 @@ section {
     gap: 5rem;
 }
 
-.skills-row .skills-column {
+.skills-column {
     flex: 1 1 40rem;
 }
 
 .skills-column .title {
-    font-size: 2.5rem;
-    margin: 0 0 1.5rem;
+    font-size: 2.8rem;
+    margin: 0 0 2rem;
 }
 
-.skills-box .skills-content {
-    border: .2rem solid var(--main-color);
-    border-radius: .6rem;
-    padding: .5rem 1.5rem; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.skills-content .progress {
-    padding: 1rem 0;
-    font-size: 1.6rem; 
-}
-
-.skills-content .progress p {
-    font-size: 1.6rem;
-    color: var(--text-color);
-}
-
-/* Project Styling */
-.project-block {
-    border: 1px solid var(--second-bg-color);
+/* Skills: List Layout (Languages) */
+.skills-box {
     background: var(--dark-grey);
-    border-radius: 6px;
-    padding: 15px;
-    margin-bottom: 20px;
+    border-radius: 0.8rem;
+    padding: 2rem;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+.skill-item:last-child {
+    border-bottom: none;
+}
+.skill-item p {
+    font-size: 1.7rem;
+}
+.skill-icon {
+    font-size: 2.5rem;
+}
+
+
+/* Skills: Tags Layout (Frameworks & Libraries) */
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.skill-tag {
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    padding: 1rem 1.8rem;
+    border-radius: 0.5rem;
     font-size: 1.6rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.skill-tag:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+/* --- Projects Section --- */
+.projects {
+    background: var(--bg-color);
+    min-height: auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+}
+
+.project-card {
+    background: var(--dark-grey);
+    border-radius: 0.8rem;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    justify-content: space-between;
+    border: 1px solid var(--dark-grey);
     transition: all 0.3s ease;
 }
 
-.project-block:hover {
+.project-card:hover {
     border-color: var(--main-color);
-    box-shadow: 0 0 10px rgba(0, 171, 240, 0.3);
+    box-shadow: 0 0 15px rgba(0, 171, 240, 0.3);
 }
 
-.project-block p {
-    padding-left: 0;
-    padding-top: 0;
-    font-size: 1.4rem;
+.project-card h3 {
+    font-size: 2.2rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    font-size: 1.6rem;
     color: #ccc;
+    margin-bottom: 1.5rem;
     line-height: 1.5;
 }
 
-.project-block h3 {
-    margin-top: 5px;
-    color: var(--main-color);
-    font-size: 1.8rem;
+.key-features h4 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
 }
 
-.project-block img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 4px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 10px auto; /* Center image */
-    display: block;
+.key-features ul {
+    list-style: none;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
 }
+
+.key-features ul li {
+    font-size: 1.4rem;
+    color: #aaa;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1rem;
+}
+.key-features ul li::before {
+    content: "•";
+    color: var(--main-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.tech-tag {
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.project-card .view-github {
+    margin-top: auto; /* Push button to the bottom */
+    text-align: center;
+    color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-card .view-github i {
+    margin-left: 0.5rem;
+}
+
 
 /* --- Contact Section --- */
-.contact  {
-    min-height: auto; 
+.contact {
+    background: var(--second-bg-color);
+    min-height: auto;
     padding-bottom: 7rem;
-    background: var(--bg-color);
 }
 
-.contact form {
-    max-width: 70rem;
+.contact-form {
+    max-width: 80rem;
     margin: 0 auto;
+}
+
+.contact-subtitle {
+    font-size: 1.6rem;
+    color: #ccc;
+    margin-bottom: 3rem;
     text-align: center;
 }
 
-.contact form .input-box {
-    position: relative;
-    display:flex;
+.input-row {
+    display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
-.contact form .input-box .input-field {
+
+.input-field {
     position: relative;
-    width: 49%;
-    margin: .8rem 0;
+    width: 50%;
+}
+.textarea-field {
+    margin-bottom: 2.5rem;
 }
 
 
-.contact form .input-box .input-field input,
-.contact form .textarea-field textarea {
-    width:100%;
-    height: 100%;
-    padding: 1.5rem;
+.input-field input,
+.textarea-field textarea {
+    width: 100%;
+    padding: 1.5rem 1.5rem 1.5rem 5rem; /* Space for icon */
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--second-bg-color);
-    border-radius: .6rem;
-    border: .2rem solid var(--second-bg-color);
+    background: var(--dark-grey);
+    border: 1px solid var(--border-color);
+    border-radius: 0.6rem;
     transition: border-color 0.3s;
 }
 
-.contact form .input-box .input-field input:focus,
-.contact form .textarea-field textarea:focus {
+.textarea-field textarea {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    resize: none;
+    min-height: 15rem;
+}
+
+.input-field i,
+.textarea-field i {
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: var(--main-color);
+    z-index: 10;
+}
+.textarea-field i {
+    top: 1.5rem;
+    transform: none;
+}
+
+
+.input-field input:focus,
+.textarea-field textarea:focus {
     border-color: var(--main-color);
 }
 
-
-.contact form .input-box .input-field input::placeholder,
-.contact form .textarea-field textarea::placeholder {
-    color: #aaa;
-} 
-
-.contact form .textarea-field {
-    position: relative;
-    margin: .8rem 0 2.7rem;
-    display: flex;
+.btn-box.btns {
+    justify-content: center;
+}
+.btn-box.btns button {
+    width: 100%;
+    max-width: 25rem;
 }
 
-.contact form .textarea-field textarea {
-    resize: none;
-}
-
-.contact form .btn-box.btns .btn{
-    color: var(--bg-color);
-    cursor: pointer;
-    border: none;
-}
-.contact form .btn-box.btns .btn:hover{
-    color: var(--main-color);
-    background: transparent;
-    border: .2rem solid var(--main-color);
-}
 
 /* --- Footer --- */
 .footer {
     display: flex;
-    justify-content: flex-end; /* Push content to the right side */
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }  
 
 .footer-iconTop a {
@@ -565,6 +637,9 @@ section {
     .footer {
         padding: 2rem 4%;
     }
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
 }
 
 @media (max-width: 768px) {
@@ -603,7 +678,24 @@ section {
         flex-direction: column;
         gap: 1rem;
     }
-    .contact form .input-box .input-field {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .input-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .input-field {
         width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .home-content h1 {
+        font-size: 4rem;
+    }
+    .about-img {
+        width: 20rem;
+        height: 20rem;
     }
 }
