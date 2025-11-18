@@ -155,8 +155,8 @@ section {
 }
 
 .home-content .greeting-text {
-    color: var(--main-color);
     font-size: 2rem;
+    color: var(--main-color);
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
@@ -322,7 +322,6 @@ section {
 }
 
 .education-content .content .view-cert {
-    display: inline-block;
     font-size: 1.5rem;
     color: var(--link-color);
     margin-top: 1rem;
@@ -373,12 +372,12 @@ section {
     border-bottom: none;
 }
 .skill-item p {
-    font-size: 1.7rem;
+    /* Increased font size for better readability */
+    font-size: 1.8rem; 
 }
 .skill-icon {
-    font-size: 2.5rem;
+    font-size: 2.8rem; /* Increased icon size */
 }
-
 
 /* Skills: Tags Layout (Frameworks & Libraries) */
 .skills-tags {
@@ -389,9 +388,10 @@ section {
 .skill-tag {
     background: var(--second-bg-color);
     color: var(--text-color);
-    padding: 1rem 1.8rem;
+    /* Increased padding and font size for tags */
+    padding: 1.2rem 2rem; 
     border-radius: 0.5rem;
-    font-size: 1.6rem;
+    font-size: 1.6rem; 
     font-weight: 500;
     transition: all 0.3s ease;
 }
@@ -435,14 +435,15 @@ section {
 }
 
 .project-description {
-    font-size: 1.6rem;
+    /* Increased font size */
+    font-size: 1.7rem; 
     color: #ccc;
     margin-bottom: 1.5rem;
     line-height: 1.5;
 }
 
 .key-features h4 {
-    font-size: 1.6rem;
+    font-size: 1.8rem; /* Increased font size */
     margin-bottom: 0.5rem;
 }
 
@@ -453,7 +454,7 @@ section {
 }
 
 .key-features ul li {
-    font-size: 1.4rem;
+    font-size: 1.5rem; /* Increased font size */
     color: #aaa;
     line-height: 1.6;
     position: relative;
@@ -480,17 +481,18 @@ section {
     color: var(--text-color);
     padding: 0.5rem 1rem;
     border-radius: 0.4rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem; /* Increased font size */
     font-weight: 500;
 }
 
 .project-card .view-github {
-    margin-top: auto; /* Push button to the bottom */
+    margin-top: auto;
     text-align: center;
     color: var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.7rem; /* Increased button font size */
 }
 .project-card .view-github i {
     margin-left: 0.5rem;
@@ -510,7 +512,8 @@ section {
 }
 
 .contact-subtitle {
-    font-size: 1.6rem;
+    /* Increased font size for subtitle */
+    font-size: 1.8rem; 
     color: #ccc;
     margin-bottom: 3rem;
     text-align: center;
@@ -535,8 +538,9 @@ section {
 .input-field input,
 .textarea-field textarea {
     width: 100%;
-    padding: 1.5rem 1.5rem 1.5rem 5rem; /* Space for icon */
-    font-size: 1.6rem;
+    padding: 1.5rem 1.5rem 1.5rem 5rem;
+    /* Increased font size for input text */
+    font-size: 1.7rem; 
     color: var(--text-color);
     background: var(--dark-grey);
     border: 1px solid var(--border-color);
