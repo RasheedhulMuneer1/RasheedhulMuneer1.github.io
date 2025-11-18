@@ -228,8 +228,8 @@ section {
 }
 
 .home-sci a {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 5.5rem;
+    height: 5.5rem;
     background: transparent;
     border: 1px solid var(--section-bg-darker); 
     /* APPLIED FINAL BUTTON RADIUS TO ICONS */
