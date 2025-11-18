@@ -173,9 +173,13 @@ section {
     flex-basis: 55%; 
 }
 
+
+
 .home-image {
     flex-basis: 40%; 
-    display: flex;
+    /* display: flex; */
+    display: none;
+ 
     /* CHANGE: Align content to the right side of its container space */
     justify-content: flex-end; 
     align-items: center;
@@ -724,3 +728,19 @@ section {
         font-size: 4rem;
     }
 }
+
+@media (max-width: 768px) {
+    .home-image {
+        display: block;
+        width: 100%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .home-image img {
+        width: 180px;       /* adjust size as you like */
+        height: auto;
+        border-radius: 50%; /* optional – makes it round */
+    }
+}
+
