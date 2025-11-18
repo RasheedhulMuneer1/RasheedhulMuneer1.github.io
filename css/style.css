@@ -136,15 +136,37 @@ section {
     border: .2rem solid var(--dark-grey);
 }
 
-.projects-btn:hover {
+/* .projects-btn:hover {
     background: var(--bg-color);
     border-color: var(--main-color);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+} */
+
+.projects-btn:hover {
+    /* Change the background to the main highlight color on hover */
+    background: var(--main-color); 
+    
+    /* Keep the border and shadow consistent with the current hover effect */
+    border-color: var(--main-color); /* Ensure border also matches main color */
+    box-shadow: 0 0 10px var(--main-color); /* Adjust shadow to main color for consistency */
+}
+
+/* Also, ensure the text color changes to the dark background color */
+.projects-btn:hover {
+    color: var(--bg-color); /* Text color becomes dark when background is bright */
 }
 
 /* --- Home Section --- */
-.home {
+/* .home {
     background: var(--bg-color); 
+    align-items: flex-start;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+} */
+
+.home {
+    /* Set background to a deep blue-black shade */
+    background: #0E111C; 
     align-items: flex-start;
     padding-top: 15rem;
     padding-bottom: 5rem;
