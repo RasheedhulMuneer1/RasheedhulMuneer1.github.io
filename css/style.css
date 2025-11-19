@@ -580,7 +580,7 @@ section {
 .btn-box.btns button {
     width: 100%;
     max-width: 100%; 
-    font-size: 1.5rem; /* APPROPRIATE SIZE */
+    font-size: 0.9rem; /* APPROPRIATE SIZE */
 }
 
 /* --- Footer (Set to darkest blue) --- */
