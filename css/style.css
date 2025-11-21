@@ -138,6 +138,13 @@ section {
     box-shadow: 0 0 10px var(--main-color);
 }
 
+.message btn-box {
+    background: var(--main-color);
+    color: var(--card-bg-color); 
+    border: .2rem solid var(--main-color);
+    align: center;
+}
+
 .projects-btn { 
     background: var(--card-bg-color); 
     color: var(--text-color);
