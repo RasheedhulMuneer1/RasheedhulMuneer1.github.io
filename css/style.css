@@ -131,6 +131,7 @@ section {
     border: .2rem solid var(--main-color);
 }
 
+
 .connect-btn:hover {
     background: transparent;
     color: var(--main-color);
@@ -147,6 +148,25 @@ section {
     background: var(--main-color);
     color: var(--card-bg-color); 
     border-color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+.message-btn {
+    background: var(--main-color);
+    color: var(--card-bg-color); 
+    border: .2rem solid var(--main-color);
+    align: center;
+}
+.btn message-btn {
+    background: var(--main-color);
+    color: var(--card-bg-color); 
+    border: .2rem solid var(--main-color);
+    align: center;
+}
+
+.message-btn:hover {
+    background: transparent;
+    color: var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
 }
 
