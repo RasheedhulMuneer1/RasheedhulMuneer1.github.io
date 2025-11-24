@@ -434,7 +434,6 @@ section {
     padding-left: 1rem;
 }
 .key-features ul li::before {
-    content: "•";
     color: var(--main-color);
     font-weight: bold;
     display: inline-block;
