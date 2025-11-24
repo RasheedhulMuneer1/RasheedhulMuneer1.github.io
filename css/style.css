@@ -421,7 +421,7 @@ section {
     line-height: 1.5;
 }
 
-.key-features h4 {
+/* .key-features h4 {
     font-size: 1.8rem; 
     margin-bottom: 0.5rem;
 }
@@ -439,7 +439,36 @@ section {
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+} */
+
+
+.key-features ul {
+    list-style: none; /* remove default bullets */
+    padding-left: 0;
 }
+
+.key-features h4 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.key-features ul li {
+    font-size: 1.6rem;
+    color: #aaa;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1.5rem; /* space for custom bullet */
+}
+
+.key-features ul li::before {
+    content: "•";              /* custom bullet */
+    color: var(--main-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;                   /* place bullet properly */
+    top: 0.2rem;
+}
+
 
 .project-tags {
     display: flex;
