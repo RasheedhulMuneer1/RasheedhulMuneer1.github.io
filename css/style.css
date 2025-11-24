@@ -574,9 +574,14 @@ section {
     color: #ccc;
 }
 
-.btn message-btn {
-    align: center;
+.message-btn-container {
+    text-align: center; /* centers inline/block elements horizontally */
 }
+
+.btn.message-btn {
+    display: inline-block; /* ensures button respects text-align */
+}
+
 
 .footer-iconTop {
     order: 1; 
