@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
- 
+
 /* Global Reset */
 * { 
     margin: 0; 
@@ -14,22 +14,22 @@
 
 :root {
     /* --- REVISED BLUE PALETTE --- */
-    --home-bg-color: #0E111C;        /* Home background (Specific deep blue from screenshot) */
-    --section-bg-darker: #090C15;    /* Used for Skills, Contact sections (Slightly Lighter Dark Blue) */
-    --section-bg-darkest: #05070B;   /* Darkest blue for Journey, Projects, and Footer */
-    --card-bg-color: #1C2230;        /* Background for cards, input fields (Lighter Dark Blue) */
+    --home-bg-color: #0E111C;        
+    --section-bg-darker: #090C15;    
+    --section-bg-darkest: #05070B;   
+    --card-bg-color: #1C2230;        
     
-    --text-color: #ededed;           /* White text */
-    --main-color: #00abf0;           /* Bright blue highlight */
+    --text-color: #ededed;           
+    --main-color: #00abf0;           
     --link-color: #00bfff;
     --border-color: #333333;
     
-    /* NEW VARIABLE for common border radius */
-    --button-radius: 1.5rem; /* Final Increased Radius */
+    /* Button border radius */
+    --button-radius: 1.5rem; 
 }
 
 html {
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%; 
     overflow-x: hidden;
 }
 
@@ -38,7 +38,7 @@ body {
     color: var(--text-color);
 }
 
-/* --- Utility Classes --- */
+/* Utility Classes */
 .highlight {
     color: var(--main-color);
 }
@@ -57,7 +57,7 @@ section {
     text-align: center;
 }
 
-/* --- Header & Navigation --- */
+/* Header & Navigation */
 .header {
     position: fixed;
     top: 0;
@@ -103,7 +103,7 @@ section {
     display: none;
 }
 
-/* --- Button Styling (Increased Border Radius) --- */
+/* Button Styling */
 .btn-box {
     display: flex;
     gap: 1.5rem;
@@ -115,9 +115,8 @@ section {
     justify-content: center;
     align-items: center;
     padding: 1.4rem 3rem;
-    /* APPLYING FINAL INCREASED BORDER RADIUS */
     border-radius: var(--button-radius); 
-    font-size: 1.8rem; /* INCREASED SIZE */
+    font-size: 1.8rem; 
     font-weight: 600;
     letter-spacing: .1rem;
     transition: .3s;
@@ -131,18 +130,10 @@ section {
     border: .2rem solid var(--main-color);
 }
 
-
 .connect-btn:hover {
     background: transparent;
     color: var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
-}
-
-.message btn-box {
-    background: var(--main-color);
-    color: var(--card-bg-color); 
-    border: .2rem solid var(--main-color);
-    align: center;
 }
 
 .projects-btn { 
@@ -162,14 +153,6 @@ section {
     background: var(--main-color);
     color: var(--card-bg-color); 
     border: .2rem solid var(--main-color);
-    align: center;
-}
-.btn message-btn {
-    background: var(--main-color);
-    color: var(--card-bg-color); 
-    border: .2rem solid var(--main-color);
-    align: center;
- 
 }
 
 .message-btn:hover {
@@ -178,7 +161,7 @@ section {
     box-shadow: 0 0 10px var(--main-color);
 }
 
-/* --- Home Section (Main Layout) --- */
+/* Home Section */
 .home {
     background: var(--home-bg-color); 
     display: flex;
@@ -211,13 +194,12 @@ section {
 
 .home-image .profile-image {
     width: 100%;
-    max-width: 250px; /* Kept previous smaller size for aesthetics */
+    max-width: 250px; 
     height: auto;
     border-radius: var(--button-radius); 
     border: 3px solid var(--main-color);
     box-shadow: 0 0 20px rgba(0, 171, 240, 0.4);
 }
-
 
 .home-content .greeting-text {
     font-size: 2rem;
@@ -232,7 +214,7 @@ section {
     line-height: 1.1;
     margin: 0;
     text-shadow: 0 0 7px rgba(0, 171, 240, 0.7);
-    white-space: nowrap; /* Forces name onto one line */
+    white-space: nowrap;
 }
 
 .home-content .title-text {
@@ -243,7 +225,7 @@ section {
 }
 
 .home-content .description-text {
-    font-size: 1.8rem; /* INCREASED SIZE */
+    font-size: 1.8rem; 
     line-height: 1.6;
     margin: 2rem 0 3rem;
     max-width: 100%;
@@ -275,7 +257,7 @@ section {
     box-shadow: 0 0 10px var(--main-color);
 }
 
-/* --- Journey/Education Section (Set to darkest blue) --- */
+/* Education / Journey Section */
 .education {
     background: var(--section-bg-darkest);
     min-height: auto;
@@ -311,7 +293,7 @@ section {
     position: relative;
     padding: 2rem;
     border-radius: 0.8rem;
-    background: var(--card-bg-color); /* FIX: Using card background for inner boxes */
+    background: var(--card-bg-color); 
     margin-bottom: 2rem;
     transition: all 0.3s ease;
 }
@@ -322,24 +304,24 @@ section {
 }
 
 .education-content .content .year {
-    font-size: 1.8rem; /* INCREASED SIZE */
+    font-size: 1.8rem;
     color: var(--main-color);
     margin-bottom: 0.5rem;
 }
 
 .education-content .content h3 {
-    font-size: 2.2rem; /* INCREASED SIZE */
+    font-size: 2.2rem; 
     font-weight: 500;
 }
 
 .education-content .content p {
-    font-size: 1.6rem; /* INCREASED SIZE */
+    font-size: 1.6rem; 
     margin-top: 0.5rem;
     color: #999;
 }
 
 .education-content .content .view-cert {
-    font-size: 1.6rem; /* INCREASED SIZE */
+    font-size: 1.6rem;
     color: var(--link-color);
     margin-top: 1rem;
     font-weight: 500;
@@ -350,7 +332,7 @@ section {
     color: var(--main-color);
 }
 
-/* --- Skills Section (Set to darker blue) --- */
+/* Skills Section */
 .skills {
     background: var(--section-bg-darker);
     min-height: auto;
@@ -371,51 +353,34 @@ section {
     margin: 0 0 2rem;
 }
 
-/* Skills: List Layout (Languages) */
 .skills-box {
     background: var(--card-bg-color); 
     border-radius: 0.8rem;
     padding: 2rem;
 }
 
-.skill-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 0;
-    border-bottom: 1px solid var(--border-color);
-}
-.skill-item:last-child {
-    border-bottom: none;
-}
-.skill-item p {
-    font-size: 1.8rem; /* APPROPRIATE SIZE */
-}
-.skill-icon {
-    font-size: 2.8rem;
-}
-
-/* Skills: Tags Layout (Frameworks & Libraries) */
 .skills-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
+
 .skill-tag {
     background: var(--section-bg-darkest); 
     color: var(--text-color);
     padding: 1.2rem 2rem; 
     border-radius: 0.5rem;
-    font-size: 1.8rem; /* INCREASED SIZE */
+    font-size: 1.8rem; 
     font-weight: 500;
     transition: all 0.3s ease;
 }
+
 .skill-tag:hover {
     background: var(--main-color);
     color: var(--card-bg-color);
 }
 
-/* --- Projects Section (Set to darkest blue) --- */
+/* Projects Section */
 .projects {
     background: var(--section-bg-darkest);
     min-height: auto;
@@ -444,7 +409,7 @@ section {
 }
 
 .project-card h3 {
-    font-size: 2.4rem; /* INCREASED SIZE */
+    font-size: 2.4rem; 
     color: var(--main-color);
     margin-bottom: 1rem;
 }
@@ -461,14 +426,8 @@ section {
     margin-bottom: 0.5rem;
 }
 
-.key-features ul {
-    list-style: none;
-    padding-left: 1rem;
-    margin-bottom: 1.5rem;
-}
-
 .key-features ul li {
-    font-size: 1.6rem; /* INCREASED SIZE */
+    font-size: 1.6rem; 
     color: #aaa;
     line-height: 1.6;
     position: relative;
@@ -495,7 +454,7 @@ section {
     color: var(--text-color);
     padding: 0.5rem 1rem;
     border-radius: 0.4rem;
-    font-size: 1.5rem; /* INCREASED SIZE */
+    font-size: 1.5rem; 
     font-weight: 500;
 }
 
@@ -506,18 +465,16 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem; /* INCREASED SIZE */
+    font-size: 1.8rem; 
 }
 .project-card .view-github:hover {
     color: var(--card-bg-color); 
 }
-
 .project-card .view-github i {
     margin-left: 0.5rem;
 }
 
-
-/* --- Contact Section (Set to darker blue) --- */
+/* Contact Section */
 .contact {
     background: var(--section-bg-darker);
     min-height: auto;
@@ -525,7 +482,6 @@ section {
 }
 
 .contact-container { 
-    /* Increased width to utilize more horizontal space */
     max-width: 90%; 
     width: 90%; 
     margin: 0 auto;
@@ -540,7 +496,7 @@ section {
 }
 
 .contact-subtitle {
-    font-size: 1.9rem; /* INCREASED SIZE */
+    font-size: 1.9rem; 
     color: #ccc;
     margin-bottom: 3rem;
     text-align: center;
@@ -561,12 +517,11 @@ section {
     margin-bottom: 2.5rem;
 }
 
-
 .input-field input,
 .textarea-field textarea {
     width: 100%;
     padding: 1.5rem 1.5rem 1.5rem 5rem;
-    font-size: 1.7rem; /* APPROPRIATE SIZE */
+    font-size: 1.7rem; 
     color: var(--text-color);
     background: var(--section-bg-darker); 
     border: 1px solid var(--border-color);
@@ -596,38 +551,12 @@ section {
     transform: none;
 }
 
-.message btn-box {
-    align-items: center;
- 
-    /* position: relative;
-    display: inline-flex;
-    justify-content: center;
-    padding: .8rem;
-    background: var(--main-color);
-    border-radius: var(--button-radius); 
-    z-index: 1;
-    overflow: hidden;
-    font-size: 2.5rem; 
-    color: var(--card-bg-color); 
-    transition: all 0.3s ease;  */
-}
-
-
 .input-field input:focus,
 .textarea-field textarea:focus {
     border-color: var(--main-color);
 }
 
-.btn-box.btns {
-    justify-content: center;
-}
-.btn-box.btns button {
-    width: 100%;
-    max-width: 100%; 
-    font-size: 0.9rem; /* APPROPRIATE SIZE */
-}
-
-/* --- Footer (Set to darkest blue) --- */
+/* Footer */
 .footer {
     display: flex;
     justify-content: space-between; 
@@ -669,7 +598,7 @@ section {
     box-shadow: 0 0 1rem var(--main-color);
 }
 
-/* --- Media Queries --- */
+/* Media Queries */
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
@@ -750,7 +679,6 @@ section {
     .footer {
         align-items: center;
     }
-    /* FIX: Change order of image to appear after h1/p tags on mobile */
     .home-container .home-content {
         order: 0; 
     }
