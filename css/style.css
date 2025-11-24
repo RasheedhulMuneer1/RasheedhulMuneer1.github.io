@@ -169,6 +169,7 @@ section {
     color: var(--card-bg-color); 
     border: .2rem solid var(--main-color);
     align: center;
+ 
 }
 
 .message-btn:hover {
@@ -631,7 +632,7 @@ section {
 .footer-iconTop {
     order: 1; 
     margin-bottom: 1.5rem;
-} 
+}    
 
 .footer-iconTop a {
     position: relative;
