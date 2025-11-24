@@ -574,6 +574,10 @@ section {
     color: #ccc;
 }
 
+.btn message-btn {
+    align: center;
+}
+
 .footer-iconTop {
     order: 1; 
     margin-bottom: 1.5rem;
