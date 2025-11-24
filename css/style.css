@@ -596,6 +596,22 @@ section {
     transform: none;
 }
 
+.message btn-box {
+    align-items: center;
+ 
+    /* position: relative;
+    display: inline-flex;
+    justify-content: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: var(--button-radius); 
+    z-index: 1;
+    overflow: hidden;
+    font-size: 2.5rem; 
+    color: var(--card-bg-color); 
+    transition: all 0.3s ease;  */
+}
+
 
 .input-field input:focus,
 .textarea-field textarea:focus {
