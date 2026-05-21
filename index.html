@@ -1,364 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-        <title>Rasheedhul Muneer | Portfolio</title>
-    
-        <link rel="stylesheet" href="css/style.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Rasheedhul Muneer – Aspiring Software Engineer, IT undergraduate, portfolio showcasing projects and skills.">
+    <title>Rasheedhul Muneer | Portfolio</title>
 
-        <script type="text/javascript">  
-            (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "s85i1ib6lm");
-        </script>
-    </head> 
-    <body>
-        <header class="header sticky">
-            <a href="#home" class="logo">Muneer.</a>
-            
-            <i class='bx bx-menu' id="menu-icon"></i>
-            
-            <nav class="navbar" id="navbar">
-                <a href="#home" class="active">Home</a>
-                <a href="#journey">Journey</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-                
-                <span class="active-nav"></span>
-            </nav>
-        </header>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-        <section class="home" id="home">
-            <div class="home-container">
-                <div class="home-content">
-                    <p class="greeting-text">Hello, I'm</p>
-                    <h1>Rasheedhul Muneer <span class="highlight"></span></h1>
-                    <p class="title-text">Aspiring Software Engineer</p> 
-                    
-                    <p class="description-text">As a final-year IT undergraduate aspiring to be a Software Engineer, I am driven by curiosity and a commitment to solving real-world problems with efficient solutions. My journey has fostered resilience, adaptability and a deep appreciation for collaboration. I actively engage in projects to explore new technologies, genuinely enjoy building solutions that solve problems and constantly seek opportunities to learn and grow while making a meaningful contribution.</p> 
-                               
-                    <div class="btn-box">
-                        <a href="#contact" class="btn connect-btn">Let's Connect</a>
-                        <a href="#projects" class="btn projects-btn">View Projects</a> 
-                    </div> 
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "s85i1ib6lm");
+    </script>
+</head>
+<body>
 
-                    <div class="home-sci">
-                        <a href="https://www.linkedin.com/in/rasheedhul-muneer123/" target="_blank">
-                            <i class='bx bxl-linkedin'></i>
-                        </a> 
-                        <a href="https://github.com/RasheedhulMuneer1" target="_blank">
-                            <i class='bx bxl-github'></i>
-                        </a>
-                        <a href="mailto:marasheedhulmuneer@gmail.com">
-                            <i class='bx bxs-envelope'></i>
-                        </a>
-                    </div>
+<!-- ─── Nav Overlay (mobile) ────────────────────────── -->
+<div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+<!-- ─── Header ──────────────────────────────────────── -->
+<header class="header sticky">
+    <a href="#home" class="logo">Muneer<span>.</span></a>
+
+    <button class="bx bx-menu" id="menu-icon" aria-label="Toggle navigation" aria-expanded="false"></button>
+
+    <nav class="navbar" id="navbar" role="navigation">
+        <a href="#home"     class="active">Home</a>
+        <a href="#journey">Journey</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- ─── Home ────────────────────────────────────────── -->
+<section class="home" id="home">
+    <div class="home-container">
+
+        <div class="home-content">
+            <div class="home-badge reveal">🎓 Final-year IT Undergraduate</div>
+
+            <p class="greeting-text reveal">Hello, I'm</p>
+            <h1 class="reveal">Rasheedhul Muneer</h1>
+
+            <p class="title-text reveal"></p><span class="cursor"></span>
+
+            <p class="description-text reveal">As a final-year IT undergraduate aspiring to be a Software Engineer, I am driven by curiosity and a commitment to solving real-world problems with efficient solutions. My journey has fostered resilience, adaptability, and a deep appreciation for collaboration.</p>
+
+            <div class="btn-box reveal stagger">
+                <a href="#contact"  class="btn connect-btn"><i class='bx bx-send'></i> Let's Connect</a>
+                <a href="#projects" class="btn projects-btn"><i class='bx bx-code-alt'></i> View Projects</a>
+            </div>
+
+            <div class="home-sci reveal stagger">
+                <span class="sci-label">Find me on</span>
+                <a href="https://www.linkedin.com/in/rasheedhul-muneer123/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://github.com/RasheedhulMuneer1" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="mailto:marasheedhulmuneer@gmail.com" aria-label="Email">
+                    <i class='bx bxs-envelope'></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="home-image reveal-right">
+            <div class="profile-wrapper">
+                <div class="profile-ring"></div>
+                <img src="Muneer.jpeg" alt="Rasheedhul Muneer" class="profile-image">
+                <div class="stat-chip chip-projects">
+                    <span class="num">5+</span>
+                    <span class="lbl">Projects</span>
                 </div>
-
-                <div class="home-image">
-                    <img src="Muneer.jpeg" alt="Rasheedhul Muneer" class="profile-image">
+                <div class="stat-chip chip-exp">
+                    <span class="num">2+</span>
+                    <span class="lbl">Years Exp.</span>
                 </div>
             </div>
-        </section>
+        </div>
 
+    </div>
+</section>
 
-        <section class="education" id="journey">
-            <h2 class="heading">My <span class="highlight">Journey</span></h2>
-            
-            <div class="education-row">
-                <div class="education-column">
-                    <h3 class="title"><i class='bx bxs-graduation'></i> Education</h3>
-                    <div class="education-box">
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year">2022-Present</div>
-                                <h3>B.Sc (Hons) in Information Technology</h3>
-                                <p>Horizon Campus</p>
-                            </div>
-                        </div>
-                    </div>
+<!-- ─── Journey ─────────────────────────────────────── -->
+<section class="education" id="journey">
+    <h2 class="heading reveal">My <span class="highlight">Journey</span></h2>
+    <span class="section-divider reveal"></span>
 
-                    <h3 class="title"><i class='bx bxs-briefcase'></i> Experience</h3>
-                    <div class="education-box">
-                        <div class="education-content">
-                             <div class="content">
-                                <div class="year">2025 April-November</div>
-                                <h3>Intern - Software Engineer</h3>
-                                <p>Directorate of Information Technology - SriLanka Army</p>
-                            </div>
-                            <div class="content">
-                                <div class="year">2022 February-November</div>
-                                <h3>(CRT) - Infrastructure</h3>
-                                <p>HCL Technologies</p>
-                                <p>Gained foundational knowledge of Operating Systems (Windows and Linux), Databases and developed proficiency in Networking concepts and practices.</p>
-                            </div>
-                        </div>
-                    </div>
+    <div class="education-row">
+        <!-- Left column -->
+        <div class="education-column">
 
-                    <h3 class="title"><i class='bx bxs-group'></i> Leadership & Volunteer</h3>
-                    <div class="education-box">
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year">2024-2025</div>
-                                <h3>General Member - HRZX30079 (Rotarizon)</h3>
-                                <p>Rotaract Club of Horizon Campus</p>
-                                <p>The Rotaract Club of Horizon Campus (RACHC) unites students from diverse faculties to drive community service, foster personal growth and inspire change through impactful projects and activities.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-
-                <div class="education-column">
-                    <h3 class="title"><i class='bx bxs-certification'></i> Certificates</h3>
-                    <div class="education-box">
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year">2025</div>
-                                <h3>Mastering Windows PowerShell</h3>
-                                <p>Alison</p>
-                                <a href="https://alison.com/certification/check/39b7e4049c" target="_blank" class="view-cert">View Certificate →</a>
-                            </div>
-                            <div class="content">
-                                <div class="year">2025</div>
-                                <h3>React.js</h3>
-                                <p>Great Learning</p>
-                                <a href="https://www.mygreatlearning.com/certificate/WQCMZYPZ" target="_blank" class="view-cert">View Certificate →</a>
-                            </div>
-                            <div class="content">
-                                <div class="year">2024</div>
-                                <h3>Data Visualization using D3.js</h3>
-                                <p>By freeCodeCamp</p>
-                                <a href="https://www.freecodecamp.org/certification/fcc78818551-f4d4-4805-8c12-73e4ab21b816/data-visualization" target="_blank" class="view-cert">View Certificate →</a>
-                            </div>
-                            <div class="content">
-                                <div class="year">2024</div>
-                                <h3>AI and ML Internship</h3>
-                                <p>By YbiFoundation</p>
-                                <a href="https://www.linkedin.com/posts/rasheedhul-muneer123_ai-ml-ybifoundation-activity-7221754905374474240-pLHs?utm_source=share&utm_medium=member_desktop" target="_blank" class="view-cert">View Certificate →</a>
-                            </div>
-                            <div class="content">
-                                <div class="year">2022</div>
-                                <h3>Responsive Web Design</h3>
-                                <p>By FreeCodeCamp</p>
-                                <a href="https://www.freecodecamp.org/certification/fcc78818551-f4d4-4805-8c12-73e4ab21b816/responsive-web-design" target="_blank" class="view-cert">View Certificate →</a>
-                            </div>
-                            <div class="content">
-                                <div class="year">2017</div>
-                                <h3>Diploma in English</h3>
-                                <p>By British Way English Academy</p>
-                                <a href="https://www.linkedin.com/in/rasheedhul-muneer123/details/certifications/1723211614555/single-media-viewer/?profileId=ACoAADmY6r4B6ePIUQFwZZhqxh3fhBkavuTE8Q0" target="_blank" class="view-cert">View Certificate →</a>
-                            </div>
-                        </div>
-                    </div>
+            <h3 class="section-title reveal"><i class='bx bxs-graduation'></i> Education</h3>
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <div class="timeline-year">2022 – Present</div>
+                    <h3>B.Sc (Hons) in Information Technology</h3>
+                    <p>Horizon Campus</p>
                 </div>
             </div>
-        </section>
-        
-        <section class="skills" id="skills">
-            <h2 class="heading">Technical <span class="highlight">Skills</span></h2>
-            <div class="skills-row">
-                <div class="skills-column">
-                    <h3 class="title">Languages</h3>
-                    <div class="skills-box skills-tags">
-                        <span class="skill-tag">HTML & CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C#</span>
-                        <span class="skill-tag">Python</span>
-                    </div>
-                </div>
 
-                <div class="skills-column">
-                    <h3 class="title">Libraries & Frameworks</h3>
-                    <div class="skills-box skills-tags">
-                        <span class="skill-tag">React.js</span>
-                        <span class="skill-tag">D3.js</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Scikit-Learn</span>
-                        <span class="skill-tag">Matplotlib</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">NestJS</span>
-                    </div>
+            <h3 class="section-title reveal"><i class='bx bxs-briefcase'></i> Experience</h3>
+            <div class="timeline reveal stagger">
+                <div class="timeline-item">
+                    <div class="timeline-year">2025 Apr – Nov</div>
+                    <h3>Intern – Software Engineer</h3>
+                    <p>Directorate of Information Technology · Sri Lanka Army</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022 Feb – Nov</div>
+                    <h3>CRT – Infrastructure</h3>
+                    <p>HCL Technologies</p>
+                    <p>Gained foundational knowledge of Operating Systems (Windows & Linux), Databases, and Networking.</p>
                 </div>
             </div>
-        </section>
 
-        <section class="projects" id="projects">
-            <h2 class="heading">Featured <span class="highlight">Projects</span></h2>
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <h3>Sales and Inventory Management System</h3>
-                    <p class="project-description">Windows Forms application to streamline sales and inventory operations for shopkeepers.</p>
-                    
-                    <div class="key-features">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Stock and product order management</li>
-                            <li>Automated billing and invoicing</li>
-                            <li>Secure login and user authentication</li>
-                        </ul>
-                    </div>
-                    <div class="project-tags">
-                        <span class="tech-tag">C#</span>
-                        <span class="tech-tag">Bunifu</span>
-                    </div>
-                    <a href="https://github.com/RasheedhulMuneer1/Sales-InventoryManagementSystem" target="_blank" class="btn projects-btn view-github">View on GitHub <i class='bx bx-link-external'></i></a>
-                </div>
-
-                <div class="project-card">
-                    <h3>Hill and Valley Prediction</h3>
-                    <p class="project-description">Machine Learning model to predict whether a given set of 100 points on a 2D graph forms a hill or a valley.</p>
-                    
-                    <div class="key-features">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Utilized a large dataset of topographical data</li>
-                            <li>Implemented robust prediction algorithm</li>
-                            <li>Data visualization with Matplotlib</li>
-                        </ul>
-                    </div>
-                    <div class="project-tags">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">Scikit-Learn</span>
-                        <span class="tech-tag">NumPy</span>
-                        <span class="tech-tag">Matplotlib</span>
-                    </div>
-                    <a href="https://github.com/RasheedhulMuneer1/Hill_and_Valley_Prediction/blob/main/Hill_and_Valley_Prediction.ipynb" target="_blank" class="btn projects-btn view-github">View on GitHub <i class='bx bx-link-external'></i></a>
-                </div>
-
-                <div class="project-card">
-                    <h3>MovieLand</h3>
-                    <p class="project-description">Responsive movie search app built with React (Original description: ReactJS/Vite/OMDb API).</p>
-                    
-                    <div class="key-features">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Find movies by title</li>
-                            <li>Card-based, responsive layout</li>
-                            <li>Fetches real-time movie information</li>
-                        </ul>
-                    </div>
-                    <div class="project-tags">
-                        <span class="tech-tag">React.js</span>
-                        <span class="tech-tag">Vite</span>
-                        <span class="tech-tag">OMDb API</span>
-                    </div>
-                    <a href="https://github.com/RasheedhulMuneer1/ReactApp-MovieLand/tree/main" target="_blank" class="btn projects-btn view-github">View on GitHub <i class='bx bx-link-external'></i></a>
-                </div>
-
-                <div class="project-card">
-                    <h3>Calories Burn Estimation</h3>
-                    <p class="project-description">ML model to estimate calories burned based on steps walked using Linear Regression (Original: Python/Scikit-learn/Jupyter).</p>
-                    
-                    <div class="key-features">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Supervised Machine Learning model</li>
-                            <li>Uses Linear Regression algorithm</li>
-                            <li>Estimates energy expenditure based on activity</li>
-                        </ul>
-                    </div>
-                    <div class="project-tags">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Scikit-Learn</span>
-                        <span class="tech-tag">Jupyter</span>
-                    </div>
-                    <a href="https://github.com/RasheedhulMuneer1/ML-Project-Calories-Burn-Prediction-Based-on-Steps-Walked" target="_blank" class="btn projects-btn view-github">View on GitHub <i class='bx bx-link-external'></i></a>
-                </div>
-
-                <div class="project-card">
-                    <h3>InMemoryBookStore-API</h3>
-                    <p class="project-description">A RESTful API built with NestJS to manage a collection of books with full CRUD operations.</p>
-                    
-                    <div class="key-features">
-                        <h4>Core Features:</h4>
-                        <ul>
-                            <li>CRUD Operations (Create, Read, Update, Delete)</li>
-                            <li>Built with NestJS (TypeScript)</li>
-                            <li>In-memory data store</li>
-                        </ul>
-                    </div>
-                    <div class="project-tags"> 
-                        <span class="tech-tag">NestJS</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">REST API</span>
-                    </div>
-                    <a href="https://github.com/RasheedhulMuneer1/Book-Library-API-NestJS" target="_blank" class="btn projects-btn view-github">View on GitHub <i class='bx bx-link-external'></i></a>
+            <h3 class="section-title reveal"><i class='bx bxs-group'></i> Leadership & Volunteer</h3>
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <div class="timeline-year">2024 – 2025</div>
+                    <h3>General Member · HRZX30079 (Rotarizon)</h3>
+                    <p>Rotaract Club of Horizon Campus — driving community service, personal growth, and impactful change.</p>
                 </div>
             </div>
-        </section>
 
+        </div>
 
-        <section class="contact" id="contact">
-            <!-- <h2 class="heading">Get<span class="highlight">In Touch</span></h2> -->
-            <h2 class="heading">Get <span class="highlight">In Touch</span></h2>
-            <div class="contact-container"> 
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                    <input type="hidden" name="access_key" value="183428c0-7e4e-46f6-83d6-40e97827eb82">
-                    <p class="contact-subtitle">Always open to discussing new projects, opportunities or partnerships.</p>
+        <!-- Right column -->
+        <div class="education-column">
+            <h3 class="section-title reveal"><i class='bx bxs-certification'></i> Certificates</h3>
+            <div class="timeline reveal stagger">
 
-                    <div class="input-row">
-                        <div class="input-field">
-                            <i class='bx bxs-user'></i>
-                            <input type="text" name="full_name" placeholder="Full Name" required>
-                        </div>
-                        <div class="input-field">
-                            <i class='bx bxs-envelope'></i>
-                            <input type="email" name="email" placeholder="Email Address" required>
-                        </div>
-                    </div>
-
-                    <div class="input-row">
-                        <div class="input-field">
-                            <i class='bx bxs-phone'></i>
-                            <input type="tel" name="mobile_number" placeholder="Mobile Number" pattern="[0-9]{10}">
-                        </div>
-                        <div class="input-field">
-                            <i class='bx bxs-comment-detail'></i>
-                            <input type="text" name="subject" placeholder="Subject">
-                        </div>
-                    </div>
-
-                    <div class="textarea-field">
-                        <i class='bx bxs-message-alt-dots'></i>
-                            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                    </div>
- 
-                    <!-- <div class="message btn-box">
-                        
-                    </div> -->
-
-
-                     <div class="message-btn-container">
-                 <button type="submit" class="btn message-btn">Send Message</button>
+                <div class="timeline-item">
+                    <div class="timeline-year">2025</div>
+                    <h3>Mastering Windows PowerShell</h3>
+                    <p>Alison</p>
+                    <a href="https://alison.com/certification/check/39b7e4049c" target="_blank" rel="noopener" class="view-cert">View Certificate <i class='bx bx-link-external'></i></a>
                 </div>
 
-                </form>
-                <!-- <button type="submit" class="btn message-btn">Send Message</button> -->
+                <div class="timeline-item">
+                    <div class="timeline-year">2025</div>
+                    <h3>React.js</h3>
+                    <p>Great Learning</p>
+                    <a href="https://www.mygreatlearning.com/certificate/WQCMZYPZ" target="_blank" rel="noopener" class="view-cert">View Certificate <i class='bx bx-link-external'></i></a>
+                </div>
 
-               
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <h3>Data Visualization using D3.js</h3>
+                    <p>freeCodeCamp</p>
+                    <a href="https://www.freecodecamp.org/certification/fcc78818551-f4d4-4805-8c12-73e4ab21b816/data-visualization" target="_blank" rel="noopener" class="view-cert">View Certificate <i class='bx bx-link-external'></i></a>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <h3>AI and ML Internship</h3>
+                    <p>YbiFoundation</p>
+                    <a href="https://www.linkedin.com/posts/rasheedhul-muneer123_ai-ml-ybifoundation-activity-7221754905374474240-pLHs" target="_blank" rel="noopener" class="view-cert">View Certificate <i class='bx bx-link-external'></i></a>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <h3>Responsive Web Design</h3>
+                    <p>freeCodeCamp</p>
+                    <a href="https://www.freecodecamp.org/certification/fcc78818551-f4d4-4805-8c12-73e4ab21b816/responsive-web-design" target="_blank" rel="noopener" class="view-cert">View Certificate <i class='bx bx-link-external'></i></a>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2017</div>
+                    <h3>Diploma in English</h3>
+                    <p>British Way English Academy</p>
+                    <a href="https://www.linkedin.com/in/rasheedhul-muneer123/details/certifications/" target="_blank" rel="noopener" class="view-cert">View Certificate <i class='bx bx-link-external'></i></a>
+                </div>
+
             </div>
-            
-        </section>
-        
-        <footer class="footer">
-            <div class="footer-text">
-                <p> &copy; 2024 Rasheedhul Muneer. All rights reserved.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ─── Skills ───────────────────────────────────────── -->
+<section class="skills" id="skills">
+    <h2 class="heading reveal">Technical <span class="highlight">Skills</span></h2>
+    <span class="section-divider reveal"></span>
+
+    <div class="skills-row">
+        <div class="skills-column">
+            <h3 class="section-title reveal"><i class='bx bxs-code'></i> Languages</h3>
+            <div class="skills-grid reveal stagger">
+                <span class="skill-tag"><i class='bx bxl-html5'></i> HTML & CSS</span>
+                <span class="skill-tag"><i class='bx bxl-javascript'></i> JavaScript</span>
+                <span class="skill-tag"><i class='bx bxl-java'></i> Java</span>
+                <span class="skill-tag"><i class='bx bx-code'></i> C#</span>
+                <span class="skill-tag"><i class='bx bxl-python'></i> Python</span>
             </div>
-            <div class="footer-iconTop">
-                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+        </div>
+
+        <div class="skills-column">
+            <h3 class="section-title reveal"><i class='bx bxs-layer'></i> Libraries & Frameworks</h3>
+            <div class="skills-grid reveal stagger">
+                <span class="skill-tag"><i class='bx bxl-react'></i> React.js</span>
+                <span class="skill-tag"><i class='bx bx-bar-chart-alt-2'></i> D3.js</span>
+                <span class="skill-tag"><i class='bx bx-data'></i> Pandas</span>
+                <span class="skill-tag"><i class='bx bx-math'></i> NumPy</span>
+                <span class="skill-tag"><i class='bx bx-brain'></i> Scikit-Learn</span>
+                <span class="skill-tag"><i class='bx bx-line-chart'></i> Matplotlib</span>
+                <span class="skill-tag"><i class='bx bxl-google'></i> TensorFlow</span>
+                <span class="skill-tag"><i class='bx bx-server'></i> NestJS</span>
             </div>
-            
-        </footer>
-        <script src="js/script.js"></script>
-    </body>
+        </div>
+    </div>
+</section>
+
+<!-- ─── Projects ─────────────────────────────────────── -->
+<section class="projects" id="projects">
+    <h2 class="heading reveal">Featured <span class="highlight">Projects</span></h2>
+    <span class="section-divider reveal"></span>
+
+    <div class="projects-grid">
+
+        <div class="project-card reveal">
+            <div class="card-body">
+                <h3>Sales & Inventory Management</h3>
+                <p class="project-description">Windows Forms application to streamline sales and inventory operations for shopkeepers.</p>
+                <div class="key-features">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Stock and product order management</li>
+                        <li>Automated billing and invoicing</li>
+                        <li>Secure login and user authentication</li>
+                    </ul>
+                </div>
+                <div class="project-tags">
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">Bunifu</span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <a href="https://github.com/RasheedhulMuneer1/Sales-InventoryManagementSystem" target="_blank" rel="noopener" class="btn view-github">
+                    <i class='bx bxl-github'></i> View on GitHub <i class='bx bx-link-external'></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
+            <div class="card-body">
+                <h3>Hill & Valley Prediction</h3>
+                <p class="project-description">Machine Learning model to predict whether a set of 100 points on a 2D graph forms a hill or a valley.</p>
+                <div class="key-features">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Large topographical dataset</li>
+                        <li>Robust prediction algorithm</li>
+                        <li>Data visualization with Matplotlib</li>
+                    </ul>
+                </div>
+                <div class="project-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">Scikit-Learn</span>
+                    <span class="tech-tag">NumPy</span>
+                    <span class="tech-tag">Matplotlib</span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <a href="https://github.com/RasheedhulMuneer1/Hill_and_Valley_Prediction/blob/main/Hill_and_Valley_Prediction.ipynb" target="_blank" rel="noopener" class="btn view-github">
+                    <i class='bx bxl-github'></i> View on GitHub <i class='bx bx-link-external'></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
+            <div class="card-body">
+                <h3>MovieLand</h3>
+                <p class="project-description">Responsive movie search app powered by the OMDb API, built with React and Vite.</p>
+                <div class="key-features">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Search movies by title</li>
+                        <li>Card-based responsive layout</li>
+                        <li>Real-time movie information</li>
+                    </ul>
+                </div>
+                <div class="project-tags">
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">Vite</span>
+                    <span class="tech-tag">OMDb API</span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <a href="https://github.com/RasheedhulMuneer1/ReactApp-MovieLand/tree/main" target="_blank" rel="noopener" class="btn view-github">
+                    <i class='bx bxl-github'></i> View on GitHub <i class='bx bx-link-external'></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
+            <div class="card-body">
+                <h3>Calories Burn Estimation</h3>
+                <p class="project-description">ML model that estimates calories burned based on steps walked using Linear Regression.</p>
+                <div class="key-features">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Supervised Machine Learning model</li>
+                        <li>Linear Regression algorithm</li>
+                        <li>Energy expenditure estimation</li>
+                    </ul>
+                </div>
+                <div class="project-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Scikit-Learn</span>
+                    <span class="tech-tag">Jupyter</span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <a href="https://github.com/RasheedhulMuneer1/ML-Project-Calories-Burn-Prediction-Based-on-Steps-Walked" target="_blank" rel="noopener" class="btn view-github">
+                    <i class='bx bxl-github'></i> View on GitHub <i class='bx bx-link-external'></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
+            <div class="card-body">
+                <h3>InMemory BookStore API</h3>
+                <p class="project-description">A RESTful API built with NestJS to manage a book collection with full CRUD operations.</p>
+                <div class="key-features">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Full CRUD operations</li>
+                        <li>Built with NestJS (TypeScript)</li>
+                        <li>In-memory data store</li>
+                    </ul>
+                </div>
+                <div class="project-tags">
+                    <span class="tech-tag">NestJS</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">REST API</span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <a href="https://github.com/RasheedhulMuneer1/Book-Library-API-NestJS" target="_blank" rel="noopener" class="btn view-github">
+                    <i class='bx bxl-github'></i> View on GitHub <i class='bx bx-link-external'></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ─── Contact ──────────────────────────────────────── -->
+<section class="contact" id="contact">
+    <h2 class="heading reveal">Get <span class="highlight">In Touch</span></h2>
+    <span class="section-divider reveal"></span>
+
+    <div class="contact-container reveal">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="183428c0-7e4e-46f6-83d6-40e97827eb82">
+            <p class="contact-subtitle">Always open to discussing new projects, opportunities or partnerships.</p>
+
+            <div class="input-row">
+                <div class="input-field">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" name="full_name" placeholder="Full Name" required autocomplete="name">
+                </div>
+                <div class="input-field">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" name="email" placeholder="Email Address" required autocomplete="email">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-field">
+                    <i class='bx bxs-phone'></i>
+                    <input type="tel" name="mobile_number" placeholder="Mobile Number" pattern="[0-9]{10}" autocomplete="tel">
+                </div>
+                <div class="input-field">
+                    <i class='bx bxs-comment-detail'></i>
+                    <input type="text" name="subject" placeholder="Subject">
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <i class='bx bxs-message-alt-dots'></i>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+            </div>
+
+            <div class="message-btn-container">
+                <button type="submit" class="btn message-btn">
+                    <i class='bx bx-send'></i> Send Message
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- ─── Footer ───────────────────────────────────────── -->
+<footer class="footer">
+    <div class="footer-text">
+        <p>© 2025 <span>Rasheedhul Muneer</span>. All rights reserved.</p>
+    </div>
+    <div class="footer-links">
+        <a href="https://www.linkedin.com/in/rasheedhul-muneer123/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/RasheedhulMuneer1" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:marasheedhulmuneer@gmail.com">Email</a>
+    </div>
+    <div class="footer-iconTop">
+        <a href="#home" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</footer>
+
+<!-- ─── Back to top button ───────────────────────────── -->
+<button id="back-to-top" aria-label="Scroll to top">
+    <i class='bx bx-chevron-up'></i>
+</button>
+
+<!-- ─── Toast notification ───────────────────────────── -->
+<div id="toast" role="alert" aria-live="polite">
+    <i class='bx bx-check-circle'></i>
+    <span></span>
+</div>
+
+<script src="js/script.js"></script>
+</body>
 </html>
